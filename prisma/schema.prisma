@@ -1,127 +1,101 @@
-// VIBE - 潮流独立站数据库 Schema
+// OPENENDED - AI Workflow Subscription System
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
+// NextAuth.js Models
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
 model User {
-  id            String            @id @default(cuid())
-  email         String            @unique
+  id            String    @id @default(cuid())
   name          String?
-  avatar        String?
-  password      String
-  role          String            @default("USER") // USER | ADMIN
-  createdAt     DateTime          @default(now())
-  updatedAt     DateTime          @updatedAt
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
 
-  orders           Order[]
-  digitalIdentity  DigitalIdentity?
+  accounts      Account[]
+  sessions      Session[]
+  subscriptions Subscription[]
 }
 
-model Category {
-  id          String    @id @default(cuid())
-  name        String    @unique
-  slug        String    @unique
-  description String?
-  image       String?
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
 
-  products Product[]
+  @@unique([identifier, token])
 }
 
-model Brand {
-  id          String    @id @default(cuid())
-  name        String    @unique
-  slug        String    @unique
-  description String?
-  logo        String?
-  website     String?
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+// Subscription Models
+model Subscription {
+  id                     String   @id @default(cuid())
+  userId                 String
+  paypalSubscriptionId   String   @unique
+  paypalPlanId           String
+  paypalPayerId          String?
+  tier                   String   // core | plus | pro
+  interval               String   // monthly | yearly
+  status                 String   // active | canceled | suspended | expired
+  currentPeriodStart     DateTime
+  currentPeriodEnd       DateTime
+  cancelAtPeriodEnd      Boolean  @default(false)
+  createdAt              DateTime @default(now())
+  updatedAt              DateTime @updatedAt
 
-  products Product[]
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([paypalSubscriptionId])
 }
 
-model Product {
-  id          String    @id @default(cuid())
-  name        String
-  slug        String    @unique
-  description String?
-  price       Float
-  salePrice   Float?
-  images      String    @default("[]") // JSON array of image URLs
-  stock       Int       @default(0)
-  featured    Boolean   @default(false)
-  published   Boolean   @default(false)
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-
-  categoryId String?
-  category   Category? @relation(fields: [categoryId], references: [id])
-
-  brandId String?
-  brand   Brand?  @relation(fields: [brandId], references: [id])
-
-  orderItems OrderItem[]
-}
-
-model DigitalContent {
-  id          String    @id @default(cuid())
+// Workflow Content Models
+model Workflow {
+  id          String   @id @default(cuid())
+  slug        String   @unique
   title       String
-  slug        String    @unique
-  type        String    // ARTICLE | VIDEO | LOOKBOOK | PLAYLIST
-  content     String?
-  coverImage  String?
-  tags        String    @default("[]") // JSON array of tags
-  published   Boolean   @default(false)
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-}
+  tier        String   // core | plus | pro
+  category    String   // writing | research | strategy | analysis | etc
+  description String   @db.Text
+  content     String   @db.Text // Markdown content
+  version     String   @default("1.0.0")
+  published   Boolean  @default(false)
+  releaseDate DateTime
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 
-model Order {
-  id          String      @id @default(cuid())
-  orderNo     String      @unique
-  status      String      @default("PENDING") // PENDING | PAID | SHIPPED | DELIVERED | CANCELLED
-  totalAmount Float
-  address     String?
-  note        String?
-  createdAt   DateTime    @default(now())
-  updatedAt   DateTime    @updatedAt
-
-  userId String
-  user   User   @relation(fields: [userId], references: [id])
-
-  items OrderItem[]
-}
-
-model OrderItem {
-  id        String @id @default(cuid())
-  quantity  Int
-  price     Float
-
-  orderId   String
-  order     Order   @relation(fields: [orderId], references: [id])
-
-  productId String
-  product   Product @relation(fields: [productId], references: [id])
-}
-
-model DigitalIdentity {
-  id          String    @id @default(cuid())
-  displayName String
-  bio         String?
-  style       String?   // JSON style preferences
-  badges      String    @default("[]") // JSON array of badge IDs
-  level       Int       @default(1)
-  points      Int       @default(0)
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-
-  userId String @unique
-  user   User   @relation(fields: [userId], references: [id])
+  @@index([tier])
+  @@index([published])
+  @@index([releaseDate])
 }

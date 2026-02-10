@@ -7,27 +7,36 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className = "", variant = "primary", size = "md", children, ...props }, ref) => {
-    const base = "inline-flex items-center justify-center font-bold transition-all rounded-full";
+  (
+    { className = "", variant = "primary", size = "md", children, ...props },
+    ref,
+  ) => {
+    const base =
+      "inline-flex items-center justify-center font-light tracking-[0.1em] transition-all";
 
     const variants = {
       primary:
-        "bg-[var(--accent)] text-[var(--accent-foreground)] hover:scale-105 hover:shadow-[0_0_30px_rgba(228,255,26,0.3)]",
+        "bg-[var(--signal)] text-[var(--background)] hover:opacity-80",
       secondary:
-        "border border-[var(--border)] hover:border-[var(--accent)] hover:text-[var(--accent)]",
-      ghost: "text-[var(--muted-foreground)] hover:text-[var(--foreground)]",
+        "border border-[var(--border)] text-[var(--foreground)] hover:border-[var(--signal)] hover:text-[var(--signal)]",
+      ghost:
+        "text-[var(--muted)] hover:text-[var(--foreground)]",
     };
 
     const sizes = {
-      sm: "px-4 py-2 text-sm",
-      md: "px-6 py-3 text-base",
-      lg: "px-8 py-4 text-lg",
+      sm: "px-4 py-2 text-[11px]",
+      md: "px-6 py-3 text-[12px]",
+      lg: "px-8 py-4 text-[13px]",
     };
 
     return (
       <button
         ref={ref}
         className={`${base} ${variants[variant]} ${sizes[size]} ${className}`}
+        style={{
+          transitionDuration: "var(--duration-medium)",
+          transitionTimingFunction: "var(--ease-smooth)",
+        }}
         {...props}
       >
         {children}

@@ -1,0 +1,450 @@
+export const translations = {
+  en: {
+    nav: {
+      home: "Home",
+      product: "Product",
+      about: "About",
+      faq: "FAQ",
+    },
+    home: {
+      hero: {
+        title: "Stop figuring out AI.\nStart using it.",
+        subtitle: "OPENENDED is a structured AI workflow system that removes the guessing — so you just work.",
+        cta: "Start Free →",
+      },
+      problem: {
+        title: "You don't have an AI problem.\nYou have a process problem.",
+        p1: "You've tried ChatGPT. You've watched the tutorials. You've saved 200 prompts you'll never use again.",
+        p2: "And yet — every time you sit down to actually get something done with AI, you start from scratch. You think about what to type. You wonder if there's a better way. You waste 40 minutes on something that should take 5.",
+        p3: "The issue was never the tool. It was never the model. It was that nobody gave you a system.",
+      },
+      system: {
+        title: "A system, not a collection.",
+        workflows: {
+          title: "Workflows",
+          desc: "Step-by-step processes for real tasks. Not theory. Actual sequences you follow.",
+        },
+        prompts: {
+          title: "Prompts",
+          desc: "Tested, reusable prompts built into every workflow. Not standalone tricks.",
+        },
+        updates: {
+          title: "Monthly Updates",
+          desc: "New workflows delivered every month. The system grows with AI — and with you.",
+        },
+        footer: "It's not a prompt pack. It's not a course. It's not a tool.",
+        footerHighlight: "It's the operating layer between you and AI.",
+      },
+      audience: {
+        title: "Built for people who work,\nnot people who tinker.",
+        items: [
+          {
+            bold: "Freelancers and consultants",
+            rest: "who need to deliver faster without sacrificing quality",
+          },
+          {
+            bold: "Operators and team leads",
+            rest: "who want repeatable processes, not one-off experiments",
+          },
+          {
+            bold: "Anyone tired of starting from zero",
+            rest: "every time they open ChatGPT",
+          },
+        ],
+      },
+      cta: {
+        title: "One system. Use it for everything.",
+        subtitle: "New workflows every month. Cancel anytime. The longer you stay, the more you have.",
+        button: "Start Your Subscription →",
+      },
+    },
+    product: {
+      title: "The OPENENDED System",
+      whatYouGet: "What you're getting",
+      valuePoints: [
+        "A full library of AI workflows",
+        "Tested, embedded prompts",
+        "A reusable structure",
+        "Ongoing updates",
+      ],
+      whatNot: "What this is NOT",
+      notPoints: [
+        "A collection of random prompts",
+        "A course you have to complete",
+        "Another AI tool with no structure",
+        "Theory without implementation",
+      ],
+      recommended: "MOST POPULAR",
+      getButton: "Subscribe",
+      forLabel: "For:",
+      monthly: "/mo",
+      yearly: "/yr",
+      yearlySave: "Save",
+      billingToggle: {
+        monthly: "Monthly",
+        yearly: "Yearly",
+      },
+      pricing: {
+        title: "One system. Three depths.",
+        subtitle: "New workflows every month. Cancel anytime.",
+        tiers: [
+          {
+            name: "Core",
+            monthlyPrice: 19,
+            yearlyPrice: 149,
+            tagline: "Ready to use. Immediately.",
+            audience: "Individuals who use AI regularly and want workflows that just work — no setup, no guessing",
+            features: [
+              "Full access to the Core workflow library",
+              "New workflows added every month",
+              "Tested prompts embedded in every workflow",
+              "Works with ChatGPT, Claude, and any capable model",
+              "Access to the member dashboard",
+            ],
+          },
+          {
+            name: "Plus",
+            monthlyPrice: 29,
+            yearlyPrice: 199,
+            tagline: "The full working system.",
+            audience: "Freelancers, consultants, and team leads who need AI for complex, multi-step work",
+            features: [
+              "Everything in Core",
+              "Advanced workflows for analysis, strategy, and decision-making",
+              "Multi-step processes for projects that take days, not minutes",
+              "Workflow adaptation guides — modify any workflow to fit your context",
+              "Priority access to new workflows before Core",
+            ],
+          },
+          {
+            name: "Pro",
+            monthlyPrice: 49,
+            yearlyPrice: 399,
+            tagline: "Build your own system.",
+            audience: "People who want AI as a permanent layer in how they think and work",
+            features: [
+              "Everything in Plus",
+              "The OPENENDED Framework — design your own workflows from scratch",
+              "Industry-specific templates (consulting, content, operations, research)",
+              "Early access to every new release and module",
+              "Direct input channel — shape what gets built next",
+              "Quarterly deep-dive workflow packs",
+            ],
+          },
+        ],
+        guide: {
+          core: "If you use AI for everyday tasks and want to stop starting from scratch —",
+          plus: "If your work involves complex thinking and multi-step projects —",
+          pro: "If you want to build AI into everything you do —",
+        },
+      },
+    },
+    about: {
+      title: "About OPENENDED",
+      sections: [
+        {
+          title: "The problem we noticed",
+          paragraphs: [
+            "Everyone has access to the same AI tools. ChatGPT, Claude, Gemini — they're all powerful. They're all capable. And yet most people struggle to use them consistently.",
+            "The issue isn't capability. It's not intelligence. It's not even skill.",
+            "It's that nobody gave them a system. A repeatable way to approach tasks. A structure that removes the guesswork.",
+          ],
+        },
+        {
+          title: "What we believe",
+          paragraphs: [
+            "AI doesn't need more tutorials. It doesn't need more hype. It doesn't need more \"10 prompts that will change your life\" threads.",
+            "It needs better systems. Structured workflows that you can follow without thinking. Processes that work the first time and keep working.",
+          ],
+        },
+        {
+          title: "Our approach",
+          paragraphs: [
+            "We don't teach. We don't coach. We don't inspire.",
+            "We build structured workflows that reduce the thinking cost of using AI.",
+            "Every workflow is tested. Every prompt is embedded in context. Every step is designed to be followed, not interpreted. You don't need to be creative. You don't need to experiment. You just need to follow the system.",
+          ],
+        },
+        {
+          title: "Why OPENENDED",
+          paragraphs: [
+            "The name reflects the philosophy. This isn't a static product. It's not a one-time download that becomes outdated in three months.",
+            "OPENENDED is a system that evolves. As AI changes, the workflows adapt. As new models emerge, the prompts get updated. As you grow, the system grows with you.",
+            "It's open-ended by design — not because it's incomplete, but because it's built to last.",
+          ],
+        },
+      ],
+      closing: "We're not here to sell you on AI. We're here to give you a system that actually works.",
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+      items: [
+        {
+          q: "Is this for beginners?",
+          a: "Yes. The workflows are designed to be followed step-by-step, regardless of your AI experience. If you can copy and paste, you can use this system. That said, it's also valuable for experienced users who want more structure and consistency.",
+        },
+        {
+          q: "Do I need any technical skills?",
+          a: "No. You don't need to code, understand APIs, or configure anything. The workflows are written in plain language and designed to work with the AI tools you already use — ChatGPT, Claude, and similar interfaces.",
+        },
+        {
+          q: "What AI tools does this work with?",
+          a: "ChatGPT, Claude, and similar conversational AI models. The workflows are tool-agnostic — they focus on the process, not the specific platform. As long as you have access to a capable language model, the system works.",
+        },
+        {
+          q: "Is this just a collection of prompts?",
+          a: "No. Prompts are part of larger workflows. Each workflow is a multi-step process that tells you what to do, when to do it, and how to adapt based on results. Prompts are embedded in context — not standalone tricks you have to figure out how to use.",
+        },
+        {
+          q: "Will this become outdated?",
+          a: "That's the whole point of the subscription. New workflows are added every month, and existing ones get updated as AI evolves. You're not buying a static product — you're subscribing to a living system that stays current.",
+        },
+        {
+          q: "How does the subscription work?",
+          a: "Choose a plan (Core, Plus, or Pro), pay monthly or yearly, and get immediate access to your member dashboard. New workflows are delivered every month. You can upgrade, downgrade, or cancel anytime — no lock-in.",
+        },
+        {
+          q: "What happens if I cancel?",
+          a: "You keep access until the end of your billing period. After that, you lose access to the member dashboard and future updates. You can resubscribe anytime to pick up where you left off.",
+        },
+        {
+          q: "Is there a free trial?",
+          a: "We're working on it. For now, if the system doesn't work for you within the first 14 days, reach out and we'll make it right. No questions asked.",
+        },
+        {
+          q: "Can I use this for my team?",
+          a: "Standard plans are for individual use. If you want to deploy this across a team, contact us for team pricing. We have options for small teams and larger organizations.",
+        },
+      ],
+      contact: {
+        text: "Still have questions?",
+        email: "hello@openended.com",
+      },
+    },
+    footer: {
+      copyright: "OPENENDED",
+    },
+  },
+  zh: {
+    nav: {
+      home: "首页",
+      product: "产品",
+      about: "关于",
+      faq: "常见问题",
+    },
+    home: {
+      hero: {
+        title: "别再琢磨 AI 怎么用。\n直接用起来。",
+        subtitle: "OPENENDED 是一套结构化的 AI 工作流系统，帮你省去摸索的过程——直接进入工作状态。",
+        cta: "免费开始 →",
+      },
+      problem: {
+        title: "你的问题不是 AI 不好用，\n而是没有方法。",
+        p1: "你试过 ChatGPT，看过各种教程，收藏了 200 个 prompt——但再也没打开过。",
+        p2: "每次坐下来想用 AI 干点正事，你都得从头开始。想半天该怎么问，纠结有没有更好的方式，本来 5 分钟能搞定的事，折腾了 40 分钟。",
+        p3: "问题从来不在工具，也不在模型。而是没人给你一套系统。",
+      },
+      system: {
+        title: "这是一个系统，不是一堆素材。",
+        workflows: {
+          title: "工作流",
+          desc: "针对真实任务的分步流程。不是理论，是你可以直接跟着做的操作序列。",
+        },
+        prompts: {
+          title: "提示词",
+          desc: "经过测试的、嵌入在每个工作流中的可复用提示词。不是零散的技巧。",
+        },
+        updates: {
+          title: "每月更新",
+          desc: "每月交付新工作流。系统随 AI 一起进化——也随你一起成长。",
+        },
+        footer: "它不是 prompt 合集，不是课程，也不是工具。",
+        footerHighlight: "它是你和 AI 之间的操作层。",
+      },
+      audience: {
+        title: "为做事的人而建，\n不是为折腾的人。",
+        items: [
+          {
+            bold: "自由职业者和顾问",
+            rest: "需要更快交付，同时不牺牲质量",
+          },
+          {
+            bold: "团队负责人和运营者",
+            rest: "需要可重复的流程，而不是一次性实验",
+          },
+          {
+            bold: "所有厌倦了每次从零开始的人",
+            rest: "每次打开 ChatGPT 都不知道从哪开始",
+          },
+        ],
+      },
+      cta: {
+        title: "一套系统，解决所有问题。",
+        subtitle: "每月更新新工作流。随时取消。订阅越久，积累越多。",
+        button: "开始订阅 →",
+      },
+    },
+    product: {
+      title: "OPENENDED 系统",
+      whatYouGet: "你会得到什么",
+      valuePoints: [
+        "完整的 AI 工作流库",
+        "经过测试的嵌入式提示词",
+        "可反复使用的结构化系统",
+        "持续更新的内容",
+      ],
+      whatNot: "这不是什么",
+      notPoints: [
+        "一堆零散的 prompt 合集",
+        "需要你「学完」的课程",
+        "又一个没有体系的 AI 工具",
+        "没有落地方案的理论",
+      ],
+      recommended: "最受欢迎",
+      getButton: "订阅",
+      forLabel: "适合：",
+      monthly: "/月",
+      yearly: "/年",
+      yearlySave: "省",
+      billingToggle: {
+        monthly: "月付",
+        yearly: "年付",
+      },
+      pricing: {
+        title: "一个系统，三种深度。",
+        subtitle: "每月更新新工作流。随时取消。",
+        tiers: [
+          {
+            name: "Core",
+            monthlyPrice: 19,
+            yearlyPrice: 149,
+            tagline: "开箱即用。",
+            audience: "日常使用 AI，想要拿来就能用的工作流——不用设置，不用猜",
+            features: [
+              "完整访问 Core 工作流库",
+              "每月新增工作流",
+              "每个工作流内嵌经过测试的提示词",
+              "适用于 ChatGPT、Claude 及任何主流模型",
+              "访问会员仪表盘",
+            ],
+          },
+          {
+            name: "Plus",
+            monthlyPrice: 29,
+            yearlyPrice: 199,
+            tagline: "完整的工作系统。",
+            audience: "自由职业者、顾问和团队负责人，需要 AI 处理复杂的多步骤工作",
+            features: [
+              "包含 Core 全部内容",
+              "高级工作流：分析、策略、决策",
+              "为需要数天而非数分钟的项目设计的多步骤流程",
+              "工作流适配指南——将任何工作流调整为适合你的场景",
+              "优先获取新工作流，早于 Core 用户",
+            ],
+          },
+          {
+            name: "Pro",
+            monthlyPrice: 49,
+            yearlyPrice: 399,
+            tagline: "构建你自己的系统。",
+            audience: "希望 AI 成为思考和工作方式中永久一层的人",
+            features: [
+              "包含 Plus 全部内容",
+              "OPENENDED 框架——从零设计你自己工作流的方法论",
+              "行业专属模板（咨询、内容、运营、研究）",
+              "所有新版本和模块的抢先体验",
+              "直接反馈通道——决定下一步做什么",
+              "季度深度工作流包",
+            ],
+          },
+        ],
+        guide: {
+          core: "日常使用 AI，想告别每次从零开始 —",
+          plus: "工作涉及复杂思考和多步骤项目 —",
+          pro: "想把 AI 融入你做的每一件事 —",
+        },
+      },
+    },
+    about: {
+      title: "关于 OPENENDED",
+      sections: [
+        {
+          title: "我们发现的问题",
+          paragraphs: [
+            "每个人都能用上 AI。ChatGPT、Claude、Gemini——它们都很强大。但大多数人依然用不好。",
+            "问题不在能力，不在智商，甚至不在技术水平。",
+            "而是没人给他们一套系统。一种可重复的方法。一个去掉猜测的结构。",
+          ],
+        },
+        {
+          title: "我们相信什么",
+          paragraphs: [
+            "AI 不需要更多教程，不需要更多炒作，不需要更多「改变你人生的 10 个 prompt」。",
+            "它需要更好的系统。结构化的工作流，让你不用思考就能跟着做。第一次就能用，以后也一直能用。",
+          ],
+        },
+        {
+          title: "我们的方法",
+          paragraphs: [
+            "我们不教学，不辅导，不灌鸡汤。",
+            "我们构建结构化的工作流，降低你使用 AI 的思考成本。",
+            "每个工作流都经过测试。每个提示词都嵌入在上下文中。每一步都是设计好让你跟着做的，不需要你自己去理解和发挥。",
+          ],
+        },
+        {
+          title: "为什么叫 OPENENDED",
+          paragraphs: [
+            "名字本身就是理念。这不是一个静态产品，不是一个三个月后就过时的一次性下载。",
+            "OPENENDED 是一个会进化的系统。AI 变了，工作流跟着变。新模型出了，提示词跟着更新。你成长了，系统也跟着成长。",
+            "它是开放式的——不是因为不完整，而是因为它本来就该持续进化。",
+          ],
+        },
+      ],
+      closing: "我们不是来给你推销 AI 的。我们是来给你一套真正能用的系统。",
+    },
+    faq: {
+      title: "常见问题",
+      items: [
+        {
+          q: "适合新手吗？",
+          a: "适合。工作流设计为分步骤跟着做，不管你之前有没有用过 AI。只要你会复制粘贴，就能用。当然，对有经验的用户来说，它同样有价值——帮你建立更系统的使用方式。",
+        },
+        {
+          q: "需要技术背景吗？",
+          a: "不需要。不用写代码，不用懂 API，不用配置任何东西。工作流用的是日常语言，配合你已经在用的 AI 工具——ChatGPT、Claude 等。",
+        },
+        {
+          q: "支持哪些 AI 工具？",
+          a: "ChatGPT、Claude 以及类似的对话式 AI。工作流不绑定特定平台——它关注的是流程，不是工具。只要你能用上一个靠谱的语言模型，系统就能用。",
+        },
+        {
+          q: "这只是一堆 prompt 吗？",
+          a: "不是。提示词是更大工作流的一部分。每个工作流是一个多步骤流程，告诉你做什么、什么时候做、怎么根据结果调整。提示词嵌入在上下文中——不是让你自己琢磨怎么用的零散技巧。",
+        },
+        {
+          q: "会不会过时？",
+          a: "这正是订阅制的意义。每月新增工作流，现有工作流也会随 AI 发展持续更新。你订阅的不是静态产品——而是一个保持最新的活系统。",
+        },
+        {
+          q: "订阅怎么运作？",
+          a: "选择方案（Core、Plus 或 Pro），按月或按年付费，立即访问会员仪表盘。每月交付新工作流。可以随时升级、降级或取消——没有锁定期。",
+        },
+        {
+          q: "取消后会怎样？",
+          a: "你可以继续使用到当前计费周期结束。之后将无法访问会员仪表盘和未来更新。随时可以重新订阅，从上次的地方继续。",
+        },
+        {
+          q: "有免费试用吗？",
+          a: "正在筹备中。目前，如果系统在 14 天内不适合你，联系我们，我们会妥善处理。没有任何附加条件。",
+        },
+      ],
+      contact: {
+        text: "还有其他问题？",
+        email: "hello@openended.com",
+      },
+    },
+    footer: {
+      copyright: "OPENENDED",
+    },
+  },
+};
