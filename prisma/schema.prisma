@@ -1,0 +1,127 @@
+// VIBE - 潮流独立站数据库 Schema
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String            @id @default(cuid())
+  email         String            @unique
+  name          String?
+  avatar        String?
+  password      String
+  role          String            @default("USER") // USER | ADMIN
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+
+  orders           Order[]
+  digitalIdentity  DigitalIdentity?
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  slug        String    @unique
+  description String?
+  image       String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  products Product[]
+}
+
+model Brand {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  slug        String    @unique
+  description String?
+  logo        String?
+  website     String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  products Product[]
+}
+
+model Product {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  description String?
+  price       Float
+  salePrice   Float?
+  images      String    @default("[]") // JSON array of image URLs
+  stock       Int       @default(0)
+  featured    Boolean   @default(false)
+  published   Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  categoryId String?
+  category   Category? @relation(fields: [categoryId], references: [id])
+
+  brandId String?
+  brand   Brand?  @relation(fields: [brandId], references: [id])
+
+  orderItems OrderItem[]
+}
+
+model DigitalContent {
+  id          String    @id @default(cuid())
+  title       String
+  slug        String    @unique
+  type        String    // ARTICLE | VIDEO | LOOKBOOK | PLAYLIST
+  content     String?
+  coverImage  String?
+  tags        String    @default("[]") // JSON array of tags
+  published   Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Order {
+  id          String      @id @default(cuid())
+  orderNo     String      @unique
+  status      String      @default("PENDING") // PENDING | PAID | SHIPPED | DELIVERED | CANCELLED
+  totalAmount Float
+  address     String?
+  note        String?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  items OrderItem[]
+}
+
+model OrderItem {
+  id        String @id @default(cuid())
+  quantity  Int
+  price     Float
+
+  orderId   String
+  order     Order   @relation(fields: [orderId], references: [id])
+
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+}
+
+model DigitalIdentity {
+  id          String    @id @default(cuid())
+  displayName String
+  bio         String?
+  style       String?   // JSON style preferences
+  badges      String    @default("[]") // JSON array of badge IDs
+  level       Int       @default(1)
+  points      Int       @default(0)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id])
+}

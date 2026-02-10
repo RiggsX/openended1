@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap");
+@import "tailwindcss";
+
+:root {
+  /* Core palette — luxury dark */
+  --background: #09090b;
+  --foreground: #fafafa;
+  --accent: #c8a97e;
+  --accent-foreground: #09090b;
+  --neon-cyan: #a8c4c2;
+  --neon-magenta: #c4a0b0;
+  --neon-orange: #d4a574;
+  --muted: #111113;
+  --muted-foreground: #71717a;
+  --border: #1c1c1f;
+  --card: #0f0f11;
+  --glass: rgba(15, 15, 17, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.05);
+
+  /* Fonts */
+  --font-display: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-body: "Inter", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-neon-cyan: var(--neon-cyan);
+  --color-neon-magenta: var(--neon-magenta);
+  --color-neon-orange: var(--neon-orange);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-glass: var(--glass);
+  --color-glass-border: var(--glass-border);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+  --font-display: var(--font-display);
+}
+
+/* ─── Base ─── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* Noise texture overlay — subtle grain */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* Selection */
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+/* ─── Custom Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) var(--background);
+}
+
+/* ─── Grid Background ─── */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ─── Glitch Effect — Subtle Luxury ─── */
+@keyframes glitch-1 {
+  0%,
+  100% {
+    clip-path: inset(0 0 95% 0);
+    transform: translate(0);
+  }
+  10% {
+    clip-path: inset(20% 0 60% 0);
+    transform: translate(-1px, 1px);
+  }
+  20% {
+    clip-path: inset(50% 0 20% 0);
+    transform: translate(1px, -1px);
+  }
+  30% {
+    clip-path: inset(10% 0 70% 0);
+    transform: translate(-1px, 0);
+  }
+  40% {
+    clip-path: inset(80% 0 5% 0);
+    transform: translate(1px, -1px);
+  }
+  50% {
+    clip-path: inset(30% 0 40% 0);
+    transform: translate(-1px, 1px);
+  }
+  60% {
+    clip-path: inset(60% 0 10% 0);
+    transform: translate(2px, 0);
+  }
+  70% {
+    clip-path: inset(5% 0 80% 0);
+    transform: translate(-2px, -1px);
+  }
+  80% {
+    clip-path: inset(40% 0 30% 0);
+    transform: translate(1px, 1px);
+  }
+  90% {
+    clip-path: inset(70% 0 15% 0);
+    transform: translate(-1px, -1px);
+  }
+}
+
+@keyframes glitch-2 {
+  0%,
+  100% {
+    clip-path: inset(95% 0 0 0);
+    transform: translate(0);
+  }
+  10% {
+    clip-path: inset(60% 0 20% 0);
+    transform: translate(1px, -1px);
+  }
+  20% {
+    clip-path: inset(20% 0 50% 0);
+    transform: translate(-1px, 1px);
+  }
+  30% {
+    clip-path: inset(70% 0 10% 0);
+    transform: translate(1px, 0);
+  }
+  40% {
+    clip-path: inset(5% 0 80% 0);
+    transform: translate(-1px, 1px);
+  }
+  50% {
+    clip-path: inset(40% 0 30% 0);
+    transform: translate(1px, -1px);
+  }
+  60% {
+    clip-path: inset(10% 0 60% 0);
+    transform: translate(-2px, 0);
+  }
+  70% {
+    clip-path: inset(80% 0 5% 0);
+    transform: translate(2px, 1px);
+  }
+  80% {
+    clip-path: inset(30% 0 40% 0);
+    transform: translate(-1px, -1px);
+  }
+  90% {
+    clip-path: inset(15% 0 70% 0);
+    transform: translate(1px, 1px);
+  }
+}
+
+.glitch-text {
+  position: relative;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch-text::before {
+  color: var(--neon-cyan);
+  animation: glitch-1 5s infinite linear alternate-reverse;
+  z-index: -1;
+}
+
+.glitch-text::after {
+  color: var(--neon-magenta);
+  animation: glitch-2 5.5s infinite linear alternate-reverse;
+  z-index: -1;
+}
+
+/* ─── Neon Glow — Warm Gold ─── */
+.neon-glow {
+  box-shadow:
+    0 0 15px rgba(200, 169, 126, 0.15),
+    0 0 45px rgba(200, 169, 126, 0.08);
+}
+
+.neon-glow-cyan {
+  box-shadow:
+    0 0 15px rgba(168, 196, 194, 0.15),
+    0 0 45px rgba(168, 196, 194, 0.08);
+}
+
+.neon-text {
+  text-shadow: 0 0 20px rgba(200, 169, 126, 0.3);
+}
+
+/* ─── Scanline ─── */
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.scanline::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(transparent 50%, rgba(168, 196, 194, 0.01) 50%);
+  background-size: 100% 4px;
+  z-index: 1;
+}
+
+/* ─── Scroll indicator ─── */
+@keyframes scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.5;
+  }
+}
+
+/* ─── Horizontal scroll area ─── */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ─── Perspective container ─── */
+.perspective-container {
+  perspective: 1000px;
+}
+
+/* ─── Glass card ─── */
+.glass-card {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ─── Luxury Reveal Animation ─── */
+@keyframes luxury-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.luxury-reveal {
+  animation: luxury-reveal 0.8s ease-out forwards;
+}
+
+/* ─── Shimmer Effect for Gold Accents ─── */
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.shimmer-gold {
+  background: linear-gradient(
+    90deg,
+    var(--accent) 0%,
+    #e8d5b5 25%,
+    var(--accent) 50%,
+    #e8d5b5 75%,
+    var(--accent) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+
+/* ─── Elegant Underline ─── */
+.luxury-underline {
+  position: relative;
+}
+
+.luxury-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  transform: scaleX(0);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.luxury-underline:hover::after {
+  transform: scaleX(1);
+}
+
+/* ─── Magnetic Hover ─── */
+.magnetic-hover {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.magnetic-hover:hover {
+  transform: translateY(-2px);
+}
+
+/* ─── Luxury Divider ─── */
+.luxury-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--border),
+    rgba(200, 169, 126, 0.3),
+    var(--border),
+    transparent
+  );
+}
