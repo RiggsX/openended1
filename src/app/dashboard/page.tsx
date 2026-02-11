@@ -28,7 +28,11 @@ export default function DashboardPage() {
     return null;
   }
 
-  const subscription = (session.user as { subscription?: { tier: string; interval: string; status: string; currentPeriodEnd: string } })?.subscription;
+  const subscription = (
+    session.user as {
+      subscription?: { tier: string; interval: string; status: string; currentPeriodEnd: string };
+    }
+  )?.subscription;
 
   return (
     <div className="min-h-screen py-24 px-8 md:px-16">
@@ -68,9 +72,7 @@ export default function DashboardPage() {
                 <p className="text-[15px] font-light text-muted mb-4">
                   You don&apos;t have an active subscription.
                 </p>
-                <Button onClick={() => router.push("/product")}>
-                  Choose a Plan
-                </Button>
+                <Button onClick={() => router.push("/product")}>Choose a Plan</Button>
               </div>
             )}
           </div>
@@ -78,12 +80,16 @@ export default function DashboardPage() {
 
         <SlowFade delay={0.2}>
           <div className="border border-border bg-card p-8">
-            <h2 className="text-[20px] font-extralight text-foreground mb-4">
-              Your Workflows
-            </h2>
-            <p className="text-[15px] font-light text-muted">
-              Workflow library coming soon...
-            </p>
+            <h2 className="text-[20px] font-extralight text-foreground mb-4">Your Workflows</h2>
+            {subscription ? (
+              <Button onClick={() => router.push("/dashboard/workflows")}>
+                Browse Workflow Library
+              </Button>
+            ) : (
+              <p className="text-[15px] font-light text-muted">
+                Subscribe to access the workflow library
+              </p>
+            )}
           </div>
         </SlowFade>
       </div>

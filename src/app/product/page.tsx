@@ -3,7 +3,9 @@
 import { useState } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 import { SlowFade } from "@/components/motion/slow-fade";
+import { Magnetic } from "@/components/motion/magnetic";
 import { Button } from "@/components/ui/button";
 import { Check, X } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
@@ -30,7 +32,7 @@ export default function ProductPage() {
       });
 
       const data = await response.json();
-      
+
       if (data.approvalUrl) {
         window.location.href = data.approvalUrl;
       } else {
@@ -76,9 +78,7 @@ export default function ProductPage() {
                 <div className="mt-1 shrink-0">
                   <Check size={18} className="text-signal" strokeWidth={1.5} />
                 </div>
-                <p className="text-[15px] font-light leading-[1.7] text-foreground">
-                  {point}
-                </p>
+                <p className="text-[15px] font-light leading-[1.7] text-foreground">{point}</p>
               </div>
             </SlowFade>
           ))}
@@ -97,9 +97,7 @@ export default function ProductPage() {
                 <div className="mt-1 shrink-0">
                   <X size={18} className="text-muted" strokeWidth={1.5} />
                 </div>
-                <p className="text-[15px] font-light leading-[1.7] text-muted">
-                  {point}
-                </p>
+                <p className="text-[15px] font-light leading-[1.7] text-muted">{point}</p>
               </div>
             </SlowFade>
           ))}
@@ -149,83 +147,90 @@ export default function ProductPage() {
         </SlowFade>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-          {pricingTiers.map((tier: any, i: number) => {
-            const recommended = tier.name === "Plus";
-            const price = billing === "monthly" ? tier.monthlyPrice : tier.yearlyPrice;
-            const suffix = billing === "monthly" ? t("product.monthly") : t("product.yearly");
-            const yearlySaving = tier.monthlyPrice * 12 - tier.yearlyPrice;
+          {pricingTiers.map(
+            (
+              tier: {
+                name: string;
+                monthlyPrice: number;
+                yearlyPrice: number;
+                tagline: string;
+                audience: string;
+                features: string[];
+              },
+              i: number,
+            ) => {
+              const recommended = tier.name === "Plus";
+              const price = billing === "monthly" ? tier.monthlyPrice : tier.yearlyPrice;
+              const suffix = billing === "monthly" ? t("product.monthly") : t("product.yearly");
+              const yearlySaving = tier.monthlyPrice * 12 - tier.yearlyPrice;
 
-            return (
-              <SlowFade key={tier.name} delay={0.1 + i * 0.1}>
-                <div
-                  className={`relative border bg-card p-8 transition-all duration-[0.9s] hover:border-signal/60 ${
-                    recommended
-                      ? "border-signal lg:scale-105"
-                      : "border-border"
-                  }`}
-                >
-                  {recommended && (
-                    <div className="absolute -top-3 left-8 bg-signal text-background px-4 py-1 text-[11px] font-light tracking-[0.15em]">
-                      {t("product.recommended")}
-                    </div>
-                  )}
-
-                  <div className="mb-8">
-                    <h3 className="text-[28px] font-extralight text-foreground mb-2">
-                      OPENENDED {tier.name}
-                    </h3>
-                    <div className="flex items-baseline gap-2 mb-2">
-                      <span className="text-[48px] font-extralight text-signal">
-                        ${price}
-                      </span>
-                      <span className="text-[16px] font-light text-muted">
-                        {suffix}
-                      </span>
-                    </div>
-                    {billing === "yearly" && yearlySaving > 0 && (
-                      <p className="text-[13px] font-light text-signal mb-4">
-                        {t("product.yearlySave")} ${yearlySaving}
-                      </p>
-                    )}
-                    <p className="text-[14px] font-light text-muted italic mb-6">
-                      {tier.tagline}
-                    </p>
-                    <p className="text-[13px] font-light leading-[1.7] text-muted">
-                      <span className="text-foreground">{t("product.forLabel")}</span> {tier.audience}
-                    </p>
-                  </div>
-
-                  <div className="space-y-4 mb-8">
-                    {tier.features.map((feature: string) => (
-                      <div key={feature} className="flex items-start gap-3">
-                        <div className="mt-1 shrink-0">
-                          <Check
-                            size={16}
-                            className="text-signal"
-                            strokeWidth={1.5}
-                          />
-                        </div>
-                        <p className="text-[13px] font-light leading-[1.7] text-muted">
-                          {feature}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-
-                  <Button
-                    variant={recommended ? "primary" : "secondary"}
-                    className="w-full"
-                    onClick={() => handleSubscribe(tier.name.toLowerCase())}
-                    disabled={loading === tier.name.toLowerCase()}
+              return (
+                <SlowFade key={tier.name} delay={0.1 + i * 0.1}>
+                  <motion.div
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
+                    className={`relative border bg-card p-8 transition-all duration-[0.9s] hover:border-signal/60 ${
+                      recommended ? "border-signal lg:scale-105" : "border-border"
+                    }`}
                   >
-                    {loading === tier.name.toLowerCase()
-                      ? "Processing..."
-                      : `${t("product.getButton")} ${tier.name}`}
-                  </Button>
-                </div>
-              </SlowFade>
-            );
-          })}
+                    {recommended ? (
+                      <div className="absolute -top-3 left-8 bg-signal text-background px-4 py-1 text-[11px] font-light tracking-[0.15em]">
+                        {t("product.recommended")}
+                      </div>
+                    ) : null}
+
+                    <div className="mb-8">
+                      <h3 className="text-[28px] font-extralight text-foreground mb-2">
+                        OPENENDED {tier.name}
+                      </h3>
+                      <div className="flex items-baseline gap-2 mb-2">
+                        <span className="text-[48px] font-extralight text-signal">${price}</span>
+                        <span className="text-[16px] font-light text-muted">{suffix}</span>
+                      </div>
+                      {billing === "yearly" && yearlySaving > 0 && (
+                        <p className="text-[13px] font-light text-signal mb-4">
+                          {t("product.yearlySave")} ${yearlySaving}
+                        </p>
+                      )}
+                      <p className="text-[14px] font-light text-muted italic mb-6">
+                        {tier.tagline}
+                      </p>
+                      <p className="text-[13px] font-light leading-[1.7] text-muted">
+                        <span className="text-foreground">{t("product.forLabel")}</span>{" "}
+                        {tier.audience}
+                      </p>
+                    </div>
+
+                    <div className="space-y-4 mb-8">
+                      {tier.features.map((feature: string) => (
+                        <div key={feature} className="flex items-start gap-3">
+                          <div className="mt-1 shrink-0">
+                            <Check size={16} className="text-signal" strokeWidth={1.5} />
+                          </div>
+                          <p className="text-[13px] font-light leading-[1.7] text-muted">
+                            {feature}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+
+                    <Magnetic strength={0.2}>
+                      <Button
+                        variant={recommended ? "primary" : "secondary"}
+                        className="w-full"
+                        onClick={() => handleSubscribe(tier.name.toLowerCase())}
+                        disabled={loading === tier.name.toLowerCase()}
+                      >
+                        {loading === tier.name.toLowerCase()
+                          ? "Processing..."
+                          : `${t("product.getButton")} ${tier.name}`}
+                      </Button>
+                    </Magnetic>
+                  </motion.div>
+                </SlowFade>
+              );
+            },
+          )}
         </div>
 
         <SlowFade delay={0.4}>

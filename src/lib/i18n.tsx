@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  createContext,
-  useContext,
-  useState,
-  useCallback,
-  useEffect,
-  type ReactNode,
-} from "react";
+import { createContext, useContext, useState, useCallback, type ReactNode } from "react";
 import { translations } from "./translations";
 
 type Locale = "en" | "zh";
@@ -32,11 +25,6 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     }
     return "en";
   });
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const setLocale = useCallback((newLocale: Locale) => {
     setLocaleState(newLocale);
@@ -60,7 +48,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
       return typeof value === "string" ? value : key;
     },
-    [locale]
+    [locale],
   );
 
   const tRaw = useCallback(
@@ -78,18 +66,11 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
       return value;
     },
-    [locale]
+    [locale],
   );
 
-  // Prevent hydration mismatch by not rendering until mounted
-  if (!mounted) {
-    return null;
-  }
-
   return (
-    <I18nContext.Provider value={{ locale, setLocale, t, tRaw }}>
-      {children}
-    </I18nContext.Provider>
+    <I18nContext.Provider value={{ locale, setLocale, t, tRaw }}>{children}</I18nContext.Provider>
   );
 }
 

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Instagram, Twitter, Youtube } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
@@ -12,12 +11,9 @@ const SOCIAL_LINKS = [
 
 export function Footer() {
   const { t } = useI18n();
-  
+
   return (
-    <footer
-      className="border-t pb-20 md:pb-0"
-      style={{ borderColor: "var(--border)" }}
-    >
+    <footer className="border-t pb-20 md:pb-0" style={{ borderColor: "var(--border)" }}>
       <div className="mx-auto max-w-[1200px] px-8 py-6 flex items-center justify-between">
         <p
           className="text-[11px] font-light tracking-[0.1em]"

@@ -6,16 +6,15 @@
 :root {
   /* Core palette — "Almost Nothing" */
   --background: #080808;
-  --foreground: #D4D4D4;
-  --signal: #E8A634;
-  --muted: #6B6B6B;
+  --foreground: #d4d4d4;
+  --signal: #e8a634;
+  --muted: #6b6b6b;
   --border: rgba(255, 255, 255, 0.04);
-  --surface: #0E0E0E;
+  --surface: #0e0e0e;
   --card: #111111;
 
   /* Typography */
-  --font-display: "Helvetica Now Display", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  --font-display: "Helvetica Now Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Motion */
@@ -54,6 +53,13 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Custom cursor on desktop ─── */
+@media (min-width: 768px) {
+  body.cursor-none * {
+    cursor: none !important;
+  }
 }
 
 /* ─── Selection — amber on black ─── */
