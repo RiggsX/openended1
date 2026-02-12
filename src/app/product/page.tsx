@@ -25,7 +25,7 @@ export default function ProductPage() {
 
     setLoading(tier);
     try {
-      const response = await fetch("/api/subscriptions/create", {
+      const response = await fetch("/api/payments/create", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ tier, interval: billing }),
@@ -33,14 +33,14 @@ export default function ProductPage() {
 
       const data = await response.json();
 
-      if (data.approvalUrl) {
-        window.location.href = data.approvalUrl;
+      if (data.paymentUrl) {
+        window.location.href = data.paymentUrl;
       } else {
-        throw new Error("No approval URL returned");
+        throw new Error("No payment URL returned");
       }
     } catch (error) {
-      console.error("Subscription error:", error);
-      alert("Failed to create subscription. Please try again.");
+      console.error("Payment error:", error);
+      alert("Failed to create payment. Please try again.");
       setLoading(null);
     }
   };
