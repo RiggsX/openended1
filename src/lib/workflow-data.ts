@@ -6110,4 +6110,331 @@ Output:** Complete blog writing system with templates and workflows.`,
       },
     ],
   },
+  "51": {
+    id: 51,
+    title: "Product Launch Strategy",
+    titleZh: "产品发布策略",
+    category: "Business",
+    tier: "Plus",
+    description: "Plan and execute a successful product launch that generates buzz and sales.",
+    descriptionZh: "规划和执行成功的产品发布，产生热度和销售。",
+    steps: [
+      {
+        title: "Launch Planning & Execution",
+        titleZh: "发布规划与执行",
+        description: "Create a comprehensive product launch plan.",
+        descriptionZh: "创建全面的产品发布计划。",
+        prompt: `I'm launching a product and need a strategic plan.
+
+**Product Context:**
+- Product type: [Digital, physical, service]
+- Target market: [Who it's for]
+- Price point: [Cost]
+- Unique value: [What makes it different]
+- Launch timeline: [When you're launching]
+
+**My Resources:**
+- Existing audience: [Email list, social media, etc.]
+- Budget: [Marketing spend]
+- Team: [Solo or team size]
+- Competition: [Who else is in the market]
+
+**Please create:**
+1. Pre-launch strategy (building anticipation)
+2. Launch day plan and timeline
+3. Marketing channels and tactics
+4. Messaging and positioning
+5. Pricing and offer strategy
+6. Post-launch momentum plan
+7. Success metrics and tracking
+
+**Output:** Complete product launch plan with timeline and tactics.`,
+        promptZh: `我正在发布产品并需要战略计划。
+
+**产品背景：**
+- 产品类型：[数字、实体、服务]
+- 目标市场：[为谁设计]
+- 价格点：[成本]
+- 独特价值：[什么使它与众不同]
+- 发布时间表：[你何时发布]
+
+**我的资源：**
+- 现有受众：[电子邮件列表、社交媒体等]
+- 预算：[营销支出]
+- 团队：[独自或团队规模]
+- 竞争：[市场上还有谁]
+
+**请创建：**
+1. 预发布策略（建立期待）
+2. 发布日计划和时间表
+3. 营销渠道和策略
+4. 信息传递和定位
+5. 定价和优惠策略
+6. 发布后动力计划
+7. 成功指标和跟踪
+
+**输出：** 完整的产品发布计划，包含时间表和策略。`,
+      },
+    ],
+  },
+  "52": {
+    id: 52,
+    title: "Customer Research & Validation",
+    titleZh: "客户研究与验证",
+    category: "Business",
+    tier: "Plus",
+    description: "Understand your customers deeply through research and validation.",
+    descriptionZh: "通过研究和验证深入了解你的客户。",
+    steps: [
+      {
+        title: "Customer Discovery Process",
+        titleZh: "客户发现流程",
+        description: "Conduct customer research to validate ideas and understand needs.",
+        descriptionZh: "进行客户研究以验证想法并了解需求。",
+        prompt: `I need to understand my customers better.
+
+**My Context:**
+- Business stage: [Idea, early, growing, established]
+- Target customer: [Who you think they are]
+- Product/service: [What you offer]
+- Current knowledge: [What you know about customers]
+- Research goals: [What you want to learn]
+
+**My Questions:**
+- Pain points: [What problems do they have?]
+- Buying behavior: [How do they make decisions?]
+- Willingness to pay: [What's the right price?]
+
+**Please create:**
+1. Customer research framework
+2. Interview question scripts
+3. Survey design and distribution
+4. Data analysis methods
+5. Customer persona templates
+6. Jobs-to-be-done framework
+7. Validation experiments
+
+**Output:** Complete customer research system with templates and analysis tools.`,
+        promptZh: `我需要更好地了解我的客户。
+
+**我的背景：**
+- 业务阶段：[想法、早期、成长、成熟]
+- 目标客户：[你认为他们是谁]
+- 产品/服务：[你提供什么]
+- 当前知识：[你对客户的了解]
+- 研究目标：[你想学什么]
+
+**我的问题：**
+- 痛点：[他们有什么问题？]
+- 购买行为：[他们如何做决定？]
+- 支付意愿：[正确的价格是多少？]
+
+**请创建：**
+1. 客户研究框架
+2. 访谈问题脚本
+3. 调查设计和分发
+4. 数据分析方法
+5. 客户画像模板
+6. 待完成工作框架
+7. 验证实验
+
+**输出：** 完整的客户研究系统，包含模板和分析工具。`,
+      },
+    ],
+  },
+  "53": {
+    id: 53,
+    title: "Sales Funnel Optimization",
+    titleZh: "销售漏斗优化",
+    category: "Marketing",
+    tier: "Plus",
+    description: "Build and optimize a sales funnel that converts visitors into customers.",
+    descriptionZh: "建立和优化将访客转化为客户的销售漏斗。",
+    steps: [
+      {
+        title: "Funnel Design & Optimization",
+        titleZh: "漏斗设计与优化",
+        description: "Create a high-converting sales funnel.",
+        descriptionZh: "创建高转化率的销售漏斗。",
+        prompt: `I need to build or improve my sales funnel.
+
+**Business Context:**
+- Product/service: [What you sell]
+- Price point: [Cost]
+- Target customer: [Who buys]
+- Current funnel: [What you have now]
+- Conversion rate: [Current performance]
+
+**My Challenges:**
+- Biggest leak: [Where people drop off]
+- Traffic sources: [Where visitors come from]
+- Budget: [For ads, tools, etc.]
+
+**Please create:**
+1. Funnel mapping (awareness → purchase)
+2. Landing page optimization
+3. Lead magnet strategy
+4. Email sequence templates
+5. Conversion rate optimization tactics
+6. Retargeting strategies
+7. Analytics and tracking setup
+
+**Output:** Complete sales funnel with optimization strategies and templates.`,
+        promptZh: `我需要建立或改进我的销售漏斗。
+
+**业务背景：**
+- 产品/服务：[你卖什么]
+- 价格点：[成本]
+- 目标客户：[谁购买]
+- 当前漏斗：[你现在有什么]
+- 转化率：[当前表现]
+
+**我的挑战：**
+- 最大泄漏：[人们在哪里流失]
+- 流量来源：[访客从哪里来]
+- 预算：[用于广告、工具等]
+
+**请创建：**
+1. 漏斗映射（意识 → 购买）
+2. 着陆页优化
+3. 铅磁铁策略
+4. 电子邮件序列模板
+5. 转化率优化策略
+6. 重定向策略
+7. 分析和跟踪设置
+
+**输出：** 完整的销售漏斗，包含优化策略和模板。`,
+      },
+    ],
+  },
+  "54": {
+    id: 54,
+    title: "Email Marketing Automation",
+    titleZh: "电子邮件营销自动化",
+    category: "Marketing",
+    tier: "Plus",
+    description: "Set up automated email sequences that nurture leads and drive sales.",
+    descriptionZh: "设置自动化电子邮件序列以培养潜在客户并推动销售。",
+    steps: [
+      {
+        title: "Email Automation Strategy",
+        titleZh: "电子邮件自动化策略",
+        description: "Build automated email workflows that convert.",
+        descriptionZh: "建立转化的自动化电子邮件工作流。",
+        prompt: `I want to set up email marketing automation.
+
+**My Context:**
+- Business type: [E-commerce, SaaS, service, etc.]
+- Email list size: [Number of subscribers]
+- Current setup: [What you have now]
+- Goals: [Sales, engagement, retention]
+- Email platform: [Mailchimp, ConvertKit, etc.]
+
+**My Needs:**
+- Automation types: [Welcome, nurture, sales, re-engagement]
+- Segmentation: [How to group subscribers]
+- Personalization: [Level of customization]
+
+**Please create:**
+1. Email automation strategy
+2. Welcome sequence (5-7 emails)
+3. Nurture sequence templates
+4. Sales sequence with urgency
+5. Re-engagement campaign
+6. Segmentation strategy
+7. Performance metrics and optimization
+
+**Output:** Complete email automation system with sequences and templates.`,
+        promptZh: `我想设置电子邮件营销自动化。
+
+**我的背景：**
+- 业务类型：[电子商务、SaaS、服务等]
+- 电子邮件列表大小：[订阅者数量]
+- 当前设置：[你现在有什么]
+- 目标：[销售、参与、留存]
+- 电子邮件平台：[Mailchimp、ConvertKit 等]
+
+**我的需求：**
+- 自动化类型：[欢迎、培养、销售、重新参与]
+- 细分：[如何分组订阅者]
+- 个性化：[自定义级别]
+
+**请创建：**
+1. 电子邮件自动化策略
+2. 欢迎序列（5-7 封电子邮件）
+3. 培养序列模板
+4. 带紧迫感的销售序列
+5. 重新参与活动
+6. 细分策略
+7. 性能指标和优化
+
+**输出：** 完整的电子邮件自动化系统，包含序列和模板。`,
+      },
+    ],
+  },
+  "55": {
+    id: 55,
+    title: "Freelance Business Setup",
+    titleZh: "自由职业业务设置",
+    category: "Business",
+    tier: "Core",
+    description: "Start and run a successful freelance business from scratch.",
+    descriptionZh: "从头开始启动和运营成功的自由职业业务。",
+    steps: [
+      {
+        title: "Freelance Business Foundation",
+        titleZh: "自由职业业务基础",
+        description: "Build a sustainable freelance business.",
+        descriptionZh: "建立可持续的自由职业业务。",
+        prompt: `I want to start freelancing successfully.
+
+**My Context:**
+- Skills/services: [What you offer]
+- Experience level: [Beginner, intermediate, expert]
+- Target clients: [Who you want to work with]
+- Income goal: [Monthly target]
+- Time commitment: [Full-time or part-time]
+
+**My Challenges:**
+- Main concerns: [Finding clients, pricing, etc.]
+- Current situation: [Employed, unemployed, transitioning]
+- Financial runway: [How long you can afford to build]
+
+**Please create:**
+1. Service positioning and packaging
+2. Pricing strategy (hourly vs project vs retainer)
+3. Client acquisition plan
+4. Portfolio and case study templates
+5. Proposal and contract templates
+6. Project management workflow
+7. Financial management (invoicing, taxes, savings)
+
+**Output:** Complete freelance business setup with templates and systems.`,
+        promptZh: `我想成功开始自由职业。
+
+**我的背景：**
+- 技能/服务：[你提供什么]
+- 经验水平：[初学者、中级、专家]
+- 目标客户：[你想与谁合作]
+- 收入目标：[月度目标]
+- 时间承诺：[全职或兼职]
+
+**我的挑战：**
+- 主要担忧：[寻找客户、定价等]
+- 当前情况：[受雇、失业、过渡]
+- 财务跑道：[你能承受多长时间的建设]
+
+**请创建：**
+1. 服务定位和打包
+2. 定价策略（按小时 vs 项目 vs 保留）
+3. 客户获取计划
+4. 作品集和案例研究模板
+5. 提案和合同模板
+6. 项目管理工作流
+7. 财务管理（发票、税收、储蓄）
+
+**输出：** 完整的自由职业业务设置，包含模板和系统。`,
+      },
+    ],
+  },
 };
