@@ -45,12 +45,22 @@ export async function sendVerificationCode({ email, code }: SendVerificationCode
                 padding: 48px 40px;
                 text-align: center;
               }
-              .logo {
+              .logo-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 16px;
+                margin-bottom: 12px;
+              }
+              .logo-svg {
+                width: 40px;
+                height: 40px;
+              }
+              .logo-text {
                 font-size: 28px;
                 font-weight: 200;
                 letter-spacing: 2px;
                 color: #ffffff;
-                margin-bottom: 12px;
               }
               .tagline {
                 font-size: 13px;
@@ -168,7 +178,40 @@ export async function sendVerificationCode({ email, code }: SendVerificationCode
           <body>
             <div class="container">
               <div class="header">
-                <div class="logo">OPENENDED</div>
+                <div class="logo-container">
+                  <svg class="logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- 主体 - 三条精致的波浪线 -->
+                    <path
+                      d="M 3 13.5 Q 9 10.5, 14 13.5 Q 19 16.5, 24 13.5 Q 29 10.5, 34 13.5"
+                      stroke="rgba(255,255,255,0.68)"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    />
+                    <path
+                      d="M 3 20 Q 9 17, 14 20 Q 19 23, 24 20 Q 29 17, 34 20"
+                      stroke="rgba(255,255,255,0.88)"
+                      stroke-width="2.3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    />
+                    <path
+                      d="M 3 26.5 Q 9 23.5, 14 26.5 Q 19 29.5, 24 26.5 Q 29 23.5, 34 26.5"
+                      stroke="rgba(255,255,255,1)"
+                      stroke-width="2.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    />
+                    <!-- 延伸线 -->
+                    <line x1="34" y1="13.5" x2="39" y2="13.5" stroke="rgba(255,255,255,0.4)" stroke-width="1.8" stroke-linecap="round"/>
+                    <line x1="34" y1="20" x2="39" y2="20" stroke="rgba(255,255,255,0.6)" stroke-width="2.3" stroke-linecap="round"/>
+                    <line x1="34" y1="26.5" x2="39" y2="26.5" stroke="rgba(255,255,255,0.8)" stroke-width="2.8" stroke-linecap="round"/>
+                  </svg>
+                  <div class="logo-text">OPENENDED</div>
+                </div>
                 <div class="tagline">Structured AI Workflows</div>
               </div>
               
