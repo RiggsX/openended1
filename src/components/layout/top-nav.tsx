@@ -83,7 +83,7 @@ export function TopNav() {
             })}
           </div>
 
-          {/* Language Toggle + CTA */}
+          {/* Language Toggle + Auth */}
           <div className="hidden md:flex items-center gap-4">
             {mounted ? (
               <div className="flex items-center gap-2">
@@ -111,7 +111,18 @@ export function TopNav() {
                 </button>
               </div>
             ) : null}
-            {!session && (
+
+            {session ? (
+              <button
+                onClick={() => {
+                  window.location.href = "/api/auth/signout";
+                }}
+                className="text-small px-6 py-2.5 border border-white/[0.12] hover:bg-white/[0.02] transition-all rounded"
+                suppressHydrationWarning
+              >
+                {locale === "zh" ? "退出" : "Sign Out"}
+              </button>
+            ) : (
               <Link
                 href="/auth/signin"
                 className="text-small px-6 py-2.5 border border-white/[0.12] hover:bg-white/[0.02] transition-all rounded"
@@ -192,7 +203,17 @@ export function TopNav() {
             </div>
           ) : null}
 
-          {!session && (
+          {session ? (
+            <button
+              onClick={() => {
+                window.location.href = "/api/auth/signout";
+              }}
+              className="block text-small py-2.5 text-center border border-white/[0.12] hover:bg-white/[0.02] transition-all rounded"
+              suppressHydrationWarning
+            >
+              {locale === "zh" ? "退出" : "Sign Out"}
+            </button>
+          ) : (
             <Link
               href="/auth/signin"
               onClick={() => setMobileMenuOpen(false)}
