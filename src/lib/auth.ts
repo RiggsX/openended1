@@ -1,7 +1,6 @@
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import { prisma } from "@/lib/prisma";
-import bcrypt from "bcryptjs";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   // Don't use PrismaAdapter with Credentials - JWT only
@@ -12,27 +11,47 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     Credentials({
       credentials: {
         email: { label: "Email", type: "email" },
-        password: { label: "Password", type: "password" },
+        code: { label: "Code", type: "text" },
       },
       async authorize(credentials) {
-        if (!credentials?.email || !credentials?.password) {
+        if (!credentials?.email || !credentials?.code) {
           return null;
         }
 
         const email = credentials.email as string;
-        const password = credentials.password as string;
+        const code = credentials.code as string;
 
-        const user = await prisma.user.findUnique({
-          where: { email },
+        // 验证验证码
+        const verification = await prisma.verificationToken.findFirst({
+          where: {
+            identifier: email.toLowerCase(),
+            token: code,
+            expires: {
+              gt: new Date(),
+            },
+          },
         });
 
-        if (!user || !user.password) {
+        if (!verification) {
           return null;
         }
 
-        const isValid = await bcrypt.compare(password, user.password);
+        // 验证成功，删除验证码
+        await prisma.verificationToken.delete({
+          where: {
+            identifier_token: {
+              identifier: email.toLowerCase(),
+              token: code,
+            },
+          },
+        });
 
-        if (!isValid) {
+        // 查找用户
+        const user = await prisma.user.findUnique({
+          where: { email: email.toLowerCase() },
+        });
+
+        if (!user) {
           return null;
         }
 
