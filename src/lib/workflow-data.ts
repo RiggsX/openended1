@@ -7738,4 +7738,333 @@ Output:** Complete blog writing system with templates and workflows.`,
       },
     ],
   },
+  "76": {
+    id: 76,
+    title: "Financial Planning & Budgeting",
+    titleZh: "财务规划与预算",
+    category: "Finance",
+    tier: "Core",
+    description: "Take control of your finances with smart budgeting and planning.",
+    descriptionZh: "通过智能预算和规划掌控你的财务。",
+    steps: [
+      {
+        title: "Financial Management System",
+        titleZh: "财务管理系统",
+        description: "Build a comprehensive personal finance system.",
+        descriptionZh: "建立全面的个人财务系统。",
+        prompt: `I want to improve my financial management.
+
+**My Context:**
+- Income: [Monthly income range]
+- Current situation: [Debt, savings, investments]
+- Financial goals: [Emergency fund, retirement, house, etc.]
+- Spending habits: [Where money goes]
+- Financial knowledge: [Beginner, intermediate, advanced]
+
+**My Challenges:**
+- Biggest issues: [Overspending, no savings, debt, etc.]
+- Tracking: [Do you track expenses?]
+- Discipline: [Sticking to plans]
+
+**Please create:**
+1. Budget framework (50/30/20 or custom)
+2. Expense tracking system
+3. Debt payoff strategy
+4. Emergency fund building
+5. Savings and investment basics
+6. Financial goal setting and tracking
+7. Monthly review and adjustment process
+
+**Output:** Complete financial planning system with templates and calculators.`,
+        promptZh: `我想改进我的财务管理。
+
+**我的背景：**
+- 收入：[月收入范围]
+- 当前情况：[债务、储蓄、投资]
+- 财务目标：[应急基金、退休、房子等]
+- 消费习惯：[钱去哪里]
+- 财务知识：[初学者、中级、高级]
+
+**我的挑战：**
+- 最大问题：[超支、没有储蓄、债务等]
+- 跟踪：[你跟踪支出吗？]
+- 纪律：[坚持计划]
+
+**请创建：**
+1. 预算框架（50/30/20 或自定义）
+2. 支出跟踪系统
+3. 债务偿还策略
+4. 应急基金建设
+5. 储蓄和投资基础
+6. 财务目标设定和跟踪
+7. 月度审查和调整流程
+
+**输出：** 完整的财务规划系统，包含模板和计算器。`,
+      },
+    ],
+  },
+  "77": {
+    id: 77,
+    title: "Side Hustle Validation",
+    titleZh: "副业验证",
+    category: "Business",
+    tier: "Core",
+    description: "Validate your side hustle idea before investing time and money.",
+    descriptionZh: "在投入时间和金钱之前验证你的副业想法。",
+    steps: [
+      {
+        title: "Idea Validation Framework",
+        titleZh: "想法验证框架",
+        description: "Test your side hustle idea quickly and cheaply.",
+        descriptionZh: "快速且廉价地测试你的副业想法。",
+        prompt: `I have a side hustle idea and want to validate it.
+
+**My Idea:**
+- What it is: [Brief description]
+- Target customer: [Who would buy this]
+- Problem it solves: [What pain point]
+- How you'll deliver: [Product, service, digital, etc.]
+- Time commitment: [Hours per week]
+
+**My Resources:**
+- Budget: [How much you can invest]
+- Skills: [What you bring to the table]
+- Network: [Who can help or buy]
+
+**Please create:**
+1. Problem-solution fit validation
+2. Customer discovery interviews
+3. Minimum viable offer (MVO)
+4. Pre-selling strategy
+5. Landing page test
+6. Pricing validation
+7. Go/no-go decision framework
+
+**Output:** Complete validation plan with experiments and decision criteria.`,
+        promptZh: `我有一个副业想法并想验证它。
+
+**我的想法：**
+- 它是什么：[简要描述]
+- 目标客户：[谁会购买这个]
+- 它解决的问题：[什么痛点]
+- 你如何交付：[产品、服务、数字等]
+- 时间承诺：[每周小时数]
+
+**我的资源：**
+- 预算：[你可以投资多少]
+- 技能：[你带来什么]
+- 网络：[谁可以帮助或购买]
+
+**请创建：**
+1. 问题-解决方案契合验证
+2. 客户发现访谈
+3. 最小可行报价（MVO）
+4. 预售策略
+5. 着陆页测试
+6. 定价验证
+7. 去/不去决策框架
+
+**输出：** 完整的验证计划，包含实验和决策标准。`,
+      },
+    ],
+  },
+  "78": {
+    id: 78,
+    title: "Productivity System Design",
+    titleZh: "生产力系统设计",
+    category: "Productivity",
+    tier: "Plus",
+    description: "Build a personalized productivity system that actually works for you.",
+    descriptionZh: "建立真正适合你的个性化生产力系统。",
+    steps: [
+      {
+        title: "Custom Productivity Framework",
+        titleZh: "自定义生产力框架",
+        description: "Design a productivity system tailored to your needs.",
+        descriptionZh: "设计适合你需求的生产力系统。",
+        prompt: `I want to build a productivity system that works for me.
+
+**My Context:**
+- Work type: [Knowledge work, creative, mixed]
+- Current system: [What you use now]
+- Pain points: [What's not working]
+- Energy patterns: [When you're most productive]
+- Tools: [Apps, notebooks, etc.]
+
+**My Needs:**
+- Task management: [How you want to organize]
+- Time blocking: [Structured or flexible]
+- Focus time: [Deep work needs]
+- Review cadence: [Daily, weekly, monthly]
+
+**Please create:**
+1. System design principles (based on your needs)
+2. Task capture and organization
+3. Prioritization framework
+4. Time management approach
+5. Energy management integration
+6. Review and reflection rituals
+7. Tool stack recommendations
+
+**Output:** Complete personalized productivity system with implementation guide.`,
+        promptZh: `我想建立适合我的生产力系统。
+
+**我的背景：**
+- 工作类型：[知识工作、创意、混合]
+- 当前系统：[你现在使用什么]
+- 痛点：[什么不起作用]
+- 能量模式：[你何时最有生产力]
+- 工具：[应用、笔记本等]
+
+**我的需求：**
+- 任务管理：[你想如何组织]
+- 时间块：[结构化或灵活]
+- 专注时间：[深度工作需求]
+- 审查节奏：[每日、每周、每月]
+
+**请创建：**
+1. 系统设计原则（基于你的需求）
+2. 任务捕获和组织
+3. 优先级排序框架
+4. 时间管理方法
+5. 能量管理整合
+6. 审查和反思仪式
+7. 工具堆栈推荐
+
+**输出：** 完整的个性化生产力系统，包含实施指南。`,
+      },
+    ],
+  },
+  "79": {
+    id: 79,
+    title: "Relationship Building Strategy",
+    titleZh: "关系建立策略",
+    category: "Communication",
+    tier: "Core",
+    description: "Build and maintain meaningful professional and personal relationships.",
+    descriptionZh: "建立和维持有意义的职业和个人关系。",
+    steps: [
+      {
+        title: "Relationship Management System",
+        titleZh: "关系管理系统",
+        description: "Systematically build and nurture relationships.",
+        descriptionZh: "系统地建立和培养关系。",
+        prompt: `I want to build better relationships.
+
+**My Context:**
+- Relationship types: [Professional, personal, mentors, etc.]
+- Current network: [Size and quality]
+- Goals: [Career, support, friendship, etc.]
+- Challenges: [Maintaining contact, depth, etc.]
+- Time available: [For relationship building]
+
+**My Needs:**
+- New connections: [How to meet people]
+- Deepening existing: [How to strengthen bonds]
+- Maintenance: [Staying in touch]
+
+**Please create:**
+1. Relationship mapping and prioritization
+2. Connection strategies (online and offline)
+3. Conversation starters and deepening questions
+4. Follow-up and stay-in-touch system
+5. Value-adding without asking
+6. CRM for relationships (tools and methods)
+7. Networking event strategies
+
+**Output:** Complete relationship building system with templates and scripts.`,
+        promptZh: `我想建立更好的关系。
+
+**我的背景：**
+- 关系类型：[职业、个人、导师等]
+- 当前网络：[规模和质量]
+- 目标：[职业、支持、友谊等]
+- 挑战：[保持联系、深度等]
+- 可用时间：[用于关系建立]
+
+**我的需求：**
+- 新连接：[如何认识人]
+- 深化现有：[如何加强纽带]
+- 维护：[保持联系]
+
+**请创建：**
+1. 关系映射和优先级排序
+2. 连接策略（在线和离线）
+3. 对话开场白和深化问题
+4. 跟进和保持联系系统
+5. 不要求就增加价值
+6. 关系 CRM（工具和方法）
+7. 社交活动策略
+
+**输出：** 完整的关系建立系统，包含模板和脚本。`,
+      },
+    ],
+  },
+  "80": {
+    id: 80,
+    title: "Creative Ideation Process",
+    titleZh: "创意构思流程",
+    category: "Productivity",
+    tier: "Plus",
+    description: "Generate and develop creative ideas systematically.",
+    descriptionZh: "系统地生成和发展创意想法。",
+    steps: [
+      {
+        title: "Idea Generation Framework",
+        titleZh: "想法生成框架",
+        description: "Build a system for creative thinking and ideation.",
+        descriptionZh: "建立创意思维和构思的系统。",
+        prompt: `I want to generate more creative ideas.
+
+**My Context:**
+- Creative domain: [Writing, business, design, etc.]
+- Current process: [How you generate ideas now]
+- Challenges: [Blank page, too many ideas, quality, etc.]
+- Goals: [What you need ideas for]
+- Time available: [For ideation]
+
+**My Needs:**
+- Idea quantity: [Need more ideas]
+- Idea quality: [Need better ideas]
+- Idea capture: [How to save them]
+- Idea development: [How to refine them]
+
+**Please create:**
+1. Divergent thinking techniques
+2. Idea generation exercises and prompts
+3. Constraint-based creativity
+4. Idea capture and organization system
+5. Evaluation and filtering criteria
+6. Idea development and refinement
+7. Creative routine and rituals
+
+**Output:** Complete creative ideation system with exercises and templates.`,
+        promptZh: `我想生成更多创意想法。
+
+**我的背景：**
+- 创意领域：[写作、商业、设计等]
+- 当前流程：[你现在如何生成想法]
+- 挑战：[空白页、太多想法、质量等]
+- 目标：[你需要想法做什么]
+- 可用时间：[用于构思]
+
+**我的需求：**
+- 想法数量：[需要更多想法]
+- 想法质量：[需要更好的想法]
+- 想法捕获：[如何保存它们]
+- 想法发展：[如何完善它们]
+
+**请创建：**
+1. 发散思维技巧
+2. 想法生成练习和提示
+3. 基于约束的创造力
+4. 想法捕获和组织系统
+5. 评估和过滤标准
+6. 想法发展和完善
+7. 创意例程和仪式
+
+**输出：** 完整的创意构思系统，包含练习和模板。`,
+      },
+    ],
+  },
 };
