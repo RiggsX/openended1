@@ -38,7 +38,7 @@ export default function HomePage() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <p className="text-small text-white/40 mb-8">AI Workflow Platform</p>
-            <h1 className="text-display mb-6 max-w-4xl mx-auto whitespace-pre-line">
+            <h1 className="text-[clamp(2.5rem,8vw,4rem)] font-extralight leading-[1.1] tracking-tight mb-6 max-w-4xl mx-auto whitespace-pre-line">
               {t("home.hero.title")}
             </h1>
             <p className="text-body text-white/50 mb-12 max-w-xl mx-auto">
@@ -72,8 +72,8 @@ export default function HomePage() {
       </section>
 
       {/* Problem */}
-      <section className="py-32 relative">
-        <div className="container max-w-4xl">
+      <section className="py-16 md:py-32 relative">
+        <div className="container max-w-4xl px-6">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -92,8 +92,8 @@ export default function HomePage() {
       </section>
 
       {/* System */}
-      <section className="py-32 relative">
-        <div className="container">
+      <section className="py-16 md:py-32 relative">
+        <div className="container px-6">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -152,8 +152,8 @@ export default function HomePage() {
       </section>
 
       {/* Audience */}
-      <section className="py-32 relative">
-        <div className="container max-w-4xl">
+      <section className="py-16 md:py-32 relative">
+        <div className="container max-w-4xl px-6">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -186,8 +186,8 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-32 border-t border-white/[0.06]">
-        <div className="container">
+      <section className="py-16 md:py-32 border-t border-white/[0.06]">
+        <div className="container px-6">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}

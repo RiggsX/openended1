@@ -3,9 +3,9 @@ export default function WelcomePage() {
     <div className="min-h-screen bg-black flex items-center justify-center px-8">
       <div className="text-center">
         {/* 动态 Logo */}
-        <div className="mb-12 flex justify-center">
+        <div className="mb-8 md:mb-12 flex justify-center">
           <svg
-            className="w-32 h-32"
+            className="w-24 h-24 md:w-32 md:h-32"
             viewBox="0 0 40 40"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +168,7 @@ export default function WelcomePage() {
         </div>
 
         {/* 品牌名称 */}
-        <h1 className="text-[clamp(3rem,8vw,6rem)] font-extralight text-white mb-8 tracking-tight">
+        <h1 className="text-[clamp(2rem,8vw,6rem)] font-extralight text-white mb-6 md:mb-8 tracking-tight">
           OPENENDED
         </h1>
 
