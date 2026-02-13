@@ -253,6 +253,9 @@ export const translations = {
       memberSince: "Member Since",
       recentWorkflows: "Recent Workflows",
       viewAll: "View All",
+      workflowsUsed: "Workflows Used",
+      savedTime: "Time Saved",
+      quickActions: "Quick Actions",
     },
     workflows: {
       title: "Workflow Library",
@@ -528,6 +531,9 @@ export const translations = {
       memberSince: "会员时长",
       recentWorkflows: "最近工作流",
       viewAll: "查看全部",
+      workflowsUsed: "已使用工作流",
+      savedTime: "节省时间",
+      quickActions: "快捷操作",
     },
     workflows: {
       title: "工作流库",
