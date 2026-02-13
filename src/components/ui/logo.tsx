@@ -1,86 +1,89 @@
 export function Logo({ className = "" }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* 外圈 - 完整圆环 */}
-      <circle
-        cx="20"
-        cy="20"
-        r="15"
+      {/* 主体 - 三条递进的波浪线，象征持续延伸 */}
+      <path
+        d="M 5 15 Q 12 12, 15 15 T 25 15 T 35 15"
         stroke="currentColor"
-        strokeWidth="2.5"
-        fill="none"
-        opacity="0.9"
-      />
-
-      {/* 内圈 - 增加层次 */}
-      <circle
-        cx="20"
-        cy="20"
-        r="11"
-        stroke="currentColor"
-        strokeWidth="1.5"
+        strokeWidth="2"
+        strokeLinecap="round"
         fill="none"
         opacity="0.4"
       />
 
-      {/* 中心图形 - 向右的箭头/延伸 */}
       <path
-        d="M 14 20 L 26 20 M 22 16 L 26 20 L 22 24"
+        d="M 5 20 Q 12 17, 15 20 T 25 20 T 35 20"
         stroke="currentColor"
         strokeWidth="2.5"
         strokeLinecap="round"
-        strokeLinejoin="round"
+        fill="none"
+        opacity="0.7"
       />
 
-      {/* 右侧突破线 - 延伸到边界外 */}
+      <path
+        d="M 5 25 Q 12 22, 15 25 T 25 25 T 35 25"
+        stroke="url(#waveGradient)"
+        strokeWidth="3"
+        strokeLinecap="round"
+        fill="none"
+      />
+
+      {/* 起点标记 */}
+      <circle cx="5" cy="20" r="2.5" fill="currentColor" />
+
+      {/* 延伸线 - 突破边界 */}
       <line
-        x1="26"
+        x1="35"
+        y1="15"
+        x2="38"
+        y2="15"
+        stroke="url(#fadeGradient)"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+
+      <line
+        x1="35"
         y1="20"
-        x2="35"
+        x2="38"
         y2="20"
-        stroke="url(#extendGradient)"
+        stroke="url(#fadeGradient)"
         strokeWidth="2.5"
         strokeLinecap="round"
       />
 
-      {/* 装饰点 - 增加细节 */}
-      <circle cx="35" cy="20" r="1.5" fill="currentColor" opacity="0.6" />
-
-      {/* 微妙光晕 - Apple 式质感 */}
-      <circle cx="20" cy="20" r="15" fill="url(#glowGradient)" opacity="0.08" />
-
-      {/* 内阴影效果 */}
-      <circle
-        cx="20"
-        cy="20"
-        r="15"
-        stroke="url(#innerShadow)"
-        strokeWidth="1"
-        fill="none"
-        opacity="0.2"
+      <line
+        x1="35"
+        y1="25"
+        x2="38"
+        y2="25"
+        stroke="url(#fadeGradient)"
+        strokeWidth="3"
+        strokeLinecap="round"
       />
+
+      {/* 微妙光效 */}
+      <ellipse cx="20" cy="20" rx="18" ry="8" fill="url(#glowGradient)" opacity="0.06" />
 
       {/* 渐变定义 */}
       <defs>
-        {/* 延伸线渐变 */}
-        <linearGradient id="extendGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        {/* 波浪渐变 */}
+        <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="currentColor" stopOpacity="0.8" />
+          <stop offset="100%" stopColor="currentColor" stopOpacity="1" />
+        </linearGradient>
+
+        {/* 淡出渐变 */}
+        <linearGradient id="fadeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" stopColor="currentColor" stopOpacity="1" />
-          <stop offset="100%" stopColor="currentColor" stopOpacity="0.3" />
+          <stop offset="100%" stopColor="currentColor" stopOpacity="0" />
         </linearGradient>
 
         {/* 光晕渐变 */}
         <radialGradient id="glowGradient">
-          <stop offset="0%" stopColor="currentColor" stopOpacity="0.4" />
-          <stop offset="70%" stopColor="currentColor" stopOpacity="0.1" />
+          <stop offset="0%" stopColor="currentColor" stopOpacity="0.3" />
           <stop offset="100%" stopColor="currentColor" stopOpacity="0" />
         </radialGradient>
-
-        {/* 内阴影渐变 */}
-        <linearGradient id="innerShadow" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="black" stopOpacity="0.2" />
-          <stop offset="50%" stopColor="transparent" stopOpacity="0" />
-          <stop offset="100%" stopColor="white" stopOpacity="0.15" />
-        </linearGradient>
       </defs>
     </svg>
   );
