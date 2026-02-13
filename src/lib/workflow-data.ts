@@ -7414,4 +7414,328 @@ Output:** Complete blog writing system with templates and workflows.`,
       },
     ],
   },
+  "71": {
+    id: 71,
+    title: "Conflict Resolution Guide",
+    titleZh: "冲突解决指南",
+    category: "Communication",
+    tier: "Core",
+    description:
+      "Navigate and resolve conflicts effectively in personal and professional settings.",
+    descriptionZh: "在个人和职业环境中有效地导航和解决冲突。",
+    steps: [
+      {
+        title: "Conflict Management Framework",
+        titleZh: "冲突管理框架",
+        description: "Develop skills to handle difficult conversations and resolve disputes.",
+        descriptionZh: "发展处理困难对话和解决争议的技能。",
+        prompt: `I need to handle conflicts better.
+
+**My Context:**
+- Conflict types: [Work, family, friends, etc.]
+- Frequency: [How often conflicts arise]
+- Current approach: [How you handle them now]
+- Comfort level: [Avoidant, confrontational, balanced]
+- Stakes: [Relationships, career, etc.]
+
+**My Challenges:**
+- Biggest issues: [Emotions, communication, resolution]
+- Patterns: [Recurring conflicts]
+- Desired outcomes: [What you want to achieve]
+
+**Please create:**
+1. Conflict assessment framework
+2. De-escalation techniques
+3. Active listening and empathy skills
+4. Non-violent communication methods
+5. Finding win-win solutions
+6. Boundary setting in conflicts
+7. Post-conflict repair and follow-up
+
+**Output:** Complete conflict resolution system with scripts and techniques.`,
+        promptZh: `我需要更好地处理冲突。
+
+**我的背景：**
+- 冲突类型：[工作、家庭、朋友等]
+- 频率：[冲突多久发生一次]
+- 当前方法：[你现在如何处理它们]
+- 舒适度：[回避、对抗、平衡]
+- 利害关系：[关系、职业等]
+
+**我的挑战：**
+- 最大问题：[情绪、沟通、解决]
+- 模式：[反复出现的冲突]
+- 期望的结果：[你想实现什么]
+
+**请创建：**
+1. 冲突评估框架
+2. 降级技巧
+3. 积极倾听和同理心技能
+4. 非暴力沟通方法
+5. 寻找双赢解决方案
+6. 冲突中的界限设定
+7. 冲突后修复和跟进
+
+**输出：** 完整的冲突解决系统，包含脚本和技巧。`,
+      },
+    ],
+  },
+  "72": {
+    id: 72,
+    title: "Critical Thinking Development",
+    titleZh: "批判性思维发展",
+    category: "Education",
+    tier: "Plus",
+    description: "Develop critical thinking skills for better decision-making and problem-solving.",
+    descriptionZh: "发展批判性思维技能以实现更好的决策和问题解决。",
+    steps: [
+      {
+        title: "Critical Thinking Framework",
+        titleZh: "批判性思维框架",
+        description: "Build systematic thinking and analytical skills.",
+        descriptionZh: "建立系统思维和分析技能。",
+        prompt: `I want to improve my critical thinking skills.
+
+**My Context:**
+- Current level: [Beginner, intermediate, advanced]
+- Application areas: [Work, learning, life decisions]
+- Challenges: [Biases, assumptions, analysis]
+- Goals: [Better decisions, problem-solving, etc.]
+
+**My Needs:**
+- Specific skills: [Analysis, evaluation, synthesis]
+- Common mistakes: [What you struggle with]
+- Practice opportunities: [Where you can apply this]
+
+**Please create:**
+1. Critical thinking fundamentals
+2. Logical reasoning and argumentation
+3. Cognitive bias awareness and mitigation
+4. Information evaluation framework
+5. Problem decomposition techniques
+6. Decision-making models
+7. Practice exercises and applications
+
+**Output:** Complete critical thinking development program with exercises.`,
+        promptZh: `我想提高我的批判性思维技能。
+
+**我的背景：**
+- 当前水平：[初学者、中级、高级]
+- 应用领域：[工作、学习、生活决策]
+- 挑战：[偏见、假设、分析]
+- 目标：[更好的决策、问题解决等]
+
+**我的需求：**
+- 具体技能：[分析、评估、综合]
+- 常见错误：[你挣扎的地方]
+- 实践机会：[你可以在哪里应用这个]
+
+**请创建：**
+1. 批判性思维基础
+2. 逻辑推理和论证
+3. 认知偏见意识和缓解
+4. 信息评估框架
+5. 问题分解技巧
+6. 决策模型
+7. 实践练习和应用
+
+**输出：** 完整的批判性思维发展计划，包含练习。`,
+      },
+    ],
+  },
+  "73": {
+    id: 73,
+    title: "Problem-Solving Framework",
+    titleZh: "问题解决框架",
+    category: "Productivity",
+    tier: "Core",
+    description: "Master systematic problem-solving for complex challenges.",
+    descriptionZh: "掌握复杂挑战的系统化问题解决。",
+    steps: [
+      {
+        title: "Structured Problem-Solving",
+        titleZh: "结构化问题解决",
+        description: "Apply proven frameworks to solve any problem.",
+        descriptionZh: "应用经过验证的框架解决任何问题。",
+        prompt: `I want to become better at solving problems.
+
+**My Context:**
+- Problem types: [Work, technical, personal, etc.]
+- Complexity: [Simple, moderate, complex]
+- Current approach: [How you solve problems now]
+- Success rate: [How often you find good solutions]
+- Time pressure: [How much time you typically have]
+
+**My Challenges:**
+- Biggest obstacles: [Getting stuck, wrong approach, etc.]
+- Analysis paralysis: [Overthinking]
+- Implementation: [Executing solutions]
+
+**Please create:**
+1. Problem definition and framing
+2. Root cause analysis techniques (5 Whys, Fishbone)
+3. Solution generation methods (brainstorming, lateral thinking)
+4. Evaluation and decision criteria
+5. Implementation planning
+6. Iteration and learning from failures
+7. Problem-solving templates and checklists
+
+**Output:** Complete problem-solving system with frameworks and tools.`,
+        promptZh: `我想变得更擅长解决问题。
+
+**我的背景：**
+- 问题类型：[工作、技术、个人等]
+- 复杂性：[简单、中等、复杂]
+- 当前方法：[你现在如何解决问题]
+- 成功率：[你多久找到好的解决方案]
+- 时间压力：[你通常有多少时间]
+
+**我的挑战：**
+- 最大障碍：[卡住、错误方法等]
+- 分析瘫痪：[过度思考]
+- 实施：[执行解决方案]
+
+**请创建：**
+1. 问题定义和框架
+2. 根本原因分析技巧（5 个为什么、鱼骨图）
+3. 解决方案生成方法（头脑风暴、横向思维）
+4. 评估和决策标准
+5. 实施规划
+6. 迭代和从失败中学习
+7. 问题解决模板和清单
+
+**输出：** 完整的问题解决系统，包含框架和工具。`,
+      },
+    ],
+  },
+  "74": {
+    id: 74,
+    title: "Reading & Learning System",
+    titleZh: "阅读与学习系统",
+    category: "Education",
+    tier: "Core",
+    description: "Read more effectively and retain what you learn.",
+    descriptionZh: "更有效地阅读并保留你学到的东西。",
+    steps: [
+      {
+        title: "Effective Reading Framework",
+        titleZh: "有效阅读框架",
+        description: "Build a system for reading and learning from books.",
+        descriptionZh: "建立从书籍中阅读和学习的系统。",
+        prompt: `I want to read more and retain what I learn.
+
+**My Context:**
+- Reading goals: [Books per year, topics]
+- Current habits: [How much you read now]
+- Reading types: [Non-fiction, fiction, articles, etc.]
+- Time available: [Hours per week]
+- Retention issues: [Forget what you read]
+
+**My Challenges:**
+- Biggest obstacles: [Time, focus, retention]
+- Reading speed: [Too slow or too fast]
+- Application: [Not using what you learn]
+
+**Please create:**
+1. Reading selection and prioritization
+2. Active reading techniques (annotation, questioning)
+3. Speed reading vs deep reading strategies
+4. Note-taking and synthesis methods
+5. Spaced repetition for retention
+6. Application and implementation plans
+7. Reading habit formation
+
+**Output:** Complete reading and learning system with templates.`,
+        promptZh: `我想读更多并保留我学到的东西。
+
+**我的背景：**
+- 阅读目标：[每年书籍数量、主题]
+- 当前习惯：[你现在读多少]
+- 阅读类型：[非小说、小说、文章等]
+- 可用时间：[每周小时数]
+- 保留问题：[忘记你读的内容]
+
+**我的挑战：**
+- 最大障碍：[时间、专注、保留]
+- 阅读速度：[太慢或太快]
+- 应用：[不使用你学到的东西]
+
+**请创建：**
+1. 阅读选择和优先级排序
+2. 主动阅读技巧（注释、提问）
+3. 速读 vs 深度阅读策略
+4. 笔记和综合方法
+5. 间隔重复以保留
+6. 应用和实施计划
+7. 阅读习惯养成
+
+**输出：** 完整的阅读和学习系统，包含模板。`,
+      },
+    ],
+  },
+  "75": {
+    id: 75,
+    title: "Mindfulness & Meditation Practice",
+    titleZh: "正念与冥想练习",
+    category: "Health",
+    tier: "Core",
+    description: "Develop a sustainable mindfulness practice for mental clarity and well-being.",
+    descriptionZh: "发展可持续的正念练习以实现心理清晰和幸福。",
+    steps: [
+      {
+        title: "Mindfulness Foundation",
+        titleZh: "正念基础",
+        description: "Start and maintain a mindfulness meditation practice.",
+        descriptionZh: "开始和维持正念冥想练习。",
+        prompt: `I want to start a mindfulness practice.
+
+**My Context:**
+- Experience: [Complete beginner, tried before, regular practice]
+- Goals: [Stress reduction, focus, self-awareness, etc.]
+- Time available: [Minutes per day]
+- Environment: [Where you can practice]
+- Obstacles: [Restlessness, skepticism, time, etc.]
+
+**My Needs:**
+- Practice type: [Meditation, breathing, body scan, etc.]
+- Guidance level: [Need structure or flexible]
+- Integration: [How to fit into daily life]
+
+**Please create:**
+1. Mindfulness fundamentals and benefits
+2. Beginner meditation techniques
+3. Daily practice routine (5-20 minutes)
+4. Breathing exercises for different situations
+5. Mindful living practices (eating, walking, working)
+6. Dealing with common challenges
+7. Progress tracking and deepening practice
+
+**Output:** Complete mindfulness system with guided practices.`,
+        promptZh: `我想开始正念练习。
+
+**我的背景：**
+- 经验：[完全初学者、以前尝试过、定期练习]
+- 目标：[压力减轻、专注、自我意识等]
+- 可用时间：[每天分钟数]
+- 环境：[你可以在哪里练习]
+- 障碍：[不安、怀疑、时间等]
+
+**我的需求：**
+- 练习类型：[冥想、呼吸、身体扫描等]
+- 指导水平：[需要结构或灵活]
+- 整合：[如何融入日常生活]
+
+**请创建：**
+1. 正念基础和好处
+2. 初学者冥想技巧
+3. 每日练习例程（5-20 分钟）
+4. 不同情况的呼吸练习
+5. 正念生活实践（饮食、行走、工作）
+6. 应对常见挑战
+7. 进度跟踪和深化练习
+
+**输出：** 完整的正念系统，包含引导练习。`,
+      },
+    ],
+  },
 };
