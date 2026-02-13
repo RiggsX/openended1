@@ -5785,4 +5785,329 @@ Provide a complete funnel blueprint with page templates, email sequences, and op
       },
     ],
   },
+  "46": {
+    id: 46,
+    title: "Blog Writing System",
+    titleZh: "博客写作系统",
+    category: "Content",
+    tier: "Core",
+    description: "Create a consistent blog writing process that attracts and engages readers.",
+    descriptionZh: "创建一致的博客写作流程，吸引和吸引读者。",
+    steps: [
+      {
+        title: "Blog Content Strategy",
+        titleZh: "博客内容策略",
+        description: "Build a sustainable blog writing and publishing system.",
+        descriptionZh: "建立可持续的博客写作和发布系统。",
+        prompt: `I want to start or improve my blog.
+
+**My Blog Context:**
+- Niche/topic: [What you write about]
+- Target audience: [Who you're writing for]
+- Current status: [Starting new, have existing blog]
+- Publishing frequency: [How often you want to post]
+- Goals: [Traffic, authority, monetization, etc.]
+
+**My Challenges:**
+- Main obstacles: [Ideas, consistency, quality, promotion]
+- Time available: [Hours per week]
+- Writing experience: [Beginner, intermediate, advanced]
+
+**Please create:**
+1. Content ideation system (never run out of ideas)
+2. Blog post structure templates (listicles, how-tos, guides)
+3. Writing workflow (research → draft → edit → publish)
+4. SEO optimization checklist
+5. Headline formulas that get clicks
+6. Content calendar and batching strategy
+7. Promotion and distribution plan
+
+Output:** Complete blog writing system with templates and workflows.`,
+        promptZh: `我想开始或改进我的博客。
+
+**我的博客背景：**
+- 细分市场/主题：[你写什么]
+- 目标受众：[你为谁写作]
+- 当前状态：[开始新的、有现有博客]
+- 发布频率：[你想多久发布一次]
+- 目标：[流量、权威、变现等]
+
+**我的挑战：**
+- 主要障碍：[想法、一致性、质量、推广]
+- 可用时间：[每周小时数]
+- 写作经验：[初学者、中级、高级]
+
+**请创建：**
+1. 内容构思系统（永不缺乏想法）
+2. 博客文章结构模板（列表、操作指南、指南）
+3. 写作工作流（研究 → 草稿 → 编辑 → 发布）
+4. SEO 优化清单
+5. 获得点击的标题公式
+6. 内容日历和批处理策略
+7. 推广和分发计划
+
+**输出：** 完整的博客写作系统，包含模板和工作流。`,
+      },
+    ],
+  },
+  "47": {
+    id: 47,
+    title: "YouTube Channel Strategy",
+    titleZh: "YouTube 频道策略",
+    category: "Content",
+    tier: "Plus",
+    description: "Launch and grow a successful YouTube channel with strategic content planning.",
+    descriptionZh: "通过战略内容规划启动和发展成功的 YouTube 频道。",
+    steps: [
+      {
+        title: "YouTube Growth Framework",
+        titleZh: "YouTube 增长框架",
+        description: "Build a YouTube channel from scratch or optimize existing one.",
+        descriptionZh: "从头开始建立 YouTube 频道或优化现有频道。",
+        prompt: `I want to start or grow my YouTube channel.
+
+**Channel Context:**
+- Niche/topic: [What your channel is about]
+- Target audience: [Who you're creating for]
+- Current status: [Starting new, have subscribers]
+- Content type: [Educational, entertainment, vlog, etc.]
+- Goals: [Subscribers, views, monetization]
+
+**My Resources:**
+- Equipment: [Camera, mic, editing software]
+- Time available: [Hours per week]
+- Budget: [For equipment, ads, etc.]
+- Skills: [Video editing, speaking, etc.]
+
+**Please create:**
+1. Channel positioning and branding
+2. Content pillar strategy (video types)
+3. Video production workflow
+4. Thumbnail and title optimization
+5. YouTube SEO and algorithm strategy
+6. Audience engagement tactics
+7. Monetization roadmap
+
+**Output:** Complete YouTube channel strategy with production workflow.`,
+        promptZh: `我想开始或发展我的 YouTube 频道。
+
+**频道背景：**
+- 细分市场/主题：[你的频道是关于什么的]
+- 目标受众：[你为谁创作]
+- 当前状态：[开始新的、有订阅者]
+- 内容类型：[教育、娱乐、vlog 等]
+- 目标：[订阅者、观看次数、变现]
+
+**我的资源：**
+- 设备：[相机、麦克风、编辑软件]
+- 可用时间：[每周小时数]
+- 预算：[用于设备、广告等]
+- 技能：[视频编辑、演讲等]
+
+**请创建：**
+1. 频道定位和品牌
+2. 内容支柱策略（视频类型）
+3. 视频制作工作流
+4. 缩略图和标题优化
+5. YouTube SEO 和算法策略
+6. 观众参与策略
+7. 变现路线图
+
+**输出：** 完整的 YouTube 频道策略，包含制作工作流。`,
+      },
+    ],
+  },
+  "48": {
+    id: 48,
+    title: "Newsletter Growth System",
+    titleZh: "Newsletter 增长系统",
+    category: "Marketing",
+    tier: "Plus",
+    description: "Build and grow an engaged email newsletter audience.",
+    descriptionZh: "建立和发展参与的电子邮件 Newsletter 受众。",
+    steps: [
+      {
+        title: "Newsletter Strategy & Growth",
+        titleZh: "Newsletter 策略与增长",
+        description: "Create a newsletter that people actually want to read.",
+        descriptionZh: "创建人们真正想阅读的 Newsletter。",
+        prompt: `I want to start or grow my newsletter.
+
+**Newsletter Context:**
+- Topic/niche: [What you write about]
+- Target audience: [Who you're writing for]
+- Current subscribers: [Number or starting from zero]
+- Frequency: [Weekly, bi-weekly, monthly]
+- Goals: [Subscribers, engagement, monetization]
+
+**My Assets:**
+- Existing audience: [Social media, blog, etc.]
+- Content expertise: [What you know well]
+- Time available: [Hours per week]
+
+**Please create:**
+1. Newsletter positioning and value proposition
+2. Content format and structure
+3. Growth tactics (lead magnets, referrals, partnerships)
+4. Writing workflow and templates
+5. Engagement and retention strategies
+6. Monetization options (ads, sponsorships, paid tiers)
+7. Analytics and optimization
+
+**Output:** Complete newsletter growth system with templates and tactics.`,
+        promptZh: `我想开始或发展我的 Newsletter。
+
+**Newsletter 背景：**
+- 主题/细分市场：[你写什么]
+- 目标受众：[你为谁写作]
+- 当前订阅者：[数量或从零开始]
+- 频率：[每周、双周、每月]
+- 目标：[订阅者、参与度、变现]
+
+**我的资产：**
+- 现有受众：[社交媒体、博客等]
+- 内容专长：[你很了解什么]
+- 可用时间：[每周小时数]
+
+**请创建：**
+1. Newsletter 定位和价值主张
+2. 内容格式和结构
+3. 增长策略（铅磁铁、推荐、合作）
+4. 写作工作流和模板
+5. 参与和留存策略
+6. 变现选项（广告、赞助、付费层级）
+7. 分析和优化
+
+**输出：** 完整的 Newsletter 增长系统，包含模板和策略。`,
+      },
+    ],
+  },
+  "49": {
+    id: 49,
+    title: "Instagram Content Strategy",
+    titleZh: "Instagram 内容策略",
+    category: "Marketing",
+    tier: "Core",
+    description: "Create engaging Instagram content that grows your audience.",
+    descriptionZh: "创建吸引人的 Instagram 内容以增长你的受众。",
+    steps: [
+      {
+        title: "Instagram Growth Plan",
+        titleZh: "Instagram 增长计划",
+        description: "Build an Instagram presence with strategic content.",
+        descriptionZh: "通过战略内容建立 Instagram 存在感。",
+        prompt: `I want to grow my Instagram account.
+
+**Account Context:**
+- Niche/industry: [What you post about]
+- Target audience: [Who you want to reach]
+- Current followers: [Number or starting new]
+- Content type: [Photos, Reels, Stories, carousel]
+- Goals: [Followers, engagement, sales, brand awareness]
+
+**My Resources:**
+- Content creation: [Phone, camera, editing apps]
+- Time available: [Hours per week]
+- Budget: [For ads, tools, etc.]
+
+**Please create:**
+1. Content pillar strategy (themes and topics)
+2. Posting schedule and frequency
+3. Reel ideas and hooks
+4. Caption formulas that drive engagement
+5. Hashtag strategy
+6. Story engagement tactics
+7. Growth tactics (collaborations, giveaways, etc.)
+
+**Output:** Complete Instagram content strategy with templates and calendar.`,
+        promptZh: `我想发展我的 Instagram 账户。
+
+**账户背景：**
+- 细分市场/行业：[你发布什么]
+- 目标受众：[你想接触谁]
+- 当前粉丝：[数量或开始新的]
+- 内容类型：[照片、Reels、Stories、轮播]
+- 目标：[粉丝、参与度、销售、品牌知名度]
+
+**我的资源：**
+- 内容创作：[手机、相机、编辑应用]
+- 可用时间：[每周小时数]
+- 预算：[用于广告、工具等]
+
+**请创建：**
+1. 内容支柱策略（主题和话题）
+2. 发布时间表和频率
+3. Reel 想法和钩子
+4. 推动参与的标题公式
+5. 标签策略
+6. Story 参与策略
+7. 增长策略（合作、赠品等）
+
+**输出：** 完整的 Instagram 内容策略，包含模板和日历。`,
+      },
+    ],
+  },
+  "50": {
+    id: 50,
+    title: "TikTok Viral Content Formula",
+    titleZh: "TikTok 爆款内容公式",
+    category: "Marketing",
+    tier: "Core",
+    description: "Create TikTok content that has viral potential and grows your audience.",
+    descriptionZh: "创建具有病毒式传播潜力并增长受众的 TikTok 内容。",
+    steps: [
+      {
+        title: "TikTok Content Strategy",
+        titleZh: "TikTok 内容策略",
+        description: "Master TikTok's algorithm and create engaging short-form content.",
+        descriptionZh: "掌握 TikTok 算法并创建吸引人的短视频内容。",
+        prompt: `I want to grow on TikTok and create viral content.
+
+**Account Context:**
+- Niche/topic: [What you create about]
+- Target audience: [Who you want to reach]
+- Current followers: [Number or starting new]
+- Goals: [Followers, views, brand deals, sales]
+
+**My Resources:**
+- Equipment: [Phone, lighting, etc.]
+- Time available: [Hours per week]
+- Comfort on camera: [Shy, confident, etc.]
+
+**Please create:**
+1. TikTok algorithm understanding
+2. Viral content formula (hooks, patterns, trends)
+3. Content ideas and formats
+4. Posting strategy and timing
+5. Trend-jacking tactics
+6. Engagement and community building
+7. Monetization strategies
+
+**Output:** Complete TikTok growth strategy with content formulas and examples.`,
+        promptZh: `我想在 TikTok 上成长并创建病毒式内容。
+
+**账户背景：**
+- 细分市场/主题：[你创作什么]
+- 目标受众：[你想接触谁]
+- 当前粉丝：[数量或开始新的]
+- 目标：[粉丝、观看次数、品牌交易、销售]
+
+**我的资源：**
+- 设备：[手机、照明等]
+- 可用时间：[每周小时数]
+- 镜头前的舒适度：[害羞、自信等]
+
+**请创建：**
+1. TikTok 算法理解
+2. 病毒式内容公式（钩子、模式、趋势）
+3. 内容想法和格式
+4. 发布策略和时机
+5. 趋势劫持策略
+6. 参与和社区建设
+7. 变现策略
+
+**输出：** 完整的 TikTok 增长策略，包含内容公式和示例。`,
+      },
+    ],
+  },
 };
