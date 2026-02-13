@@ -22,9 +22,11 @@ export default function WelcomePage() {
               <animate
                 attributeName="d"
                 values="M 3 13.5 Q 9 10.5, 14 13.5 Q 19 16.5, 24 13.5 Q 29 10.5, 34 13.5;
-                        M 3 13.5 Q 9 11, 14 13.5 Q 19 16, 24 13.5 Q 29 11, 34 13.5;
+                        M 3 13.5 Q 9 11.5, 14 13.5 Q 19 15.5, 24 13.5 Q 29 11.5, 34 13.5;
+                        M 3 13.5 Q 9 10, 14 13.5 Q 19 17, 24 13.5 Q 29 10, 34 13.5;
+                        M 3 13.5 Q 9 11.5, 14 13.5 Q 19 15.5, 24 13.5 Q 29 11.5, 34 13.5;
                         M 3 13.5 Q 9 10.5, 14 13.5 Q 19 16.5, 24 13.5 Q 29 10.5, 34 13.5"
-                dur="3s"
+                dur="4s"
                 repeatCount="indefinite"
               />
             </path>
@@ -40,9 +42,11 @@ export default function WelcomePage() {
               <animate
                 attributeName="d"
                 values="M 3 20 Q 9 17, 14 20 Q 19 23, 24 20 Q 29 17, 34 20;
-                        M 3 20 Q 9 17.5, 14 20 Q 19 22.5, 24 20 Q 29 17.5, 34 20;
+                        M 3 20 Q 9 18, 14 20 Q 19 22, 24 20 Q 29 18, 34 20;
+                        M 3 20 Q 9 16.5, 14 20 Q 19 23.5, 24 20 Q 29 16.5, 34 20;
+                        M 3 20 Q 9 18, 14 20 Q 19 22, 24 20 Q 29 18, 34 20;
                         M 3 20 Q 9 17, 14 20 Q 19 23, 24 20 Q 29 17, 34 20"
-                dur="3s"
+                dur="4s"
                 repeatCount="indefinite"
               />
             </path>
@@ -58,9 +62,11 @@ export default function WelcomePage() {
               <animate
                 attributeName="d"
                 values="M 3 26.5 Q 9 23.5, 14 26.5 Q 19 29.5, 24 26.5 Q 29 23.5, 34 26.5;
-                        M 3 26.5 Q 9 24, 14 26.5 Q 19 29, 24 26.5 Q 29 24, 34 26.5;
+                        M 3 26.5 Q 9 24.5, 14 26.5 Q 19 28.5, 24 26.5 Q 29 24.5, 34 26.5;
+                        M 3 26.5 Q 9 23, 14 26.5 Q 19 30, 24 26.5 Q 29 23, 34 26.5;
+                        M 3 26.5 Q 9 24.5, 14 26.5 Q 19 28.5, 24 26.5 Q 29 24.5, 34 26.5;
                         M 3 26.5 Q 9 23.5, 14 26.5 Q 19 29.5, 24 26.5 Q 29 23.5, 34 26.5"
-                dur="3s"
+                dur="4s"
                 repeatCount="indefinite"
               />
             </path>
@@ -78,7 +84,7 @@ export default function WelcomePage() {
               <animate
                 attributeName="opacity"
                 values="0.4;0.7;0.4"
-                dur="3s"
+                dur="4s"
                 repeatCount="indefinite"
               />
             </line>
@@ -94,7 +100,7 @@ export default function WelcomePage() {
               <animate
                 attributeName="opacity"
                 values="0.6;0.9;0.6"
-                dur="3s"
+                dur="4s"
                 repeatCount="indefinite"
               />
             </line>
@@ -110,7 +116,7 @@ export default function WelcomePage() {
               <animate
                 attributeName="opacity"
                 values="0.8;1;0.8"
-                dur="3s"
+                dur="4s"
                 repeatCount="indefinite"
               />
             </line>
@@ -120,7 +126,7 @@ export default function WelcomePage() {
               <animate
                 attributeName="opacity"
                 values="0.08;0.15;0.08"
-                dur="3s"
+                dur="4s"
                 repeatCount="indefinite"
               />
             </ellipse>
