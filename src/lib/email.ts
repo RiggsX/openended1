@@ -45,24 +45,11 @@ export async function sendVerificationCode({ email, code }: SendVerificationCode
                 padding: 48px 40px;
                 text-align: center;
               }
-              .logo-container {
-                margin-bottom: 12px;
-              }
-              .logo-table {
-                margin: 0 auto;
-              }
-              .logo-svg {
-                width: 40px;
-                height: 40px;
-                display: block;
-              }
               .logo-text {
                 font-size: 28px;
                 font-weight: 200;
                 letter-spacing: 2px;
                 color: #ffffff;
-                padding-left: 16px;
-                vertical-align: middle;
               }
               .tagline {
                 font-size: 13px;
@@ -114,9 +101,9 @@ export async function sendVerificationCode({ email, code }: SendVerificationCode
                 margin-bottom: 16px;
               }
               .code {
-                font-size: 42px;
-                font-weight: 300;
-                letter-spacing: 12px;
+                font-size: 32px;
+                font-weight: 400;
+                letter-spacing: 8px;
                 color: #000;
                 font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
                 margin: 8px 0;
