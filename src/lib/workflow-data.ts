@@ -6762,4 +6762,329 @@ Output:** Complete blog writing system with templates and workflows.`,
       },
     ],
   },
+  "61": {
+    id: 61,
+    title: "Habit Formation System",
+    titleZh: "习惯养成系统",
+    category: "Productivity",
+    tier: "Core",
+    description: "Build lasting habits using proven behavioral science techniques.",
+    descriptionZh: "使用经过验证的行为科学技术建立持久的习惯。",
+    steps: [
+      {
+        title: "Habit Building Framework",
+        titleZh: "习惯建立框架",
+        description: "Create a system for forming and maintaining habits.",
+        descriptionZh: "创建形成和维持习惯的系统。",
+        prompt: `I want to build better habits that stick.
+
+**My Context:**
+- Habits to build: [List 3-5 habits]
+- Current routine: [What your day looks like]
+- Past attempts: [What worked/didn't work]
+- Motivation: [Why these habits matter]
+- Environment: [Home, work, etc.]
+
+**My Challenges:**
+- Biggest obstacles: [Time, motivation, consistency]
+- Triggers: [What makes you break habits]
+- Support system: [Accountability]
+
+**Please create:**
+1. Habit stacking framework
+2. Tiny habits approach (start small)
+3. Trigger-routine-reward system
+4. Environment design for success
+5. Tracking and accountability methods
+6. Dealing with setbacks
+7. 30/60/90 day habit roadmap
+
+**Output:** Complete habit formation system with tracking and strategies.`,
+        promptZh: `我想建立持久的好习惯。
+
+**我的背景：**
+- 要建立的习惯：[列出 3-5 个习惯]
+- 当前例程：[你的一天是什么样的]
+- 过去的尝试：[什么有效/无效]
+- 动机：[为什么这些习惯重要]
+- 环境：[家、工作等]
+
+**我的挑战：**
+- 最大障碍：[时间、动力、一致性]
+- 触发因素：[什么让你打破习惯]
+- 支持系统：[问责制]
+
+**请创建：**
+1. 习惯堆叠框架
+2. 微习惯方法（从小开始）
+3. 触发-例程-奖励系统
+4. 成功的环境设计
+5. 跟踪和问责方法
+6. 应对挫折
+7. 30/60/90 天习惯路线图
+
+**输出：** 完整的习惯养成系统，包含跟踪和策略。`,
+      },
+    ],
+  },
+  "62": {
+    id: 62,
+    title: "Stress Management System",
+    titleZh: "压力管理系统",
+    category: "Health",
+    tier: "Core",
+    description: "Manage stress effectively with practical techniques and systems.",
+    descriptionZh: "使用实用技术和系统有效管理压力。",
+    steps: [
+      {
+        title: "Stress Reduction Framework",
+        titleZh: "压力减轻框架",
+        description: "Build resilience and manage stress proactively.",
+        descriptionZh: "建立韧性并主动管理压力。",
+        prompt: `I need to manage my stress better.
+
+**My Context:**
+- Stress level: [1-10 scale]
+- Main stressors: [Work, relationships, health, etc.]
+- Current coping: [What you do now]
+- Physical symptoms: [Sleep, energy, health]
+- Support system: [Who you can rely on]
+
+**My Goals:**
+- Desired stress level: [Target]
+- Areas to improve: [Sleep, exercise, mindset, etc.]
+- Non-negotiables: [What you must protect]
+
+**Please create:**
+1. Stress audit and trigger identification
+2. Daily stress management routine
+3. Quick stress relief techniques (5-min, 15-min, 30-min)
+4. Boundary setting strategies
+5. Mindfulness and breathing exercises
+6. Physical stress release (exercise, movement)
+7. Long-term resilience building
+
+**Output:** Complete stress management system with daily practices.`,
+        promptZh: `我需要更好地管理我的压力。
+
+**我的背景：**
+- 压力水平：[1-10 级]
+- 主要压力源：[工作、关系、健康等]
+- 当前应对：[你现在做什么]
+- 身体症状：[睡眠、能量、健康]
+- 支持系统：[你可以依靠谁]
+
+**我的目标：**
+- 期望的压力水平：[目标]
+- 要改进的领域：[睡眠、锻炼、心态等]
+- 不可协商的：[你必须保护什么]
+
+**请创建：**
+1. 压力审计和触发因素识别
+2. 每日压力管理例程
+3. 快速压力缓解技巧（5 分钟、15 分钟、30 分钟）
+4. 界限设定策略
+5. 正念和呼吸练习
+6. 身体压力释放（锻炼、运动）
+7. 长期韧性建设
+
+**输出：** 完整的压力管理系统，包含日常实践。`,
+      },
+    ],
+  },
+  "63": {
+    id: 63,
+    title: "Focus & Deep Work Mastery",
+    titleZh: "专注与深度工作精通",
+    category: "Productivity",
+    tier: "Core",
+    description: "Master deep work and eliminate distractions for peak productivity.",
+    descriptionZh: "掌握深度工作并消除干扰以实现最高生产力。",
+    steps: [
+      {
+        title: "Deep Work System",
+        titleZh: "深度工作系统",
+        description: "Create conditions for sustained focus and deep work.",
+        descriptionZh: "创建持续专注和深度工作的条件。",
+        prompt: `I want to improve my focus and do more deep work.
+
+**My Context:**
+- Work type: [Creative, analytical, mixed]
+- Current focus time: [Hours per day of deep work]
+- Main distractions: [Phone, email, people, etc.]
+- Work environment: [Office, home, coworking]
+- Energy patterns: [When you're most focused]
+
+**My Challenges:**
+- Biggest focus killers: [What breaks your concentration]
+- Shallow work: [How much time on emails, meetings, etc.]
+- Recovery: [How you recharge]
+
+**Please create:**
+1. Deep work scheduling system
+2. Distraction elimination strategies
+3. Focus rituals and triggers
+4. Environment optimization
+5. Energy management (not just time)
+6. Shallow work batching
+7. Recovery and restoration practices
+
+**Output:** Complete deep work system with schedules and techniques.`,
+        promptZh: `我想提高我的专注力并做更多深度工作。
+
+**我的背景：**
+- 工作类型：[创意、分析、混合]
+- 当前专注时间：[每天深度工作小时数]
+- 主要干扰：[手机、电子邮件、人等]
+- 工作环境：[办公室、家、共享办公]
+- 能量模式：[你何时最专注]
+
+**我的挑战：**
+- 最大的专注杀手：[什么打破你的专注]
+- 浅层工作：[在电子邮件、会议等上花费多少时间]
+- 恢复：[你如何充电]
+
+**请创建：**
+1. 深度工作调度系统
+2. 干扰消除策略
+3. 专注仪式和触发器
+4. 环境优化
+5. 能量管理（不仅仅是时间）
+6. 浅层工作批处理
+7. 恢复和修复实践
+
+**输出：** 完整的深度工作系统，包含时间表和技巧。`,
+      },
+    ],
+  },
+  "64": {
+    id: 64,
+    title: "Note-Taking & Knowledge Management",
+    titleZh: "笔记与知识管理",
+    category: "Productivity",
+    tier: "Core",
+    description: "Build a second brain with effective note-taking and knowledge systems.",
+    descriptionZh: "通过有效的笔记和知识系统建立第二大脑。",
+    steps: [
+      {
+        title: "Knowledge Management System",
+        titleZh: "知识管理系统",
+        description: "Capture, organize, and retrieve information effectively.",
+        descriptionZh: "有效地捕获、组织和检索信息。",
+        prompt: `I want to build a better system for managing information.
+
+**My Context:**
+- Information sources: [Books, articles, courses, meetings]
+- Current system: [What you use now]
+- Volume: [How much you consume]
+- Goals: [Learning, writing, projects, etc.]
+- Tools: [Notion, Obsidian, Evernote, etc.]
+
+**My Challenges:**
+- Information overload: [Too much to process]
+- Retrieval: [Can't find what you saved]
+- Application: [Not using what you learn]
+
+**Please create:**
+1. Note-taking methodology (Zettelkasten, PARA, etc.)
+2. Capture workflow (inbox → processing → storage)
+3. Organization system and tagging
+4. Linking and connecting ideas
+5. Review and synthesis process
+6. Knowledge application strategies
+7. Tool setup and workflows
+
+**Output:** Complete knowledge management system with templates.`,
+        promptZh: `我想建立更好的信息管理系统。
+
+**我的背景：**
+- 信息来源：[书籍、文章、课程、会议]
+- 当前系统：[你现在使用什么]
+- 数量：[你消费多少]
+- 目标：[学习、写作、项目等]
+- 工具：[Notion、Obsidian、Evernote 等]
+
+**我的挑战：**
+- 信息过载：[太多要处理]
+- 检索：[找不到你保存的内容]
+- 应用：[不使用你学到的东西]
+
+**请创建：**
+1. 笔记方法（Zettelkasten、PARA 等）
+2. 捕获工作流（收件箱 → 处理 → 存储）
+3. 组织系统和标记
+4. 链接和连接想法
+5. 审查和综合流程
+6. 知识应用策略
+7. 工具设置和工作流
+
+**输出：** 完整的知识管理系统，包含模板。`,
+      },
+    ],
+  },
+  "65": {
+    id: 65,
+    title: "Public Speaking Mastery",
+    titleZh: "公开演讲精通",
+    category: "Communication",
+    tier: "Plus",
+    description: "Become a confident and compelling public speaker.",
+    descriptionZh: "成为自信和引人注目的公开演讲者。",
+    steps: [
+      {
+        title: "Speaking Skills Development",
+        titleZh: "演讲技能发展",
+        description: "Master the art of public speaking and presentations.",
+        descriptionZh: "掌握公开演讲和演示的艺术。",
+        prompt: `I want to become a better public speaker.
+
+**My Context:**
+- Experience level: [Beginner, intermediate, advanced]
+- Speaking opportunities: [Meetings, conferences, etc.]
+- Audience size: [Small groups, large crowds]
+- Topics: [What you speak about]
+- Goals: [Career, influence, teaching, etc.]
+
+**My Challenges:**
+- Biggest fear: [Nervousness, forgetting, judgment]
+- Weak areas: [Structure, delivery, engagement]
+- Past experiences: [What went well/poorly]
+
+**Please create:**
+1. Speech structure frameworks
+2. Content development process
+3. Delivery techniques (voice, body language, presence)
+4. Nervousness management strategies
+5. Audience engagement tactics
+6. Q&A handling
+7. Practice and improvement system
+
+**Output:** Complete public speaking system with frameworks and exercises.`,
+        promptZh: `我想成为更好的公开演讲者。
+
+**我的背景：**
+- 经验水平：[初学者、中级、高级]
+- 演讲机会：[会议、大会等]
+- 观众规模：[小组、大群]
+- 主题：[你谈论什么]
+- 目标：[职业、影响力、教学等]
+
+**我的挑战：**
+- 最大恐惧：[紧张、忘记、评判]
+- 薄弱领域：[结构、表达、参与]
+- 过去的经历：[什么进展顺利/糟糕]
+
+**请创建：**
+1. 演讲结构框架
+2. 内容开发流程
+3. 表达技巧（声音、肢体语言、存在感）
+4. 紧张管理策略
+5. 观众参与策略
+6. 问答处理
+7. 练习和改进系统
+
+**输出：** 完整的公开演讲系统，包含框架和练习。`,
+      },
+    ],
+  },
 };
