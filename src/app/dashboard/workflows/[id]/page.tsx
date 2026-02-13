@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
-import { getUserSubscription, canAccessWorkflow } from "@/lib/subscription";
-import { workflowData } from "@/lib/workflow-data";
+import { getUserSubscription } from "@/lib/subscription";
+import { getWorkflowById } from "@/lib/workflow-filter";
 import WorkflowDetailClient from "./WorkflowDetailClient";
 
 interface PageProps {
@@ -11,12 +11,6 @@ interface PageProps {
 
 export default async function WorkflowDetailPage({ params }: PageProps) {
   const { id } = await params;
-  const workflow = workflowData[id];
-
-  // 检查工作流是否存在
-  if (!workflow) {
-    redirect("/dashboard/workflows");
-  }
 
   // 获取用户订阅信息
   const subscription = await getUserSubscription();
@@ -26,14 +20,18 @@ export default async function WorkflowDetailPage({ params }: PageProps) {
     redirect("/auth/signin");
   }
 
-  // 检查用户是否有权限访问此工作流
-  const hasAccess = await canAccessWorkflow(workflow.tier);
+  // 服务端验证权限并获取工作流
+  const workflow = getWorkflowById(id, subscription.tier, subscription.isAdmin);
+
+  // 工作流不存在或无权限访问
+  if (!workflow) {
+    redirect("/dashboard/workflows");
+  }
 
   // 传递数据到客户端组件
   return (
     <WorkflowDetailClient
       workflow={workflow}
-      hasAccess={hasAccess}
       userTier={subscription.tier}
       isAdmin={subscription.isAdmin}
     />

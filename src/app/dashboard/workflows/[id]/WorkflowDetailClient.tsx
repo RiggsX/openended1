@@ -28,12 +28,11 @@ interface Workflow {
 
 interface Props {
   workflow: Workflow;
-  hasAccess: boolean;
   userTier: UserTier;
   isAdmin: boolean;
 }
 
-export default function WorkflowDetailClient({ workflow, hasAccess, userTier, isAdmin }: Props) {
+export default function WorkflowDetailClient({ workflow, isAdmin }: Props) {
   const { t, locale } = useI18n();
   const [mounted, setMounted] = useState(false);
   const [copiedStep, setCopiedStep] = useState<number | null>(null);
@@ -57,77 +56,7 @@ export default function WorkflowDetailClient({ workflow, hasAccess, userTier, is
     );
   }
 
-  // 如果没有权限，显示升级提示
-  if (!hasAccess) {
-    return (
-      <div className="min-h-screen bg-black text-white p-8">
-        <div className="max-w-4xl mx-auto">
-          <Link
-            href="/dashboard/workflows"
-            className="inline-flex items-center text-white/60 hover:text-white mb-8 transition-colors"
-          >
-            ← {t("common.back")}
-          </Link>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="card-minimal p-12 text-center"
-          >
-            <div className="mb-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/5 mb-4">
-                <svg
-                  className="w-8 h-8 text-white/40"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                  />
-                </svg>
-              </div>
-              <h1 className="text-3xl font-light mb-4">
-                {locale === "zh" ? workflow.titleZh : workflow.title}
-              </h1>
-              <p className="text-white/60 mb-2">
-                {locale === "zh"
-                  ? `此工作流需要 ${workflow.tier} 订阅`
-                  : `This workflow requires ${workflow.tier} subscription`}
-              </p>
-              <p className="text-white/40 text-sm">
-                {locale === "zh"
-                  ? `您当前的订阅层级：${userTier.toUpperCase()}`
-                  : `Your current tier: ${userTier.toUpperCase()}`}
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <Link
-                href="/pricing"
-                className="inline-block px-8 py-3 bg-white text-black rounded hover:bg-white/90 transition-colors"
-              >
-                {locale === "zh" ? "升级订阅" : "Upgrade Subscription"}
-              </Link>
-              <div>
-                <Link
-                  href="/dashboard/workflows"
-                  className="text-white/60 hover:text-white transition-colors text-sm"
-                >
-                  {locale === "zh" ? "返回工作流列表" : "Back to Workflows"}
-                </Link>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-    );
-  }
-
-  // 有权限，显示完整内容
+  // 服务端已验证权限，直接显示完整内容
   return (
     <div className="min-h-screen bg-black text-white p-8">
       <div className="max-w-4xl mx-auto">

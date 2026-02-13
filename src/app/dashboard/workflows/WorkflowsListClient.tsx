@@ -4,22 +4,25 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
-import { workflowData } from "@/lib/workflow-data";
 import type { UserTier } from "@/lib/subscription";
 
+interface WorkflowPreview {
+  id: number;
+  title: string;
+  titleZh: string;
+  category: string;
+  tier: string;
+  description: string;
+  descriptionZh: string;
+}
+
 interface Props {
+  workflows: Record<string, WorkflowPreview>;
   userTier: UserTier;
   isAdmin: boolean;
 }
 
-const TIER_HIERARCHY: Record<UserTier, number> = {
-  free: 0,
-  core: 1,
-  plus: 2,
-  pro: 3,
-};
-
-export default function WorkflowsListClient({ userTier, isAdmin }: Props) {
+export default function WorkflowsListClient({ workflows, userTier, isAdmin }: Props) {
   const { t, locale } = useI18n();
   const [mounted, setMounted] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -29,24 +32,16 @@ export default function WorkflowsListClient({ userTier, isAdmin }: Props) {
     return () => clearTimeout(timer);
   }, []);
 
-  const workflows = Object.values(workflowData);
+  const workflowList = Object.values(workflows);
 
   // 获取所有分类
-  const categories = ["all", ...new Set(workflows.map((w) => w.category))];
+  const categories = ["all", ...new Set(workflowList.map((w) => w.category))];
 
   // 过滤工作流
   const filteredWorkflows =
     selectedCategory === "all"
-      ? workflows
-      : workflows.filter((w) => w.category === selectedCategory);
-
-  // 检查用户是否可以访问工作流
-  const canAccess = (workflowTier: string): boolean => {
-    if (isAdmin) return true;
-    const userLevel = TIER_HIERARCHY[userTier];
-    const workflowLevel = TIER_HIERARCHY[workflowTier.toLowerCase() as UserTier];
-    return userLevel >= workflowLevel;
-  };
+      ? workflowList
+      : workflowList.filter((w) => w.category === selectedCategory);
 
   if (!mounted) {
     return (
@@ -103,85 +98,56 @@ export default function WorkflowsListClient({ userTier, isAdmin }: Props) {
 
         {/* Workflows Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredWorkflows.map((workflow, index) => {
-            const hasAccess = canAccess(workflow.tier);
-
-            return (
-              <motion.div
-                key={workflow.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.05 }}
+          {filteredWorkflows.map((workflow, index) => (
+            <motion.div
+              key={workflow.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.05 }}
+            >
+              <Link
+                href={`/dashboard/workflows/${workflow.id}`}
+                className="block card-minimal p-6 h-full transition-all hover:bg-white/10 cursor-pointer"
               >
-                <Link
-                  href={hasAccess ? `/dashboard/workflows/${workflow.id}` : "#"}
-                  className={`block card-minimal p-6 h-full transition-all ${
-                    hasAccess ? "hover:bg-white/10 cursor-pointer" : "opacity-60 cursor-not-allowed"
-                  }`}
-                  onClick={(e) => {
-                    if (!hasAccess) {
-                      e.preventDefault();
-                    }
-                  }}
-                >
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="px-2 py-1 bg-white/5 rounded text-xs text-white/60">
-                          {workflow.category}
-                        </span>
-                        <span
-                          className={`px-2 py-1 rounded text-xs ${
-                            workflow.tier === "Core"
-                              ? "bg-blue-500/20 text-blue-400"
-                              : workflow.tier === "Plus"
-                                ? "bg-purple-500/20 text-purple-400"
-                                : "bg-amber-500/20 text-amber-400"
-                          }`}
-                        >
-                          {workflow.tier}
-                        </span>
-                      </div>
-                      <h3 className="text-xl font-light mb-2">
-                        {locale === "zh" ? workflow.titleZh : workflow.title}
-                      </h3>
-                      <p className="text-sm text-white/60 line-clamp-2">
-                        {locale === "zh" ? workflow.descriptionZh : workflow.description}
-                      </p>
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="px-2 py-1 bg-white/5 rounded text-xs text-white/60">
+                        {workflow.category}
+                      </span>
+                      <span
+                        className={`px-2 py-1 rounded text-xs ${
+                          workflow.tier === "Core"
+                            ? "bg-blue-500/20 text-blue-400"
+                            : workflow.tier === "Plus"
+                              ? "bg-purple-500/20 text-purple-400"
+                              : "bg-amber-500/20 text-amber-400"
+                        }`}
+                      >
+                        {workflow.tier}
+                      </span>
                     </div>
-                    {!hasAccess && (
-                      <div className="ml-4">
-                        <svg
-                          className="w-5 h-5 text-white/40"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                          />
-                        </svg>
-                      </div>
-                    )}
+                    <h3 className="text-xl font-light mb-2">
+                      {locale === "zh" ? workflow.titleZh : workflow.title}
+                    </h3>
+                    <p className="text-sm text-white/60 line-clamp-2">
+                      {locale === "zh" ? workflow.descriptionZh : workflow.description}
+                    </p>
                   </div>
-
-                  {!hasAccess && (
-                    <div className="mt-4 pt-4 border-t border-white/10">
-                      <p className="text-xs text-white/40">
-                        {locale === "zh"
-                          ? `需要 ${workflow.tier} 订阅`
-                          : `Requires ${workflow.tier} subscription`}
-                      </p>
-                    </div>
-                  )}
-                </Link>
-              </motion.div>
-            );
-          })}
+                </div>
+              </Link>
+            </motion.div>
+          ))}
         </div>
+
+        {/* Empty State */}
+        {filteredWorkflows.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-white/40">
+              {locale === "zh" ? "此分类暂无工作流" : "No workflows in this category"}
+            </p>
+          </div>
+        )}
 
         {/* Upgrade CTA */}
         {userTier !== "pro" && !isAdmin && (
