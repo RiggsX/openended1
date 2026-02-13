@@ -4,9 +4,9 @@ import { getWorkflowById } from "@/lib/workflow-filter";
 import WorkflowDetailClient from "./WorkflowDetailClient";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default async function WorkflowDetailPage({ params }: PageProps) {
