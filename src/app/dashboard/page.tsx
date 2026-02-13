@@ -162,7 +162,7 @@ export default function DashboardPage() {
           >
             <div className="card-minimal p-6 rounded">
               <p className="text-small text-white/40 mb-2">{t("dashboard.workflowsAvailable")}</p>
-              <p className="text-3xl font-light">55</p>
+              <p className="text-3xl font-light">60</p>
             </div>
             <div className="card-minimal p-6 rounded">
               <p className="text-small text-white/40 mb-2">{t("dashboard.newThisMonth")}</p>

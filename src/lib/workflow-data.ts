@@ -6437,4 +6437,329 @@ Output:** Complete blog writing system with templates and workflows.`,
       },
     ],
   },
+  "56": {
+    id: 56,
+    title: "Customer Service Excellence",
+    titleZh: "卓越客户服务",
+    category: "Operations",
+    tier: "Core",
+    description: "Build a customer service system that delights customers and builds loyalty.",
+    descriptionZh: "建立让客户满意并建立忠诚度的客户服务系统。",
+    steps: [
+      {
+        title: "Customer Service Framework",
+        titleZh: "客户服务框架",
+        description: "Create systems for exceptional customer support.",
+        descriptionZh: "创建卓越客户支持的系统。",
+        prompt: `I want to improve my customer service.
+
+**My Context:**
+- Business type: [E-commerce, SaaS, service, etc.]
+- Customer volume: [Number of customers/tickets]
+- Current setup: [Email, chat, phone, etc.]
+- Team size: [Solo or team]
+- Main issues: [Response time, quality, etc.]
+
+**My Goals:**
+- Service standards: [Response time, resolution rate]
+- Customer satisfaction: [Target score]
+- Efficiency: [Tickets per day, etc.]
+
+**Please create:**
+1. Customer service standards and SLAs
+2. Response templates for common issues
+3. Escalation procedures
+4. Knowledge base structure
+5. Customer feedback system
+6. Team training materials
+7. Performance metrics and KPIs
+
+**Output:** Complete customer service system with templates and processes.`,
+        promptZh: `我想改进我的客户服务。
+
+**我的背景：**
+- 业务类型：[电子商务、SaaS、服务等]
+- 客户量：[客户/工单数量]
+- 当前设置：[电子邮件、聊天、电话等]
+- 团队规模：[独自或团队]
+- 主要问题：[响应时间、质量等]
+
+**我的目标：**
+- 服务标准：[响应时间、解决率]
+- 客户满意度：[目标分数]
+- 效率：[每天工单数等]
+
+**请创建：**
+1. 客户服务标准和 SLA
+2. 常见问题的响应模板
+3. 升级程序
+4. 知识库结构
+5. 客户反馈系统
+6. 团队培训材料
+7. 性能指标和 KPI
+
+**输出：** 完整的客户服务系统，包含模板和流程。`,
+      },
+    ],
+  },
+  "57": {
+    id: 57,
+    title: "Sales Process Optimization",
+    titleZh: "销售流程优化",
+    category: "Sales",
+    tier: "Plus",
+    description: "Build a repeatable sales process that consistently closes deals.",
+    descriptionZh: "建立一致成交的可重复销售流程。",
+    steps: [
+      {
+        title: "Sales System Design",
+        titleZh: "销售系统设计",
+        description: "Create a structured sales process from lead to close.",
+        descriptionZh: "创建从潜在客户到成交的结构化销售流程。",
+        prompt: `I need to optimize my sales process.
+
+**My Context:**
+- Product/service: [What you sell]
+- Price point: [Average deal size]
+- Sales cycle: [How long to close]
+- Current close rate: [Percentage]
+- Sales team: [Solo or team size]
+
+**My Challenges:**
+- Biggest bottleneck: [Where deals stall]
+- Lead quality: [Good or need improvement]
+- Follow-up: [Consistency issues]
+
+**Please create:**
+1. Sales process stages and criteria
+2. Lead qualification framework (BANT, MEDDIC, etc.)
+3. Discovery call scripts
+4. Objection handling techniques
+5. Proposal and closing strategies
+6. CRM workflow and automation
+7. Sales metrics and forecasting
+
+**Output:** Complete sales process with scripts and tracking systems.`,
+        promptZh: `我需要优化我的销售流程。
+
+**我的背景：**
+- 产品/服务：[你卖什么]
+- 价格点：[平均交易规模]
+- 销售周期：[成交需要多长时间]
+- 当前成交率：[百分比]
+- 销售团队：[独自或团队规模]
+
+**我的挑战：**
+- 最大瓶颈：[交易在哪里停滞]
+- 潜在客户质量：[好或需要改进]
+- 跟进：[一致性问题]
+
+**请创建：**
+1. 销售流程阶段和标准
+2. 潜在客户资格框架（BANT、MEDDIC 等）
+3. 发现电话脚本
+4. 异议处理技巧
+5. 提案和成交策略
+6. CRM 工作流和自动化
+7. 销售指标和预测
+
+**输出：** 完整的销售流程，包含脚本和跟踪系统。`,
+      },
+    ],
+  },
+  "58": {
+    id: 58,
+    title: "Cold Email Outreach",
+    titleZh: "冷邮件外联",
+    category: "Sales",
+    tier: "Core",
+    description: "Master cold email outreach to generate leads and book meetings.",
+    descriptionZh: "掌握冷邮件外联以产生潜在客户并预订会议。",
+    steps: [
+      {
+        title: "Cold Email Strategy",
+        titleZh: "冷邮件策略",
+        description: "Create effective cold email campaigns that get responses.",
+        descriptionZh: "创建获得回复的有效冷邮件活动。",
+        prompt: `I want to use cold email to generate leads.
+
+**My Context:**
+- Target audience: [Who you're reaching out to]
+- Value proposition: [What you offer]
+- Goal: [Meetings, demos, sales]
+- Current results: [Open rate, reply rate if any]
+- Tools: [Email platform, automation]
+
+**My Challenges:**
+- Getting opens: [Subject lines]
+- Getting replies: [Email copy]
+- Avoiding spam: [Deliverability]
+
+**Please create:**
+1. Target list building strategy
+2. Email sequence structure (3-5 emails)
+3. Subject line formulas
+4. Email copy templates
+5. Personalization tactics
+6. Follow-up timing and cadence
+7. Deliverability best practices
+
+**Output:** Complete cold email system with templates and sequences.`,
+        promptZh: `我想使用冷邮件产生潜在客户。
+
+**我的背景：**
+- 目标受众：[你联系谁]
+- 价值主张：[你提供什么]
+- 目标：[会议、演示、销售]
+- 当前结果：[打开率、回复率（如有）]
+- 工具：[电子邮件平台、自动化]
+
+**我的挑战：**
+- 获得打开：[主题行]
+- 获得回复：[电子邮件文案]
+- 避免垃圾邮件：[可送达性]
+
+**请创建：**
+1. 目标列表构建策略
+2. 电子邮件序列结构（3-5 封电子邮件）
+3. 主题行公式
+4. 电子邮件文案模板
+5. 个性化策略
+6. 跟进时机和节奏
+7. 可送达性最佳实践
+
+**输出：** 完整的冷邮件系统，包含模板和序列。`,
+      },
+    ],
+  },
+  "59": {
+    id: 59,
+    title: "Team Building & Culture",
+    titleZh: "团队建设与文化",
+    category: "Operations",
+    tier: "Plus",
+    description: "Build a strong team culture that attracts and retains top talent.",
+    descriptionZh: "建立吸引和留住顶尖人才的强大团队文化。",
+    steps: [
+      {
+        title: "Culture Development Framework",
+        titleZh: "文化发展框架",
+        description: "Create and maintain a positive team culture.",
+        descriptionZh: "创建和维护积极的团队文化。",
+        prompt: `I want to build a strong team culture.
+
+**My Context:**
+- Team size: [Number of people]
+- Company stage: [Startup, growth, established]
+- Remote/hybrid/office: [Work arrangement]
+- Current culture: [What exists now]
+- Challenges: [Turnover, engagement, etc.]
+
+**My Goals:**
+- Desired culture: [Values and behaviors]
+- Team engagement: [Target level]
+- Retention: [Goal percentage]
+
+**Please create:**
+1. Core values definition and communication
+2. Hiring for culture fit
+3. Onboarding and integration process
+4. Team rituals and traditions
+5. Communication norms and practices
+6. Recognition and celebration systems
+7. Culture measurement and feedback
+
+**Output:** Complete team culture framework with implementation guide.`,
+        promptZh: `我想建立强大的团队文化。
+
+**我的背景：**
+- 团队规模：[人数]
+- 公司阶段：[初创、成长、成熟]
+- 远程/混合/办公室：[工作安排]
+- 当前文化：[现在存在什么]
+- 挑战：[流失、参与度等]
+
+**我的目标：**
+- 期望的文化：[价值观和行为]
+- 团队参与度：[目标水平]
+- 留存：[目标百分比]
+
+**请创建：**
+1. 核心价值观定义和沟通
+2. 招聘文化契合度
+3. 入职和整合流程
+4. 团队仪式和传统
+5. 沟通规范和实践
+6. 认可和庆祝系统
+7. 文化测量和反馈
+
+**输出：** 完整的团队文化框架，包含实施指南。`,
+      },
+    ],
+  },
+  "60": {
+    id: 60,
+    title: "Goal Setting & Achievement",
+    titleZh: "目标设定与实现",
+    category: "Productivity",
+    tier: "Core",
+    description: "Set and achieve meaningful goals with a proven framework.",
+    descriptionZh: "使用经过验证的框架设定和实现有意义的目标。",
+    steps: [
+      {
+        title: "Goal Framework & Execution",
+        titleZh: "目标框架与执行",
+        description: "Create a system for setting and achieving goals.",
+        descriptionZh: "创建设定和实现目标的系统。",
+        prompt: `I want to set and achieve my goals effectively.
+
+**My Context:**
+- Goal areas: [Career, health, finance, relationships, etc.]
+- Timeline: [Short-term, long-term]
+- Past experience: [What worked/didn't work]
+- Accountability: [Solo or with support]
+- Obstacles: [What holds you back]
+
+**My Goals:**
+- Specific goals: [List 3-5 main goals]
+- Why they matter: [Motivation]
+- Success criteria: [How you'll know you achieved them]
+
+**Please create:**
+1. SMART goal framework
+2. Goal breakdown (yearly → quarterly → monthly → weekly)
+3. Action planning templates
+4. Progress tracking system
+5. Obstacle anticipation and solutions
+6. Accountability mechanisms
+7. Review and adjustment process
+
+**Output:** Complete goal achievement system with templates and tracking.`,
+        promptZh: `我想有效地设定和实现我的目标。
+
+**我的背景：**
+- 目标领域：[职业、健康、财务、关系等]
+- 时间表：[短期、长期]
+- 过去的经验：[什么有效/无效]
+- 问责制：[独自或有支持]
+- 障碍：[什么阻碍你]
+
+**我的目标：**
+- 具体目标：[列出 3-5 个主要目标]
+- 为什么重要：[动机]
+- 成功标准：[你如何知道你实现了它们]
+
+**请创建：**
+1. SMART 目标框架
+2. 目标分解（年度 → 季度 → 月度 → 周度）
+3. 行动规划模板
+4. 进度跟踪系统
+5. 障碍预期和解决方案
+6. 问责机制
+7. 审查和调整流程
+
+**输出：** 完整的目标实现系统，包含模板和跟踪。`,
+      },
+    ],
+  },
 };
