@@ -20,16 +20,17 @@ export async function POST(req: NextRequest) {
     // }
 
     const body = await req.json();
-    const { title, description, tier, category, content, tags } = body;
+    const { title, description, tier, category, content, slug, releaseDate } = body;
 
     const workflow = await prisma.workflow.create({
       data: {
+        slug: slug || title.toLowerCase().replace(/\s+/g, "-"),
         title,
         description,
         tier,
         category,
         content,
-        tags: tags || [],
+        releaseDate: releaseDate ? new Date(releaseDate) : new Date(),
         published: true,
       },
     });
