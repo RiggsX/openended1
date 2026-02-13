@@ -2,10 +2,11 @@ import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 
-export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
+export async function GET(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   try {
+    const { id } = await params;
     const workflow = await prisma.workflow.findUnique({
-      where: { id: params.id },
+      where: { id },
     });
 
     if (!workflow) {
