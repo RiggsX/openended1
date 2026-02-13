@@ -8067,4 +8067,652 @@ Output:** Complete blog writing system with templates and workflows.`,
       },
     ],
   },
+  "81": {
+    id: 81,
+    title: "Customer Journey Mapping",
+    titleZh: "客户旅程映射",
+    category: "Marketing",
+    tier: "Plus",
+    description: "Map and optimize every touchpoint in your customer's journey.",
+    descriptionZh: "映射和优化客户旅程中的每个接触点。",
+    steps: [
+      {
+        title: "Journey Mapping Framework",
+        titleZh: "旅程映射框架",
+        description: "Understand and improve the customer experience.",
+        descriptionZh: "理解和改进客户体验。",
+        prompt: `I want to map my customer journey.
+
+**My Context:**
+- Business type: [E-commerce, SaaS, service, etc.]
+- Customer segments: [Who your customers are]
+- Current touchpoints: [Website, email, support, etc.]
+- Pain points: [Where customers struggle]
+- Goals: [Improve conversion, retention, satisfaction]
+
+**My Data:**
+- Analytics: [What you track now]
+- Customer feedback: [What you hear]
+- Drop-off points: [Where customers leave]
+
+**Please create:**
+1. Customer journey stages (awareness → advocacy)
+2. Touchpoint inventory and analysis
+3. Customer emotions and pain points at each stage
+4. Opportunity identification
+5. Experience optimization strategies
+6. Metrics and measurement framework
+7. Implementation roadmap
+
+**Output:** Complete customer journey map with optimization plan.`,
+        promptZh: `我想映射我的客户旅程。
+
+**我的背景：**
+- 业务类型：[电子商务、SaaS、服务等]
+- 客户细分：[你的客户是谁]
+- 当前接触点：[网站、电子邮件、支持等]
+- 痛点：[客户在哪里挣扎]
+- 目标：[改进转化、留存、满意度]
+
+**我的数据：**
+- 分析：[你现在跟踪什么]
+- 客户反馈：[你听到什么]
+- 流失点：[客户在哪里离开]
+
+**请创建：**
+1. 客户旅程阶段（意识 → 倡导）
+2. 接触点清单和分析
+3. 每个阶段的客户情绪和痛点
+4. 机会识别
+5. 体验优化策略
+6. 指标和测量框架
+7. 实施路线图
+
+**输出：** 完整的客户旅程地图，包含优化计划。`,
+      },
+    ],
+  },
+  "82": {
+    id: 82,
+    title: "Retention & Loyalty Strategy",
+    titleZh: "留存与忠诚度策略",
+    category: "Marketing",
+    tier: "Plus",
+    description: "Keep customers coming back and turn them into advocates.",
+    descriptionZh: "让客户回头并将他们变成倡导者。",
+    steps: [
+      {
+        title: "Customer Retention Framework",
+        titleZh: "客户留存框架",
+        description: "Build systems to retain and delight customers.",
+        descriptionZh: "建立留存和取悦客户的系统。",
+        prompt: `I want to improve customer retention.
+
+**My Context:**
+- Business model: [Subscription, one-time, repeat purchase]
+- Current retention rate: [Percentage]
+- Churn reasons: [Why customers leave]
+- Customer lifetime value: [Average CLV]
+- Competition: [How easy to switch]
+
+**My Goals:**
+- Target retention rate: [Goal percentage]
+- Repeat purchase rate: [For non-subscription]
+- Referral rate: [Word-of-mouth]
+
+**Please create:**
+1. Retention metrics and benchmarks
+2. Onboarding optimization
+3. Engagement and activation strategies
+4. Win-back campaigns for churned customers
+5. Loyalty program design
+6. Customer success framework
+7. Referral and advocacy programs
+
+**Output:** Complete retention strategy with tactics and metrics.`,
+        promptZh: `我想改进客户留存。
+
+**我的背景：**
+- 商业模式：[订阅、一次性、重复购买]
+- 当前留存率：[百分比]
+- 流失原因：[客户为什么离开]
+- 客户终身价值：[平均 CLV]
+- 竞争：[切换有多容易]
+
+**我的目标：**
+- 目标留存率：[目标百分比]
+- 重复购买率：[对于非订阅]
+- 推荐率：[口碑]
+
+**请创建：**
+1. 留存指标和基准
+2. 入职优化
+3. 参与和激活策略
+4. 流失客户的赢回活动
+5. 忠诚度计划设计
+6. 客户成功框架
+7. 推荐和倡导计划
+
+**输出：** 完整的留存策略，包含策略和指标。`,
+      },
+    ],
+  },
+  "83": {
+    id: 83,
+    title: "Data-Driven Decision Making",
+    titleZh: "数据驱动决策",
+    category: "Analytics",
+    tier: "Plus",
+    description: "Make better decisions using data and analytics.",
+    descriptionZh: "使用数据和分析做出更好的决策。",
+    steps: [
+      {
+        title: "Analytics Framework",
+        titleZh: "分析框架",
+        description: "Build a data-driven decision-making process.",
+        descriptionZh: "建立数据驱动的决策流程。",
+        prompt: `I want to make more data-driven decisions.
+
+**My Context:**
+- Business/role: [What you do]
+- Current data: [What you track]
+- Tools: [Analytics platforms, spreadsheets, etc.]
+- Data literacy: [Your comfort level]
+- Decision types: [What you need to decide]
+
+**My Challenges:**
+- Data quality: [Accuracy, completeness]
+- Analysis skills: [What you struggle with]
+- Action: [Turning insights into decisions]
+
+**Please create:**
+1. Key metrics framework (North Star, KPIs)
+2. Data collection and tracking setup
+3. Analysis techniques for common questions
+4. Dashboard design principles
+5. A/B testing framework
+6. Decision-making process with data
+7. Avoiding common data pitfalls
+
+**Output:** Complete data-driven decision framework with templates.`,
+        promptZh: `我想做出更多数据驱动的决策。
+
+**我的背景：**
+- 业务/角色：[你做什么]
+- 当前数据：[你跟踪什么]
+- 工具：[分析平台、电子表格等]
+- 数据素养：[你的舒适度]
+- 决策类型：[你需要决定什么]
+
+**我的挑战：**
+- 数据质量：[准确性、完整性]
+- 分析技能：[你挣扎的地方]
+- 行动：[将洞察转化为决策]
+
+**请创建：**
+1. 关键指标框架（北极星、KPI）
+2. 数据收集和跟踪设置
+3. 常见问题的分析技巧
+4. 仪表板设计原则
+5. A/B 测试框架
+6. 使用数据的决策流程
+7. 避免常见的数据陷阱
+
+**输出：** 完整的数据驱动决策框架，包含模板。`,
+      },
+    ],
+  },
+  "84": {
+    id: 84,
+    title: "Performance Tracking System",
+    titleZh: "性能跟踪系统",
+    category: "Analytics",
+    tier: "Core",
+    description: "Track what matters and measure progress toward your goals.",
+    descriptionZh: "跟踪重要的事情并衡量实现目标的进度。",
+    steps: [
+      {
+        title: "Metrics & Tracking Framework",
+        titleZh: "指标与跟踪框架",
+        description: "Build a system to measure and improve performance.",
+        descriptionZh: "建立测量和改进性能的系统。",
+        prompt: `I want to track my performance better.
+
+**My Context:**
+- What to track: [Business, personal, health, etc.]
+- Current tracking: [What you measure now]
+- Goals: [What you want to achieve]
+- Time horizon: [Daily, weekly, monthly, yearly]
+- Tools: [Apps, spreadsheets, notebooks]
+
+**My Challenges:**
+- Too many metrics: [Overwhelmed]
+- Not tracking: [Inconsistent]
+- Not using data: [Track but don't act]
+
+**Please create:**
+1. Goal-aligned metrics selection
+2. Leading vs lagging indicators
+3. Tracking systems and tools
+4. Review cadence and rituals
+5. Visualization and dashboards
+6. Progress analysis and insights
+7. Adjustment and iteration process
+
+**Output:** Complete performance tracking system with templates.`,
+        promptZh: `我想更好地跟踪我的性能。
+
+**我的背景：**
+- 要跟踪什么：[业务、个人、健康等]
+- 当前跟踪：[你现在测量什么]
+- 目标：[你想实现什么]
+- 时间范围：[每日、每周、每月、每年]
+- 工具：[应用、电子表格、笔记本]
+
+**我的挑战：**
+- 太多指标：[不知所措]
+- 不跟踪：[不一致]
+- 不使用数据：[跟踪但不行动]
+
+**请创建：**
+1. 目标对齐的指标选择
+2. 领先 vs 滞后指标
+3. 跟踪系统和工具
+4. 审查节奏和仪式
+5. 可视化和仪表板
+6. 进度分析和洞察
+7. 调整和迭代流程
+
+**输出：** 完整的性能跟踪系统，包含模板。`,
+      },
+    ],
+  },
+  "85": {
+    id: 85,
+    title: "Conversion Rate Optimization",
+    titleZh: "转化率优化",
+    category: "Marketing",
+    tier: "Plus",
+    description: "Systematically improve conversion rates across your funnel.",
+    descriptionZh: "系统地改进整个漏斗的转化率。",
+    steps: [
+      {
+        title: "CRO Framework",
+        titleZh: "CRO 框架",
+        description: "Optimize conversions with testing and iteration.",
+        descriptionZh: "通过测试和迭代优化转化。",
+        prompt: `I want to improve my conversion rates.
+
+**My Context:**
+- Conversion goal: [Sign-up, purchase, lead, etc.]
+- Current rate: [Percentage]
+- Traffic volume: [Monthly visitors]
+- Funnel stages: [Awareness → conversion]
+- Tools: [Analytics, testing platforms]
+
+**My Challenges:**
+- Biggest drop-off: [Where people leave]
+- Testing: [Not doing it or not systematic]
+- Prioritization: [What to test first]
+
+**Please create:**
+1. Conversion funnel analysis
+2. Hypothesis generation framework
+3. A/B testing prioritization (ICE score)
+4. Test design and execution
+5. Copywriting and design optimization
+6. User research and feedback integration
+7. CRO roadmap and process
+
+**Output:** Complete CRO system with testing framework and playbook.`,
+        promptZh: `我想改进我的转化率。
+
+**我的背景：**
+- 转化目标：[注册、购买、潜在客户等]
+- 当前率：[百分比]
+- 流量：[月度访客]
+- 漏斗阶段：[意识 → 转化]
+- 工具：[分析、测试平台]
+
+**我的挑战：**
+- 最大流失：[人们在哪里离开]
+- 测试：[不做或不系统]
+- 优先级排序：[首先测试什么]
+
+**请创建：**
+1. 转化漏斗分析
+2. 假设生成框架
+3. A/B 测试优先级排序（ICE 分数）
+4. 测试设计和执行
+5. 文案和设计优化
+6. 用户研究和反馈整合
+7. CRO 路线图和流程
+
+**输出：** 完整的 CRO 系统，包含测试框架和手册。`,
+      },
+    ],
+  },
+  "86": {
+    id: 86,
+    title: "Automation & AI Integration",
+    titleZh: "自动化与 AI 集成",
+    category: "Technology",
+    tier: "Pro",
+    description: "Leverage automation and AI to scale your work and business.",
+    descriptionZh: "利用自动化和 AI 扩展你的工作和业务。",
+    steps: [
+      {
+        title: "Automation Strategy",
+        titleZh: "自动化策略",
+        description: "Identify and implement automation opportunities.",
+        descriptionZh: "识别和实施自动化机会。",
+        prompt: `I want to automate and use AI in my work.
+
+**My Context:**
+- Business/role: [What you do]
+- Current manual tasks: [What takes time]
+- Tech comfort: [Beginner, intermediate, advanced]
+- Budget: [For tools and services]
+- Goals: [Save time, scale, reduce errors]
+
+**My Opportunities:**
+- Repetitive tasks: [What you do over and over]
+- Data processing: [Manual data work]
+- Communication: [Emails, messages, etc.]
+
+**Please create:**
+1. Automation audit and opportunity mapping
+2. No-code/low-code automation tools
+3. AI use cases for your context
+4. Workflow automation design
+5. Integration and setup guide
+6. ROI calculation and prioritization
+7. Maintenance and optimization
+
+**Output:** Complete automation strategy with implementation roadmap.`,
+        promptZh: `我想在我的工作中自动化和使用 AI。
+
+**我的背景：**
+- 业务/角色：[你做什么]
+- 当前手动任务：[什么花费时间]
+- 技术舒适度：[初学者、中级、高级]
+- 预算：[用于工具和服务]
+- 目标：[节省时间、扩展、减少错误]
+
+**我的机会：**
+- 重复任务：[你一遍又一遍做什么]
+- 数据处理：[手动数据工作]
+- 沟通：[电子邮件、消息等]
+
+**请创建：**
+1. 自动化审计和机会映射
+2. 无代码/低代码自动化工具
+3. 你的背景的 AI 用例
+4. 工作流自动化设计
+5. 集成和设置指南
+6. ROI 计算和优先级排序
+7. 维护和优化
+
+**输出：** 完整的自动化策略，包含实施路线图。`,
+      },
+    ],
+  },
+  "87": {
+    id: 87,
+    title: "Systems Thinking & Optimization",
+    titleZh: "系统思维与优化",
+    category: "Strategy",
+    tier: "Pro",
+    description: "Think in systems and optimize for long-term success.",
+    descriptionZh: "以系统思维并优化长期成功。",
+    steps: [
+      {
+        title: "Systems Design Framework",
+        titleZh: "系统设计框架",
+        description: "Build and optimize systems for sustainable growth.",
+        descriptionZh: "建立和优化可持续增长的系统。",
+        prompt: `I want to think more systematically.
+
+**My Context:**
+- Domain: [Business, life, projects, etc.]
+- Current approach: [Ad-hoc or systematic]
+- Challenges: [Firefighting, inefficiency, scaling]
+- Goals: [Sustainability, scalability, efficiency]
+
+**My Systems:**
+- Existing systems: [What you have now]
+- Pain points: [What breaks or bottlenecks]
+- Desired outcomes: [What good looks like]
+
+**Please create:**
+1. Systems thinking fundamentals
+2. System mapping and visualization
+3. Leverage points identification
+4. Feedback loops and dynamics
+5. Bottleneck analysis and resolution
+6. System optimization strategies
+7. Long-term system maintenance
+
+**Output:** Complete systems thinking framework with optimization guide.`,
+        promptZh: `我想更系统地思考。
+
+**我的背景：**
+- 领域：[业务、生活、项目等]
+- 当前方法：[临时或系统]
+- 挑战：[救火、低效、扩展]
+- 目标：[可持续性、可扩展性、效率]
+
+**我的系统：**
+- 现有系统：[你现在有什么]
+- 痛点：[什么崩溃或瓶颈]
+- 期望的结果：[好的样子]
+
+**请创建：**
+1. 系统思维基础
+2. 系统映射和可视化
+3. 杠杆点识别
+4. 反馈循环和动态
+5. 瓶颈分析和解决
+6. 系统优化策略
+7. 长期系统维护
+
+**输出：** 完整的系统思维框架，包含优化指南。`,
+      },
+    ],
+  },
+  "88": {
+    id: 88,
+    title: "Scalable Business Systems",
+    titleZh: "可扩展业务系统",
+    category: "Operations",
+    tier: "Pro",
+    description: "Build business systems that scale without breaking.",
+    descriptionZh: "建立不会崩溃的可扩展业务系统。",
+    steps: [
+      {
+        title: "Business Scaling Framework",
+        titleZh: "业务扩展框架",
+        description: "Design systems for sustainable business growth.",
+        descriptionZh: "为可持续业务增长设计系统。",
+        prompt: `I want to scale my business systematically.
+
+**My Context:**
+- Business stage: [Early, growth, scaling]
+- Current revenue: [Range]
+- Team size: [Number of people]
+- Growth goals: [Target growth rate]
+- Constraints: [Time, money, people]
+
+**My Challenges:**
+- Bottlenecks: [What limits growth]
+- Manual processes: [What doesn't scale]
+- Quality control: [Maintaining standards]
+
+**Please create:**
+1. Scalability audit
+2. Process documentation and SOPs
+3. Team structure and delegation
+4. Technology and tool stack
+5. Quality assurance systems
+6. Financial systems and controls
+7. Growth roadmap and milestones
+
+**Output:** Complete business scaling system with implementation plan.`,
+        promptZh: `我想系统地扩展我的业务。
+
+**我的背景：**
+- 业务阶段：[早期、成长、扩展]
+- 当前收入：[范围]
+- 团队规模：[人数]
+- 增长目标：[目标增长率]
+- 约束：[时间、金钱、人]
+
+**我的挑战：**
+- 瓶颈：[什么限制增长]
+- 手动流程：[什么不能扩展]
+- 质量控制：[维持标准]
+
+**请创建：**
+1. 可扩展性审计
+2. 流程文档和 SOP
+3. 团队结构和委派
+4. 技术和工具堆栈
+5. 质量保证系统
+6. 财务系统和控制
+7. 增长路线图和里程碑
+
+**输出：** 完整的业务扩展系统，包含实施计划。`,
+      },
+    ],
+  },
+  "89": {
+    id: 89,
+    title: "Strategic Planning Framework",
+    titleZh: "战略规划框架",
+    category: "Strategy",
+    tier: "Pro",
+    description: "Create and execute strategic plans for long-term success.",
+    descriptionZh: "创建和执行长期成功的战略计划。",
+    steps: [
+      {
+        title: "Strategy Development",
+        titleZh: "战略发展",
+        description: "Build comprehensive strategic plans.",
+        descriptionZh: "建立全面的战略计划。",
+        prompt: `I need to create a strategic plan.
+
+**My Context:**
+- Organization: [Business, team, personal]
+- Current state: [Where you are now]
+- Vision: [Where you want to be]
+- Time horizon: [1 year, 3 years, 5 years]
+- Resources: [What you have to work with]
+
+**My Challenges:**
+- Clarity: [Unclear direction]
+- Execution: [Strategy-execution gap]
+- Alignment: [Getting everyone on board]
+
+**Please create:**
+1. Vision and mission definition
+2. SWOT and competitive analysis
+3. Strategic objectives and goals
+4. Strategy formulation and options
+5. Execution roadmap and initiatives
+6. Resource allocation framework
+7. Monitoring and adjustment process
+
+**Output:** Complete strategic planning framework with execution guide.`,
+        promptZh: `我需要创建战略计划。
+
+**我的背景：**
+- 组织：[业务、团队、个人]
+- 当前状态：[你现在在哪里]
+- 愿景：[你想去哪里]
+- 时间范围：[1 年、3 年、5 年]
+- 资源：[你有什么可以使用]
+
+**我的挑战：**
+- 清晰度：[不清楚的方向]
+- 执行：[战略-执行差距]
+- 对齐：[让每个人都参与]
+
+**请创建：**
+1. 愿景和使命定义
+2. SWOT 和竞争分析
+3. 战略目标和目标
+4. 战略制定和选项
+5. 执行路线图和举措
+6. 资源分配框架
+7. 监控和调整流程
+
+**输出：** 完整的战略规划框架，包含执行指南。`,
+      },
+    ],
+  },
+  "90": {
+    id: 90,
+    title: "Innovation & Experimentation System",
+    titleZh: "创新与实验系统",
+    category: "Strategy",
+    tier: "Pro",
+    description: "Build a culture and system for continuous innovation.",
+    descriptionZh: "建立持续创新的文化和系统。",
+    steps: [
+      {
+        title: "Innovation Framework",
+        titleZh: "创新框架",
+        description: "Systematize innovation and experimentation.",
+        descriptionZh: "系统化创新和实验。",
+        prompt: `I want to innovate more systematically.
+
+**My Context:**
+- Organization: [Business, team, personal projects]
+- Current innovation: [Ad-hoc or systematic]
+- Risk tolerance: [Conservative or aggressive]
+- Resources: [Time, budget for experiments]
+- Goals: [New products, improvements, disruption]
+
+**My Challenges:**
+- Idea generation: [Not enough ideas]
+- Execution: [Ideas don't get tested]
+- Learning: [Not learning from failures]
+
+**Please create:**
+1. Innovation pipeline and stages
+2. Idea generation and collection system
+3. Rapid experimentation framework
+4. Validation and testing methods
+5. Learning from failures
+6. Scaling successful experiments
+7. Innovation metrics and culture
+
+**Output:** Complete innovation system with experimentation playbook.`,
+        promptZh: `我想更系统地创新。
+
+**我的背景：**
+- 组织：[业务、团队、个人项目]
+- 当前创新：[临时或系统]
+- 风险承受能力：[保守或激进]
+- 资源：[时间、实验预算]
+- 目标：[新产品、改进、颠覆]
+
+**我的挑战：**
+- 想法生成：[想法不够]
+- 执行：[想法没有被测试]
+- 学习：[不从失败中学习]
+
+**请创建：**
+1. 创新管道和阶段
+2. 想法生成和收集系统
+3. 快速实验框架
+4. 验证和测试方法
+5. 从失败中学习
+6. 扩展成功的实验
+7. 创新指标和文化
+
+**输出：** 完整的创新系统，包含实验手册。`,
+      },
+    ],
+  },
 };
