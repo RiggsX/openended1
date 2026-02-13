@@ -34,11 +34,13 @@ export async function POST(req: NextRequest) {
       }
 
       // Create or update subscription
+      const subscriptionId = data.id || `creem_${Date.now()}`;
+
       await prisma.subscription.upsert({
-        where: { userId: user.id },
+        where: { paypalSubscriptionId: subscriptionId },
         create: {
           userId: user.id,
-          paypalSubscriptionId: data.id || `creem_${Date.now()}`,
+          paypalSubscriptionId: subscriptionId,
           paypalPlanId: `${tier}_${interval}`,
           tier,
           interval,
