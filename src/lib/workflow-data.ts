@@ -7087,4 +7087,331 @@ Output:** Complete blog writing system with templates and workflows.`,
       },
     ],
   },
+  "66": {
+    id: 66,
+    title: "Negotiation Strategy",
+    titleZh: "谈判策略",
+    category: "Communication",
+    tier: "Plus",
+    description: "Master negotiation tactics for better deals and outcomes.",
+    descriptionZh: "掌握谈判策略以获得更好的交易和结果。",
+    steps: [
+      {
+        title: "Negotiation Framework",
+        titleZh: "谈判框架",
+        description: "Develop effective negotiation skills for any situation.",
+        descriptionZh: "为任何情况发展有效的谈判技能。",
+        prompt: `I want to improve my negotiation skills.
+
+**My Context:**
+- Negotiation types: [Salary, contracts, deals, etc.]
+- Experience level: [Beginner, intermediate, advanced]
+- Upcoming negotiations: [What you're facing]
+- Comfort level: [Confident or nervous]
+- Past results: [What worked/didn't work]
+
+**My Goals:**
+- Desired outcomes: [What you want to achieve]
+- Relationship importance: [One-time or long-term]
+- BATNA: [Best alternative if negotiation fails]
+
+**Please create:**
+1. Pre-negotiation preparation framework
+2. Research and information gathering
+3. Opening strategies and anchoring
+4. Concession tactics and trade-offs
+5. Handling objections and pushback
+6. Closing techniques
+7. Post-negotiation follow-up
+
+**Output:** Complete negotiation system with scripts and strategies.`,
+        promptZh: `我想提高我的谈判技能。
+
+**我的背景：**
+- 谈判类型：[薪资、合同、交易等]
+- 经验水平：[初学者、中级、高级]
+- 即将进行的谈判：[你面临什么]
+- 舒适度：[自信或紧张]
+- 过去的结果：[什么有效/无效]
+
+**我的目标：**
+- 期望的结果：[你想实现什么]
+- 关系重要性：[一次性或长期]
+- BATNA：[谈判失败时的最佳替代方案]
+
+**请创建：**
+1. 谈判前准备框架
+2. 研究和信息收集
+3. 开场策略和锚定
+4. 让步策略和权衡
+5. 处理异议和反击
+6. 成交技巧
+7. 谈判后跟进
+
+**输出：** 完整的谈判系统，包含脚本和策略。`,
+      },
+    ],
+  },
+  "67": {
+    id: 67,
+    title: "Personal Branding Strategy",
+    titleZh: "个人品牌策略",
+    category: "Marketing",
+    tier: "Plus",
+    description: "Build a strong personal brand that opens doors and creates opportunities.",
+    descriptionZh: "建立强大的个人品牌，打开大门并创造机会。",
+    steps: [
+      {
+        title: "Brand Development Framework",
+        titleZh: "品牌发展框架",
+        description: "Create and communicate your unique personal brand.",
+        descriptionZh: "创建和传达你独特的个人品牌。",
+        prompt: `I want to build my personal brand.
+
+**My Context:**
+- Industry/field: [Where you work]
+- Current visibility: [Known or unknown]
+- Target audience: [Who you want to reach]
+- Goals: [Career, business, influence, etc.]
+- Unique strengths: [What makes you different]
+
+**My Assets:**
+- Expertise: [What you know well]
+- Experience: [What you've done]
+- Values: [What you stand for]
+- Story: [Your journey]
+
+**Please create:**
+1. Brand positioning and differentiation
+2. Personal brand statement
+3. Content pillars and themes
+4. Visual identity guidelines
+5. Platform strategy (LinkedIn, Twitter, etc.)
+6. Content creation system
+7. Networking and visibility tactics
+
+**Output:** Complete personal branding strategy with implementation plan.`,
+        promptZh: `我想建立我的个人品牌。
+
+**我的背景：**
+- 行业/领域：[你工作的地方]
+- 当前可见性：[知名或未知]
+- 目标受众：[你想接触谁]
+- 目标：[职业、商业、影响力等]
+- 独特优势：[什么使你与众不同]
+
+**我的资产：**
+- 专长：[你很了解什么]
+- 经验：[你做过什么]
+- 价值观：[你代表什么]
+- 故事：[你的旅程]
+
+**请创建：**
+1. 品牌定位和差异化
+2. 个人品牌声明
+3. 内容支柱和主题
+4. 视觉识别指南
+5. 平台策略（LinkedIn、Twitter 等）
+6. 内容创作系统
+7. 人脉拓展和可见性策略
+
+**输出：** 完整的个人品牌策略，包含实施计划。`,
+      },
+    ],
+  },
+  "68": {
+    id: 68,
+    title: "Landing Page Optimization",
+    titleZh: "着陆页优化",
+    category: "Marketing",
+    tier: "Plus",
+    description: "Create high-converting landing pages that turn visitors into customers.",
+    descriptionZh: "创建将访客转化为客户的高转化率着陆页。",
+    steps: [
+      {
+        title: "Landing Page Strategy",
+        titleZh: "着陆页策略",
+        description: "Design and optimize landing pages for maximum conversions.",
+        descriptionZh: "设计和优化着陆页以实现最大转化。",
+        prompt: `I need to create or improve my landing page.
+
+**My Context:**
+- Product/service: [What you're selling]
+- Target audience: [Who you're targeting]
+- Traffic source: [Ads, organic, email, etc.]
+- Current conversion rate: [If existing]
+- Goal: [Sign-ups, sales, downloads, etc.]
+
+**My Challenges:**
+- Main issues: [Bounce rate, low conversions, etc.]
+- Budget: [For design, tools, testing]
+- Technical skills: [DIY or need help]
+
+**Please create:**
+1. Landing page structure and elements
+2. Headline and copy formulas
+3. Value proposition clarity
+4. Social proof and trust signals
+5. CTA optimization
+6. A/B testing framework
+7. Mobile optimization checklist
+
+**Output:** Complete landing page optimization guide with templates.`,
+        promptZh: `我需要创建或改进我的着陆页。
+
+**我的背景：**
+- 产品/服务：[你卖什么]
+- 目标受众：[你针对谁]
+- 流量来源：[广告、自然、电子邮件等]
+- 当前转化率：[如果存在]
+- 目标：[注册、销售、下载等]
+
+**我的挑战：**
+- 主要问题：[跳出率、低转化等]
+- 预算：[用于设计、工具、测试]
+- 技术技能：[DIY 或需要帮助]
+
+**请创建：**
+1. 着陆页结构和元素
+2. 标题和文案公式
+3. 价值主张清晰度
+4. 社会证明和信任信号
+5. CTA 优化
+6. A/B 测试框架
+7. 移动优化清单
+
+**输出：** 完整的着陆页优化指南，包含模板。`,
+      },
+    ],
+  },
+  "69": {
+    id: 69,
+    title: "SEO Content Strategy",
+    titleZh: "SEO 内容策略",
+    category: "Marketing",
+    tier: "Plus",
+    description: "Create content that ranks in search engines and drives organic traffic.",
+    descriptionZh: "创建在搜索引擎中排名并推动自然流量的内容。",
+    steps: [
+      {
+        title: "SEO Framework & Execution",
+        titleZh: "SEO 框架与执行",
+        description: "Build an SEO content strategy that gets results.",
+        descriptionZh: "建立获得结果的 SEO 内容策略。",
+        prompt: `I want to improve my SEO and organic traffic.
+
+**My Context:**
+- Website/blog: [What you have]
+- Current traffic: [Monthly visitors]
+- Niche/industry: [What you write about]
+- Competition: [High or low]
+- Goals: [Traffic targets, rankings]
+
+**My Resources:**
+- Content team: [Solo or team]
+- Budget: [For tools, links, etc.]
+- Technical SEO: [Current state]
+
+**Please create:**
+1. Keyword research framework
+2. Content gap analysis
+3. On-page SEO checklist
+4. Content structure for ranking
+5. Internal linking strategy
+6. Backlink building tactics
+7. Performance tracking and optimization
+
+**Output:** Complete SEO content strategy with implementation guide.`,
+        promptZh: `我想改进我的 SEO 和自然流量。
+
+**我的背景：**
+- 网站/博客：[你有什么]
+- 当前流量：[月度访客]
+- 细分市场/行业：[你写什么]
+- 竞争：[高或低]
+- 目标：[流量目标、排名]
+
+**我的资源：**
+- 内容团队：[独自或团队]
+- 预算：[用于工具、链接等]
+- 技术 SEO：[当前状态]
+
+**请创建：**
+1. 关键词研究框架
+2. 内容差距分析
+3. 页面 SEO 清单
+4. 排名的内容结构
+5. 内部链接策略
+6. 反向链接建设策略
+7. 性能跟踪和优化
+
+**输出：** 完整的 SEO 内容策略，包含实施指南。`,
+      },
+    ],
+  },
+  "70": {
+    id: 70,
+    title: "Paid Ads Strategy (Facebook/Google)",
+    titleZh: "付费广告策略（Facebook/Google）",
+    category: "Marketing",
+    tier: "Plus",
+    description: "Run profitable paid advertising campaigns on major platforms.",
+    descriptionZh: "在主要平台上运行盈利的付费广告活动。",
+    steps: [
+      {
+        title: "Paid Advertising Framework",
+        titleZh: "付费广告框架",
+        description: "Create and optimize paid ad campaigns that deliver ROI.",
+        descriptionZh: "创建和优化提供 ROI 的付费广告活动。",
+        prompt: `I want to run profitable paid ads.
+
+**My Context:**
+- Platform: [Facebook, Google, both]
+- Product/service: [What you're selling]
+- Budget: [Monthly ad spend]
+- Target audience: [Who you're targeting]
+- Current results: [If running ads already]
+
+**My Goals:**
+- Objective: [Awareness, leads, sales]
+- Target CPA/ROAS: [Cost per acquisition or return on ad spend]
+- Scale plans: [How big you want to go]
+
+**Please create:**
+1. Campaign structure and strategy
+2. Audience targeting and segmentation
+3. Ad creative guidelines (copy + visuals)
+4. Landing page alignment
+5. Bidding and budget optimization
+6. A/B testing framework
+7. Scaling and optimization tactics
+
+**Output:** Complete paid ads strategy with campaign setup guide.`,
+        promptZh: `我想运行盈利的付费广告。
+
+**我的背景：**
+- 平台：[Facebook、Google、两者]
+- 产品/服务：[你卖什么]
+- 预算：[月度广告支出]
+- 目标受众：[你针对谁]
+- 当前结果：[如果已经在运行广告]
+
+**我的目标：**
+- 目标：[意识、潜在客户、销售]
+- 目标 CPA/ROAS：[每次获取成本或广告支出回报]
+- 扩展计划：[你想做多大]
+
+**请创建：**
+1. 活动结构和策略
+2. 受众定位和细分
+3. 广告创意指南（文案 + 视觉）
+4. 着陆页对齐
+5. 出价和预算优化
+6. A/B 测试框架
+7. 扩展和优化策略
+
+**输出：** 完整的付费广告策略，包含活动设置指南。`,
+      },
+    ],
+  },
 };
