@@ -55,7 +55,7 @@ export default function FAQPage() {
                   className="w-full text-left card-minimal p-6 rounded"
                 >
                   <div className="flex items-start justify-between gap-4">
-                    <h3 className="text-lg font-normal pr-8">{faq.q}</h3>
+                    <h3 className="text-lg font-normal pr-8">{faq.question}</h3>
                     <motion.div
                       animate={{ rotate: openIndex === i ? 45 : 0 }}
                       transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -78,7 +78,7 @@ export default function FAQPage() {
                         className="overflow-hidden"
                       >
                         <div className="pt-4 border-t border-white/[0.06] mt-4">
-                          <p className="text-body text-white/60 leading-relaxed">{faq.a}</p>
+                          <p className="text-body text-white/60 leading-relaxed">{faq.answer}</p>
                         </div>
                       </motion.div>
                     )}
