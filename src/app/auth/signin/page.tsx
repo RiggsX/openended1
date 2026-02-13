@@ -56,29 +56,15 @@ export default function SignInPage() {
     setLoading(true);
 
     try {
-      const res = await fetch("/api/auth/verify-code", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, code }),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        setError(data.error || t("auth.signin.errors.invalidCredentials"));
-        setLoading(false);
-        return;
-      }
-
-      // 验证成功，使用 credentials 登录
+      // 直接使用 NextAuth credentials 登录（会在 auth.ts 中验证验证码）
       const result = await signIn("credentials", {
         email,
-        code, // 使用验证码
+        code,
         redirect: false,
       });
 
       if (result?.error) {
-        setError(t("auth.signin.errors.loginFailed"));
+        setError(t("auth.signin.errors.invalidCredentials"));
         setLoading(false);
         return;
       }
