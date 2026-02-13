@@ -10,7 +10,7 @@ interface PageProps {
 }
 
 export default async function WorkflowDetailPage({ params }: PageProps) {
-  const { id } = params;
+  const { id } = await params;
   const workflow = workflowData[id];
 
   // 检查工作流是否存在

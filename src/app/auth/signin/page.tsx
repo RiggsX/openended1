@@ -5,9 +5,11 @@ import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { SlowFade } from "@/components/motion/slow-fade";
+import { useI18n } from "@/lib/i18n";
 
 export default function SignInPage() {
   const router = useRouter();
+  const { t } = useI18n();
   const [isRegister, setIsRegister] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -32,7 +34,7 @@ export default function SignInPage() {
         const data = await res.json();
 
         if (!res.ok) {
-          setError(data.error || "Registration failed");
+          setError(data.error || t("auth.signin.errors.registrationFailed"));
           setLoading(false);
           return;
         }
@@ -47,7 +49,9 @@ export default function SignInPage() {
 
       if (result?.error) {
         setError(
-          isRegister ? "Registration succeeded but login failed" : "Invalid email or password",
+          isRegister
+            ? t("auth.signin.errors.loginFailed")
+            : t("auth.signin.errors.invalidCredentials"),
         );
         setLoading(false);
         return;
@@ -55,7 +59,7 @@ export default function SignInPage() {
 
       router.push("/dashboard");
     } catch {
-      setError("Something went wrong");
+      setError(t("auth.signin.errors.somethingWrong"));
       setLoading(false);
     }
   };
@@ -65,15 +69,13 @@ export default function SignInPage() {
       <div className="max-w-[400px] w-full">
         <SlowFade>
           <h1 className="text-[clamp(2rem,5vw,3rem)] font-extralight text-foreground text-center mb-4">
-            {isRegister ? "Create Account" : "Sign In"}
+            {isRegister ? t("auth.signin.createTitle") : t("auth.signin.title")}
           </h1>
         </SlowFade>
 
         <SlowFade delay={0.1}>
           <p className="text-[15px] font-light text-muted text-center mb-12">
-            {isRegister
-              ? "Join OPENENDED to access premium workflows"
-              : "Access your workflows and manage your subscription"}
+            {isRegister ? t("auth.signin.createSubtitle") : t("auth.signin.subtitle")}
           </p>
         </SlowFade>
 
@@ -82,7 +84,7 @@ export default function SignInPage() {
             {isRegister ? (
               <input
                 type="text"
-                placeholder="Name"
+                placeholder={t("auth.signin.name")}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="w-full px-4 py-3 bg-transparent border border-border rounded-lg text-foreground placeholder:text-muted focus:outline-none focus:border-signal transition-colors"
@@ -91,7 +93,7 @@ export default function SignInPage() {
 
             <input
               type="email"
-              placeholder="Email"
+              placeholder={t("auth.signin.email")}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -100,7 +102,7 @@ export default function SignInPage() {
 
             <input
               type="password"
-              placeholder="Password"
+              placeholder={t("auth.signin.password")}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
@@ -111,12 +113,16 @@ export default function SignInPage() {
             {error ? <p className="text-red-500 text-sm text-center">{error}</p> : null}
 
             <Button type="submit" className="w-full" size="lg" disabled={loading}>
-              {loading ? "Loading..." : isRegister ? "Create Account" : "Sign In"}
+              {loading
+                ? t("auth.signin.loading")
+                : isRegister
+                  ? t("auth.signin.createButton")
+                  : t("auth.signin.signInButton")}
             </Button>
           </form>
 
           <p className="text-center text-sm text-muted mt-6">
-            {isRegister ? "Already have an account?" : "Don't have an account?"}{" "}
+            {isRegister ? t("auth.signin.alreadyHaveAccount") : t("auth.signin.noAccount")}{" "}
             <button
               onClick={() => {
                 setIsRegister(!isRegister);
@@ -124,7 +130,7 @@ export default function SignInPage() {
               }}
               className="text-signal hover:underline"
             >
-              {isRegister ? "Sign In" : "Create Account"}
+              {isRegister ? t("auth.signin.signInLink") : t("auth.signin.createLink")}
             </button>
           </p>
         </SlowFade>

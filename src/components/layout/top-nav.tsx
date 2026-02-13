@@ -33,10 +33,8 @@ export function TopNav() {
     { href: "/faq", label: t("nav.faq") },
   ];
 
-  // 如果已登录，添加 Dashboard 链接
-  if (session) {
-    navItems.push({ href: "/dashboard", label: t("nav.dashboard") });
-  }
+  // 始终显示控制台链接
+  navItems.push({ href: "/dashboard", label: t("nav.dashboard") });
 
   return (
     <motion.nav
@@ -113,13 +111,15 @@ export function TopNav() {
                 </button>
               </div>
             ) : null}
-            <Link
-              href="/auth/signin"
-              className="text-small px-6 py-2.5 border border-white/[0.12] hover:bg-white/[0.02] transition-all rounded"
-              suppressHydrationWarning
-            >
-              {t("nav.signin")}
-            </Link>
+            {!session && (
+              <Link
+                href="/auth/signin"
+                className="text-small px-6 py-2.5 border border-white/[0.12] hover:bg-white/[0.02] transition-all rounded"
+                suppressHydrationWarning
+              >
+                {t("nav.signin")}
+              </Link>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -192,14 +192,16 @@ export function TopNav() {
             </div>
           ) : null}
 
-          <Link
-            href="/auth/signin"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-small py-2.5 text-center border border-white/[0.12] hover:bg-white/[0.02] transition-all rounded"
-            suppressHydrationWarning
-          >
-            {t("nav.signin")}
-          </Link>
+          {!session && (
+            <Link
+              href="/auth/signin"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-small py-2.5 text-center border border-white/[0.12] hover:bg-white/[0.02] transition-all rounded"
+              suppressHydrationWarning
+            >
+              {t("nav.signin")}
+            </Link>
+          )}
         </div>
       </motion.div>
     </motion.nav>

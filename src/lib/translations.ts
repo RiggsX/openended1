@@ -1,5 +1,15 @@
 export const translations = {
   en: {
+    common: {
+      back: "Back",
+    },
+    workflow: {
+      step: "Step",
+      prompt: "Prompt",
+      copy: "Copy",
+      copied: "Copied!",
+      backToList: "Back to Workflows",
+    },
     nav: {
       home: "Home",
       product: "Product",
@@ -7,6 +17,30 @@ export const translations = {
       faq: "FAQ",
       signin: "Sign In",
       dashboard: "Dashboard",
+    },
+    auth: {
+      signin: {
+        title: "Sign In",
+        createTitle: "Create Account",
+        subtitle: "Access your workflows and manage your subscription",
+        createSubtitle: "Join OPENENDED to access premium workflows",
+        name: "Name",
+        email: "Email",
+        password: "Password",
+        loading: "Loading...",
+        signInButton: "Sign In",
+        createButton: "Create Account",
+        alreadyHaveAccount: "Already have an account?",
+        noAccount: "Don't have an account?",
+        signInLink: "Sign In",
+        createLink: "Create Account",
+        errors: {
+          registrationFailed: "Registration failed",
+          loginFailed: "Registration succeeded but login failed",
+          invalidCredentials: "Invalid email or password",
+          somethingWrong: "Something went wrong",
+        },
+      },
     },
     home: {
       hero: {
@@ -288,6 +322,16 @@ export const translations = {
     },
   },
   zh: {
+    common: {
+      back: "返回",
+    },
+    workflow: {
+      step: "步骤",
+      prompt: "提示词",
+      copy: "复制",
+      copied: "已复制！",
+      backToList: "返回工作流列表",
+    },
     nav: {
       home: "首页",
       product: "产品",
@@ -295,6 +339,30 @@ export const translations = {
       faq: "常见问题",
       signin: "登录",
       dashboard: "控制台",
+    },
+    auth: {
+      signin: {
+        title: "登录",
+        createTitle: "创建账户",
+        subtitle: "访问你的工作流并管理订阅",
+        createSubtitle: "加入 OPENENDED，访问高级工作流",
+        name: "姓名",
+        email: "邮箱",
+        password: "密码",
+        loading: "加载中...",
+        signInButton: "登录",
+        createButton: "创建账户",
+        alreadyHaveAccount: "已有账户？",
+        noAccount: "还没有账户？",
+        signInLink: "登录",
+        createLink: "创建账户",
+        errors: {
+          registrationFailed: "注册失败",
+          loginFailed: "注册成功但登录失败",
+          invalidCredentials: "邮箱或密码错误",
+          somethingWrong: "出错了",
+        },
+      },
     },
     home: {
       hero: {
