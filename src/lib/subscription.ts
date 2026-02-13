@@ -4,8 +4,8 @@ import { prisma } from "@/lib/prisma";
 export type UserTier = "free" | "core" | "plus" | "pro";
 export type WorkflowTier = "Core" | "Plus" | "Pro";
 
-// 管理员邮箱列表
-const ADMIN_EMAILS = ["Riggs787@outlook.com"];
+// 管理员邮箱列表（不区分大小写）
+const ADMIN_EMAILS = ["riggs787@outlook.com"];
 
 // 层级权限映射
 const TIER_HIERARCHY: Record<UserTier, number> = {
@@ -44,8 +44,8 @@ export async function getUserSubscription() {
     return null;
   }
 
-  // 管理员拥有所有权限
-  if (ADMIN_EMAILS.includes(user.email || "")) {
+  // 管理员拥有所有权限（不区分大小写）
+  if (ADMIN_EMAILS.includes(user.email?.toLowerCase() || "")) {
     return {
       user,
       tier: "pro" as UserTier,
@@ -99,7 +99,7 @@ export async function isAdmin(): Promise<boolean> {
   if (!session?.user?.email) {
     return false;
   }
-  return ADMIN_EMAILS.includes(session.user.email);
+  return ADMIN_EMAILS.includes(session.user.email?.toLowerCase() || "");
 }
 
 /**
