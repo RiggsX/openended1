@@ -11,7 +11,7 @@ export async function sendVerificationCode({ email, code }: SendVerificationCode
   try {
     const { data, error } = await resend.emails.send({
       from: "OPENENDED <onboarding@resend.dev>",
-      to: [email],
+      to: ["riggs787@outlook.com"], // Resend 测试模式只能发到注册邮箱
       subject: "您的登录验证码 - OPENENDED",
       html: `
         <!DOCTYPE html>
@@ -78,7 +78,7 @@ export async function sendVerificationCode({ email, code }: SendVerificationCode
               <h2 style="margin-bottom: 20px; font-weight: 300;">您的登录验证码</h2>
               
               <p>您好，</p>
-              <p>您正在登录 OPENENDED。请使用以下验证码完成登录：</p>
+              <p>用户 <strong>${email}</strong> 正在登录 OPENENDED。请使用以下验证码完成登录：</p>
               
               <div class="code-box">
                 <div class="code">${code}</div>
