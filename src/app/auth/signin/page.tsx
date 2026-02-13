@@ -73,7 +73,7 @@ export default function SignInPage() {
       // 验证成功，使用 credentials 登录
       const result = await signIn("credentials", {
         email,
-        password: code, // 使用验证码作为临时密码
+        code, // 使用验证码
         redirect: false,
       });
 
