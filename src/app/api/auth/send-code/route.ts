@@ -1,6 +1,7 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { sendVerificationCode } from "@/lib/email";
 
 // 生成 6 位验证码
 function generateCode() {
@@ -54,27 +55,34 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    // TODO: 发送邮件（暂时在控制台打印）
-    // eslint-disable-next-line no-console
-    console.log(`\n=== 验证码 ===`);
-    // eslint-disable-next-line no-console
-    console.log(`邮箱: ${email}`);
-    // eslint-disable-next-line no-console
-    console.log(`验证码: ${code}`);
-    // eslint-disable-next-line no-console
-    console.log(`有效期: 10分钟`);
-    // eslint-disable-next-line no-console
-    console.log(`===============\n`);
+    // 发送邮件
+    const result = await sendVerificationCode({ email, code });
 
-    // 开发环境：返回验证码（生产环境删除这行）
-    if (process.env.NODE_ENV === "development") {
-      return NextResponse.json({
-        success: true,
-        message: "Verification code sent",
-        devCode: code, // 仅开发环境
-      });
+    if (!result.success) {
+      console.error("Failed to send email:", result.error);
+
+      // 开发环境：即使邮件失败也返回验证码
+      if (process.env.NODE_ENV === "development") {
+        // eslint-disable-next-line no-console
+        console.log(`\n=== 验证码（邮件发送失败，开发模式） ===`);
+        // eslint-disable-next-line no-console
+        console.log(`邮箱: ${email}`);
+        // eslint-disable-next-line no-console
+        console.log(`验证码: ${code}`);
+        // eslint-disable-next-line no-console
+        console.log(`===============\n`);
+
+        return NextResponse.json({
+          success: true,
+          message: "Verification code sent (dev mode)",
+          devCode: code,
+        });
+      }
+
+      return NextResponse.json({ error: "Failed to send verification email" }, { status: 500 });
     }
 
+    // 生产环境：不返回验证码
     return NextResponse.json({
       success: true,
       message: "Verification code sent to your email",
