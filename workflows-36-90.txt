@@ -1,0 +1,2915 @@
+  "36": {
+    id: 36,
+    title: "Career Change Strategy",
+    titleZh: "职业转换策略",
+    category: "Career",
+    tier: "Core",
+    description: "A comprehensive workflow to master career change strategy.",
+    descriptionZh: "掌握职业转换策略的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with career change strategy.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete career change strategy system with templates and guides.`,
+        promptZh: `我需要职业转换策略方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的职业转换策略系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "37": {
+    id: 37,
+    title: "Networking & Relationship Building",
+    titleZh: "人脉拓展与关系建立",
+    category: "Career",
+    tier: "Core",
+    description: "A comprehensive workflow to master networking & relationship building.",
+    descriptionZh: "掌握人脉拓展与关系建立的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with networking & relationship building.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete networking & relationship building system with templates and guides.`,
+        promptZh: `我需要人脉拓展与关系建立方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的人脉拓展与关系建立系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "38": {
+    id: 38,
+    title: "Salary Negotiation Mastery",
+    titleZh: "薪资谈判精通",
+    category: "Career",
+    tier: "Core",
+    description: "A comprehensive workflow to master salary negotiation mastery.",
+    descriptionZh: "掌握薪资谈判精通的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with salary negotiation mastery.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete salary negotiation mastery system with templates and guides.`,
+        promptZh: `我需要薪资谈判精通方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的薪资谈判精通系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "39": {
+    id: 39,
+    title: "Personal Brand Building",
+    titleZh: "个人品牌建设",
+    category: "Marketing",
+    tier: "Core",
+    description: "A comprehensive workflow to master personal brand building.",
+    descriptionZh: "掌握个人品牌建设的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with personal brand building.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete personal brand building system with templates and guides.`,
+        promptZh: `我需要个人品牌建设方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的个人品牌建设系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "40": {
+    id: 40,
+    title: "Portfolio & Case Study Creation",
+    titleZh: "作品集与案例研究创建",
+    category: "Career",
+    tier: "Core",
+    description: "A comprehensive workflow to master portfolio & case study creation.",
+    descriptionZh: "掌握作品集与案例研究创建的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with portfolio & case study creation.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete portfolio & case study creation system with templates and guides.`,
+        promptZh: `我需要作品集与案例研究创建方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的作品集与案例研究创建系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "41": {
+    id: 41,
+    title: "Freelance Client Acquisition",
+    titleZh: "自由职业客户获取",
+    category: "Business",
+    tier: "Plus",
+    description: "A comprehensive workflow to master freelance client acquisition.",
+    descriptionZh: "掌握自由职业客户获取的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with freelance client acquisition.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete freelance client acquisition system with templates and guides.`,
+        promptZh: `我需要自由职业客户获取方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的自由职业客户获取系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "42": {
+    id: 42,
+    title: "Side Hustle Launch Plan",
+    titleZh: "副业启动计划",
+    category: "Business",
+    tier: "Core",
+    description: "A comprehensive workflow to master side hustle launch plan.",
+    descriptionZh: "掌握副业启动计划的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with side hustle launch plan.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete side hustle launch plan system with templates and guides.`,
+        promptZh: `我需要副业启动计划方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的副业启动计划系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "43": {
+    id: 43,
+    title: "Remote Work Optimization",
+    titleZh: "远程工作优化",
+    category: "Productivity",
+    tier: "Core",
+    description: "A comprehensive workflow to master remote work optimization.",
+    descriptionZh: "掌握远程工作优化的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with remote work optimization.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete remote work optimization system with templates and guides.`,
+        promptZh: `我需要远程工作优化方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的远程工作优化系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "44": {
+    id: 44,
+    title: "Professional Development Plan",
+    titleZh: "职业发展计划",
+    category: "Career",
+    tier: "Core",
+    description: "A comprehensive workflow to master professional development plan.",
+    descriptionZh: "掌握职业发展计划的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with professional development plan.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete professional development plan system with templates and guides.`,
+        promptZh: `我需要职业发展计划方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的职业发展计划系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "45": {
+    id: 45,
+    title: "Leadership Skills Development",
+    titleZh: "领导力技能发展",
+    category: "Career",
+    tier: "Plus",
+    description: "A comprehensive workflow to master leadership skills development.",
+    descriptionZh: "掌握领导力技能发展的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with leadership skills development.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete leadership skills development system with templates and guides.`,
+        promptZh: `我需要领导力技能发展方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的领导力技能发展系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "46": {
+    id: 46,
+    title: "Blog Writing System",
+    titleZh: "博客写作系统",
+    category: "Content",
+    tier: "Core",
+    description: "A comprehensive workflow to master blog writing system.",
+    descriptionZh: "掌握博客写作系统的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with blog writing system.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete blog writing system system with templates and guides.`,
+        promptZh: `我需要博客写作系统方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的博客写作系统系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "47": {
+    id: 47,
+    title: "YouTube Channel Strategy",
+    titleZh: "YouTube 频道策略",
+    category: "Content",
+    tier: "Plus",
+    description: "A comprehensive workflow to master youtube channel strategy.",
+    descriptionZh: "掌握YouTube 频道策略的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with youtube channel strategy.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete youtube channel strategy system with templates and guides.`,
+        promptZh: `我需要YouTube 频道策略方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的YouTube 频道策略系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "48": {
+    id: 48,
+    title: "Newsletter Growth System",
+    titleZh: "Newsletter 增长系统",
+    category: "Marketing",
+    tier: "Plus",
+    description: "A comprehensive workflow to master newsletter growth system.",
+    descriptionZh: "掌握Newsletter 增长系统的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with newsletter growth system.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete newsletter growth system system with templates and guides.`,
+        promptZh: `我需要Newsletter 增长系统方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的Newsletter 增长系统系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "49": {
+    id: 49,
+    title: "Instagram Content Strategy",
+    titleZh: "Instagram 内容策略",
+    category: "Marketing",
+    tier: "Core",
+    description: "A comprehensive workflow to master instagram content strategy.",
+    descriptionZh: "掌握Instagram 内容策略的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with instagram content strategy.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete instagram content strategy system with templates and guides.`,
+        promptZh: `我需要Instagram 内容策略方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的Instagram 内容策略系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "50": {
+    id: 50,
+    title: "TikTok Viral Content Formula",
+    titleZh: "TikTok 爆款内容公式",
+    category: "Marketing",
+    tier: "Core",
+    description: "A comprehensive workflow to master tiktok viral content formula.",
+    descriptionZh: "掌握TikTok 爆款内容公式的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with tiktok viral content formula.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete tiktok viral content formula system with templates and guides.`,
+        promptZh: `我需要TikTok 爆款内容公式方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的TikTok 爆款内容公式系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "51": {
+    id: 51,
+    title: "Copywriting Mastery",
+    titleZh: "文案写作精通",
+    category: "Content",
+    tier: "Plus",
+    description: "A comprehensive workflow to master copywriting mastery.",
+    descriptionZh: "掌握文案写作精通的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with copywriting mastery.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete copywriting mastery system with templates and guides.`,
+        promptZh: `我需要文案写作精通方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的文案写作精通系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "52": {
+    id: 52,
+    title: "Storytelling Framework",
+    titleZh: "故事叙述框架",
+    category: "Content",
+    tier: "Core",
+    description: "A comprehensive workflow to master storytelling framework.",
+    descriptionZh: "掌握故事叙述框架的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with storytelling framework.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete storytelling framework system with templates and guides.`,
+        promptZh: `我需要故事叙述框架方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的故事叙述框架系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "53": {
+    id: 53,
+    title: "Content Calendar System",
+    titleZh: "内容日历系统",
+    category: "Content",
+    tier: "Core",
+    description: "A comprehensive workflow to master content calendar system.",
+    descriptionZh: "掌握内容日历系统的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with content calendar system.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete content calendar system system with templates and guides.`,
+        promptZh: `我需要内容日历系统方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的内容日历系统系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "54": {
+    id: 54,
+    title: "UGC Content Strategy",
+    titleZh: "UGC 内容策略",
+    category: "Marketing",
+    tier: "Plus",
+    description: "A comprehensive workflow to master ugc content strategy.",
+    descriptionZh: "掌握UGC 内容策略的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with ugc content strategy.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete ugc content strategy system with templates and guides.`,
+        promptZh: `我需要UGC 内容策略方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的UGC 内容策略系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "55": {
+    id: 55,
+    title: "Viral Marketing Playbook",
+    titleZh: "病毒式营销手册",
+    category: "Marketing",
+    tier: "Pro",
+    description: "A comprehensive workflow to master viral marketing playbook.",
+    descriptionZh: "掌握病毒式营销手册的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with viral marketing playbook.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete viral marketing playbook system with templates and guides.`,
+        promptZh: `我需要病毒式营销手册方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的病毒式营销手册系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "56": {
+    id: 56,
+    title: "Customer Service Excellence",
+    titleZh: "卓越客户服务",
+    category: "Operations",
+    tier: "Core",
+    description: "A comprehensive workflow to master customer service excellence.",
+    descriptionZh: "掌握卓越客户服务的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with customer service excellence.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete customer service excellence system with templates and guides.`,
+        promptZh: `我需要卓越客户服务方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的卓越客户服务系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "57": {
+    id: 57,
+    title: "Sales Process Optimization",
+    titleZh: "销售流程优化",
+    category: "Sales",
+    tier: "Plus",
+    description: "A comprehensive workflow to master sales process optimization.",
+    descriptionZh: "掌握销售流程优化的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with sales process optimization.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete sales process optimization system with templates and guides.`,
+        promptZh: `我需要销售流程优化方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的销售流程优化系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "58": {
+    id: 58,
+    title: "Cold Email Outreach",
+    titleZh: "冷邮件外联",
+    category: "Sales",
+    tier: "Core",
+    description: "A comprehensive workflow to master cold email outreach.",
+    descriptionZh: "掌握冷邮件外联的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with cold email outreach.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete cold email outreach system with templates and guides.`,
+        promptZh: `我需要冷邮件外联方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的冷邮件外联系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "59": {
+    id: 59,
+    title: "Client Proposal Writing",
+    titleZh: "客户提案撰写",
+    category: "Business",
+    tier: "Core",
+    description: "A comprehensive workflow to master client proposal writing.",
+    descriptionZh: "掌握客户提案撰写的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with client proposal writing.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete client proposal writing system with templates and guides.`,
+        promptZh: `我需要客户提案撰写方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的客户提案撰写系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "60": {
+    id: 60,
+    title: "Contract Negotiation Guide",
+    titleZh: "合同谈判指南",
+    category: "Business",
+    tier: "Plus",
+    description: "A comprehensive workflow to master contract negotiation guide.",
+    descriptionZh: "掌握合同谈判指南的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with contract negotiation guide.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete contract negotiation guide system with templates and guides.`,
+        promptZh: `我需要合同谈判指南方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的合同谈判指南系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "61": {
+    id: 61,
+    title: "Team Building & Culture",
+    titleZh: "团队建设与文化",
+    category: "Operations",
+    tier: "Plus",
+    description: "A comprehensive workflow to master team building & culture.",
+    descriptionZh: "掌握团队建设与文化的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with team building & culture.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete team building & culture system with templates and guides.`,
+        promptZh: `我需要团队建设与文化方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的团队建设与文化系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "62": {
+    id: 62,
+    title: "Hiring & Recruitment System",
+    titleZh: "招聘与录用系统",
+    category: "Operations",
+    tier: "Pro",
+    description: "A comprehensive workflow to master hiring & recruitment system.",
+    descriptionZh: "掌握招聘与录用系统的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with hiring & recruitment system.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete hiring & recruitment system system with templates and guides.`,
+        promptZh: `我需要招聘与录用系统方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的招聘与录用系统系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "63": {
+    id: 63,
+    title: "Performance Review Framework",
+    titleZh: "绩效评估框架",
+    category: "Operations",
+    tier: "Plus",
+    description: "A comprehensive workflow to master performance review framework.",
+    descriptionZh: "掌握绩效评估框架的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with performance review framework.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete performance review framework system with templates and guides.`,
+        promptZh: `我需要绩效评估框架方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的绩效评估框架系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "64": {
+    id: 64,
+    title: "SOP Documentation System",
+    titleZh: "SOP 文档系统",
+    category: "Operations",
+    tier: "Core",
+    description: "A comprehensive workflow to master sop documentation system.",
+    descriptionZh: "掌握SOP 文档系统的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with sop documentation system.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete sop documentation system system with templates and guides.`,
+        promptZh: `我需要SOP 文档系统方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的SOP 文档系统系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "65": {
+    id: 65,
+    title: "Business Process Automation",
+    titleZh: "业务流程自动化",
+    category: "Operations",
+    tier: "Pro",
+    description: "A comprehensive workflow to master business process automation.",
+    descriptionZh: "掌握业务流程自动化的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with business process automation.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete business process automation system with templates and guides.`,
+        promptZh: `我需要业务流程自动化方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的业务流程自动化系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "66": {
+    id: 66,
+    title: "Goal Setting & Achievement",
+    titleZh: "目标设定与实现",
+    category: "Productivity",
+    tier: "Core",
+    description: "A comprehensive workflow to master goal setting & achievement.",
+    descriptionZh: "掌握目标设定与实现的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with goal setting & achievement.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete goal setting & achievement system with templates and guides.`,
+        promptZh: `我需要目标设定与实现方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的目标设定与实现系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "67": {
+    id: 67,
+    title: "Habit Formation System",
+    titleZh: "习惯养成系统",
+    category: "Productivity",
+    tier: "Core",
+    description: "A comprehensive workflow to master habit formation system.",
+    descriptionZh: "掌握习惯养成系统的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with habit formation system.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete habit formation system system with templates and guides.`,
+        promptZh: `我需要习惯养成系统方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的习惯养成系统系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "68": {
+    id: 68,
+    title: "Morning Routine Optimization",
+    titleZh: "晨间例程优化",
+    category: "Productivity",
+    tier: "Core",
+    description: "A comprehensive workflow to master morning routine optimization.",
+    descriptionZh: "掌握晨间例程优化的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with morning routine optimization.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete morning routine optimization system with templates and guides.`,
+        promptZh: `我需要晨间例程优化方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的晨间例程优化系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "69": {
+    id: 69,
+    title: "Focus & Deep Work Mastery",
+    titleZh: "专注与深度工作精通",
+    category: "Productivity",
+    tier: "Core",
+    description: "A comprehensive workflow to master focus & deep work mastery.",
+    descriptionZh: "掌握专注与深度工作精通的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with focus & deep work mastery.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete focus & deep work mastery system with templates and guides.`,
+        promptZh: `我需要专注与深度工作精通方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的专注与深度工作精通系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "70": {
+    id: 70,
+    title: "Stress Management System",
+    titleZh: "压力管理系统",
+    category: "Health",
+    tier: "Core",
+    description: "A comprehensive workflow to master stress management system.",
+    descriptionZh: "掌握压力管理系统的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with stress management system.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete stress management system system with templates and guides.`,
+        promptZh: `我需要压力管理系统方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的压力管理系统系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "71": {
+    id: 71,
+    title: "Sleep Optimization Guide",
+    titleZh: "睡眠优化指南",
+    category: "Health",
+    tier: "Core",
+    description: "A comprehensive workflow to master sleep optimization guide.",
+    descriptionZh: "掌握睡眠优化指南的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with sleep optimization guide.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete sleep optimization guide system with templates and guides.`,
+        promptZh: `我需要睡眠优化指南方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的睡眠优化指南系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "72": {
+    id: 72,
+    title: "Mindfulness & Meditation",
+    titleZh: "正念与冥想",
+    category: "Health",
+    tier: "Core",
+    description: "A comprehensive workflow to master mindfulness & meditation.",
+    descriptionZh: "掌握正念与冥想的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with mindfulness & meditation.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete mindfulness & meditation system with templates and guides.`,
+        promptZh: `我需要正念与冥想方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的正念与冥想系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "73": {
+    id: 73,
+    title: "Reading & Learning System",
+    titleZh: "阅读与学习系统",
+    category: "Education",
+    tier: "Core",
+    description: "A comprehensive workflow to master reading & learning system.",
+    descriptionZh: "掌握阅读与学习系统的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with reading & learning system.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete reading & learning system system with templates and guides.`,
+        promptZh: `我需要阅读与学习系统方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的阅读与学习系统系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "74": {
+    id: 74,
+    title: "Note-Taking & Knowledge Management",
+    titleZh: "笔记与知识管理",
+    category: "Productivity",
+    tier: "Core",
+    description: "A comprehensive workflow to master note-taking & knowledge management.",
+    descriptionZh: "掌握笔记与知识管理的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with note-taking & knowledge management.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete note-taking & knowledge management system with templates and guides.`,
+        promptZh: `我需要笔记与知识管理方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的笔记与知识管理系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "75": {
+    id: 75,
+    title: "Decision-Making Framework",
+    titleZh: "决策制定框架",
+    category: "Productivity",
+    tier: "Plus",
+    description: "A comprehensive workflow to master decision-making framework.",
+    descriptionZh: "掌握决策制定框架的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with decision-making framework.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete decision-making framework system with templates and guides.`,
+        promptZh: `我需要决策制定框架方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的决策制定框架系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "76": {
+    id: 76,
+    title: "Landing Page Optimization",
+    titleZh: "落地页优化",
+    category: "Marketing",
+    tier: "Plus",
+    description: "A comprehensive workflow to master landing page optimization.",
+    descriptionZh: "掌握落地页优化的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with landing page optimization.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete landing page optimization system with templates and guides.`,
+        promptZh: `我需要落地页优化方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的落地页优化系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "77": {
+    id: 77,
+    title: "A/B Testing Strategy",
+    titleZh: "A/B 测试策略",
+    category: "Marketing",
+    tier: "Pro",
+    description: "A comprehensive workflow to master a/b testing strategy.",
+    descriptionZh: "掌握A/B 测试策略的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with a/b testing strategy.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete a/b testing strategy system with templates and guides.`,
+        promptZh: `我需要A/B 测试策略方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的A/B 测试策略系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "78": {
+    id: 78,
+    title: "Referral Program Design",
+    titleZh: "推荐计划设计",
+    category: "Marketing",
+    tier: "Plus",
+    description: "A comprehensive workflow to master referral program design.",
+    descriptionZh: "掌握推荐计划设计的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with referral program design.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete referral program design system with templates and guides.`,
+        promptZh: `我需要推荐计划设计方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的推荐计划设计系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "79": {
+    id: 79,
+    title: "Customer Feedback System",
+    titleZh: "客户反馈系统",
+    category: "Operations",
+    tier: "Core",
+    description: "A comprehensive workflow to master customer feedback system.",
+    descriptionZh: "掌握客户反馈系统的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with customer feedback system.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete customer feedback system system with templates and guides.`,
+        promptZh: `我需要客户反馈系统方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的客户反馈系统系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "80": {
+    id: 80,
+    title: "Brand Positioning Strategy",
+    titleZh: "品牌定位策略",
+    category: "Marketing",
+    tier: "Plus",
+    description: "A comprehensive workflow to master brand positioning strategy.",
+    descriptionZh: "掌握品牌定位策略的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with brand positioning strategy.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete brand positioning strategy system with templates and guides.`,
+        promptZh: `我需要品牌定位策略方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的品牌定位策略系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "81": {
+    id: 81,
+    title: "Competitive Analysis Framework",
+    titleZh: "竞争分析框架",
+    category: "Strategy",
+    tier: "Core",
+    description: "A comprehensive workflow to master competitive analysis framework.",
+    descriptionZh: "掌握竞争分析框架的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with competitive analysis framework.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete competitive analysis framework system with templates and guides.`,
+        promptZh: `我需要竞争分析框架方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的竞争分析框架系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "82": {
+    id: 82,
+    title: "Market Entry Strategy",
+    titleZh: "市场进入策略",
+    category: "Strategy",
+    tier: "Pro",
+    description: "A comprehensive workflow to master market entry strategy.",
+    descriptionZh: "掌握市场进入策略的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with market entry strategy.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete market entry strategy system with templates and guides.`,
+        promptZh: `我需要市场进入策略方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的市场进入策略系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "83": {
+    id: 83,
+    title: "Pricing Psychology & Strategy",
+    titleZh: "定价心理学与策略",
+    category: "Strategy",
+    tier: "Plus",
+    description: "A comprehensive workflow to master pricing psychology & strategy.",
+    descriptionZh: "掌握定价心理学与策略的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with pricing psychology & strategy.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete pricing psychology & strategy system with templates and guides.`,
+        promptZh: `我需要定价心理学与策略方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的定价心理学与策略系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "84": {
+    id: 84,
+    title: "Customer Journey Mapping",
+    titleZh: "客户旅程地图",
+    category: "Marketing",
+    tier: "Plus",
+    description: "A comprehensive workflow to master customer journey mapping.",
+    descriptionZh: "掌握客户旅程地图的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with customer journey mapping.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete customer journey mapping system with templates and guides.`,
+        promptZh: `我需要客户旅程地图方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的客户旅程地图系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "85": {
+    id: 85,
+    title: "Retention & Churn Reduction",
+    titleZh: "留存与流失减少",
+    category: "Operations",
+    tier: "Pro",
+    description: "A comprehensive workflow to master retention & churn reduction.",
+    descriptionZh: "掌握留存与流失减少的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with retention & churn reduction.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete retention & churn reduction system with templates and guides.`,
+        promptZh: `我需要留存与流失减少方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的留存与流失减少系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "86": {
+    id: 86,
+    title: "Public Speaking Mastery",
+    titleZh: "公开演讲精通",
+    category: "Communication",
+    tier: "Plus",
+    description: "A comprehensive workflow to master public speaking mastery.",
+    descriptionZh: "掌握公开演讲精通的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with public speaking mastery.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete public speaking mastery system with templates and guides.`,
+        promptZh: `我需要公开演讲精通方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的公开演讲精通系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "87": {
+    id: 87,
+    title: "Conflict Resolution Guide",
+    titleZh: "冲突解决指南",
+    category: "Communication",
+    tier: "Core",
+    description: "A comprehensive workflow to master conflict resolution guide.",
+    descriptionZh: "掌握冲突解决指南的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with conflict resolution guide.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete conflict resolution guide system with templates and guides.`,
+        promptZh: `我需要冲突解决指南方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的冲突解决指南系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "88": {
+    id: 88,
+    title: "Negotiation Tactics",
+    titleZh: "谈判策略",
+    category: "Business",
+    tier: "Plus",
+    description: "A comprehensive workflow to master negotiation tactics.",
+    descriptionZh: "掌握谈判策略的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with negotiation tactics.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete negotiation tactics system with templates and guides.`,
+        promptZh: `我需要谈判策略方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的谈判策略系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "89": {
+    id: 89,
+    title: "Critical Thinking Development",
+    titleZh: "批判性思维发展",
+    category: "Education",
+    tier: "Plus",
+    description: "A comprehensive workflow to master critical thinking development.",
+    descriptionZh: "掌握批判性思维发展的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with critical thinking development.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete critical thinking development system with templates and guides.`,
+        promptZh: `我需要批判性思维发展方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的批判性思维发展系统，包含模板和指南。`,
+      },
+    ],
+  },
+  "90": {
+    id: 90,
+    title: "Problem-Solving Framework",
+    titleZh: "问题解决框架",
+    category: "Productivity",
+    tier: "Core",
+    description: "A comprehensive workflow to master problem-solving framework.",
+    descriptionZh: "掌握问题解决框架的综合工作流。",
+    steps: [
+      {
+        title: "Strategy & Planning",
+        titleZh: "策略与规划",
+        description: "Create a strategic plan and actionable roadmap.",
+        descriptionZh: "创建战略计划和可行的路线图。",
+        prompt: `I need help with problem-solving framework.
+
+**My Context:**
+- Current situation: [Describe where you are now]
+- Goals: [What you want to achieve]
+- Timeline: [How long you have]
+- Resources: [What you have available]
+- Constraints: [Limitations or challenges]
+
+**Please create:**
+1. Strategic framework
+2. Step-by-step action plan
+3. Key metrics to track
+4. Common pitfalls to avoid
+5. Success indicators
+6. Implementation timeline
+
+**Output:** Complete problem-solving framework system with templates and guides.`,
+        promptZh: `我需要问题解决框架方面的帮助。
+
+**我的背景：**
+- 当前情况：[描述你现在的状态]
+- 目标：[你想实现什么]
+- 时间表：[你有多长时间]
+- 资源：[你有什么可用的]
+- 约束：[限制或挑战]
+
+**请创建：**
+1. 战略框架
+2. 分步行动计划
+3. 要跟踪的关键指标
+4. 要避免的常见陷阱
+5. 成功指标
+6. 实施时间表
+
+**输出：** 完整的问题解决框架系统，包含模板和指南。`,
+      },
+    ],
+  },

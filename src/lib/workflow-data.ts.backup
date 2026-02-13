@@ -4250,13 +4250,15 @@ Provide a complete funnel blueprint with page templates, email sequences, and op
     titleZh: "简历优化与求职策略",
     category: "Career",
     tier: "Core",
-    description: "Create a compelling resume and strategic job search plan to land your dream job.",
+    description:
+      "Create a compelling resume and strategic job search plan to land your dream job.",
     descriptionZh: "创建引人注目的简历和战略性求职计划，获得理想工作。",
     steps: [
       {
         title: "Resume Audit & Optimization",
         titleZh: "简历审核与优化",
-        description: "Analyze your current resume and optimize it for ATS systems and recruiters.",
+        description:
+          "Analyze your current resume and optimize it for ATS systems and recruiters.",
         descriptionZh: "分析你当前的简历并针对 ATS 系统和招聘人员进行优化。",
         prompt: `I need to optimize my resume to stand out and pass ATS (Applicant Tracking Systems).
 
@@ -4502,13 +4504,15 @@ Provide a complete funnel blueprint with page templates, email sequences, and op
     titleZh: "面试准备与成功系统",
     category: "Career",
     tier: "Core",
-    description: "Master interview techniques and prepare compelling answers to land job offers.",
+    description:
+      "Master interview techniques and prepare compelling answers to land job offers.",
     descriptionZh: "掌握面试技巧并准备引人注目的答案以获得工作机会。",
     steps: [
       {
         title: "Interview Strategy & Answer Preparation",
         titleZh: "面试策略与答案准备",
-        description: "Prepare structured answers for common and behavioral interview questions.",
+        description:
+          "Prepare structured answers for common and behavioral interview questions.",
         descriptionZh: "为常见和行为面试问题准备结构化答案。",
         prompt: `I have an upcoming interview and need to prepare compelling answers.
 
@@ -4815,7 +4819,8 @@ Provide a complete funnel blueprint with page templates, email sequences, and op
     titleZh: "学习计划与技能发展",
     category: "Education",
     tier: "Core",
-    description: "Create a structured learning plan to master new skills efficiently.",
+    description:
+      "Create a structured learning plan to master new skills efficiently.",
     descriptionZh: "创建结构化的学习计划以高效掌握新技能。",
     steps: [
       {

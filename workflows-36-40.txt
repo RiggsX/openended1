@@ -1,0 +1,255 @@
+  "36": {
+    id: 36,
+    title: "Meeting Management & Facilitation",
+    titleZh: "会议管理与引导",
+    category: "Productivity",
+    tier: "Core",
+    description: "Run effective meetings that drive decisions and action.",
+    descriptionZh: "举办有效的会议，推动决策和行动。",
+    steps: [
+      {
+        title: "Meeting Planning & Agenda",
+        titleZh: "会议规划与议程",
+        description: "Create structured agendas and prepare for productive meetings.",
+        descriptionZh: "创建结构化议程并为高效会议做准备。",
+        prompt: `I need to run more effective meetings.
+
+**Meeting Context:**
+- Type: [Team sync, brainstorm, decision-making, status update]
+- Participants: [Number and roles]
+- Duration: [How long]
+- Current issues: [What's not working]
+
+**Please create:**
+1. Meeting agenda template
+2. Facilitation techniques
+3. Decision-making frameworks
+4. Action item tracking
+5. Follow-up system
+
+**Output:** Complete meeting management system.`,
+        promptZh: `我需要举办更有效的会议。
+
+**会议背景：**
+- 类型：[团队同步、头脑风暴、决策、状态更新]
+- 参与者：[数量和角色]
+- 时长：[多长时间]
+- 当前问题：[什么不起作用]
+
+**请创建：**
+1. 会议议程模板
+2. 引导技巧
+3. 决策框架
+4. 行动项跟踪
+5. 后续系统
+
+**输出：** 完整的会议管理系统。`,
+      },
+    ],
+  },
+  "37": {
+    id: 37,
+    title: "Project Management Fundamentals",
+    titleZh: "项目管理基础",
+    category: "Operations",
+    tier: "Core",
+    description: "Plan, execute, and deliver projects on time.",
+    descriptionZh: "按时规划、执行和交付项目。",
+    steps: [
+      {
+        title: "Project Planning & Execution",
+        titleZh: "项目规划与执行",
+        description: "Create project plans with timelines and resources.",
+        descriptionZh: "创建包含时间表和资源的项目计划。",
+        prompt: `I need to manage a project from start to finish.
+
+**Project Details:**
+- Goal: [What you're achieving]
+- Timeline: [Start and end dates]
+- Team size: [Number of people]
+- Constraints: [Limitations]
+
+**Please create:**
+1. Project charter
+2. Work breakdown structure
+3. Timeline with milestones
+4. Resource allocation
+5. Risk management
+6. Progress tracking
+
+**Output:** Complete project management plan.`,
+        promptZh: `我需要从头到尾管理一个项目。
+
+**项目详情：**
+- 目标：[你想实现什么]
+- 时间表：[开始和结束日期]
+- 团队规模：[人数]
+- 约束：[限制]
+
+**请创建：**
+1. 项目章程
+2. 工作分解结构
+3. 带里程碑的时间表
+4. 资源分配
+5. 风险管理
+6. 进度跟踪
+
+**输出：** 完整的项目管理计划。`,
+      },
+    ],
+  },
+  "38": {
+    id: 38,
+    title: "Personal Budget & Financial Planning",
+    titleZh: "个人预算与财务规划",
+    category: "Finance",
+    tier: "Core",
+    description: "Create a realistic budget and achieve money goals.",
+    descriptionZh: "创建现实的预算并实现财务目标。",
+    steps: [
+      {
+        title: "Budget Creation & Money Management",
+        titleZh: "预算创建与资金管理",
+        description: "Build a sustainable budget and track spending.",
+        descriptionZh: "建立可持续的预算并跟踪支出。",
+        prompt: `I need to get my finances under control.
+
+**Financial Situation:**
+- Monthly income: [After-tax]
+- Fixed expenses: [Rent, utilities, etc.]
+- Variable expenses: [Food, entertainment]
+- Debt: [Amounts]
+- Savings goals: [What you want]
+
+**Please create:**
+1. Monthly budget template
+2. Expense tracking system
+3. Debt payoff strategy
+4. Emergency fund plan
+5. Savings roadmap
+
+**Output:** Complete personal finance system.`,
+        promptZh: `我需要控制我的财务。
+
+**财务状况：**
+- 月收入：[税后]
+- 固定支出：[租金、水电等]
+- 可变支出：[食物、娱乐]
+- 债务：[金额]
+- 储蓄目标：[你想要什么]
+
+**请创建：**
+1. 月度预算模板
+2. 支出跟踪系统
+3. 债务偿还策略
+4. 应急基金计划
+5. 储蓄路线图
+
+**输出：** 完整的个人财务系统。`,
+      },
+    ],
+  },
+  "39": {
+    id: 39,
+    title: "Fitness & Nutrition Plan",
+    titleZh: "健身与营养计划",
+    category: "Health",
+    tier: "Core",
+    description: "Build sustainable fitness and nutrition habits.",
+    descriptionZh: "建立可持续的健身和营养习惯。",
+    steps: [
+      {
+        title: "Personalized Fitness & Meal Planning",
+        titleZh: "个性化健身与膳食计划",
+        description: "Create workout routines and meal plans.",
+        descriptionZh: "创建锻炼例程和膳食计划。",
+        prompt: `I want to get healthier through fitness and nutrition.
+
+**Current State:**
+- Fitness level: [Beginner/intermediate/advanced]
+- Goals: [Lose weight, build muscle, general fitness]
+- Available time: [Hours per week]
+- Equipment: [Gym, home, bodyweight]
+- Dietary restrictions: [Any]
+
+**Please create:**
+1. 12-week fitness program
+2. Weekly workout schedule
+3. Exercise library
+4. Meal plan template
+5. Grocery list
+6. Progress tracking
+
+**Output:** Complete fitness and nutrition plan.`,
+        promptZh: `我想通过健身和营养变得更健康。
+
+**当前状态：**
+- 健身水平：[初学者/中级/高级]
+- 目标：[减肥、增肌、一般健身]
+- 可用时间：[每周小时数]
+- 设备：[健身房、家庭、体重]
+- 饮食限制：[任何]
+
+**请创建：**
+1. 12 周健身计划
+2. 每周锻炼时间表
+3. 练习库
+4. 膳食计划模板
+5. 杂货清单
+6. 进度跟踪
+
+**输出：** 完整的健身和营养计划。`,
+      },
+    ],
+  },
+  "40": {
+    id: 40,
+    title: "Writing Improvement System",
+    titleZh: "写作提升系统",
+    category: "Communication",
+    tier: "Core",
+    description: "Improve writing skills for any format.",
+    descriptionZh: "提升任何格式的写作技能。",
+    steps: [
+      {
+        title: "Writing Skills Development",
+        titleZh: "写作技能发展",
+        description: "Master writing fundamentals and develop your voice.",
+        descriptionZh: "掌握写作基础并发展你的声音。",
+        prompt: `I want to become a better writer.
+
+**Writing Context:**
+- Type: [Business, blog, reports, creative]
+- Current level: [Beginner/intermediate/advanced]
+- Challenges: [Clarity, structure, grammar, speed]
+- Goals: [Why improve]
+
+**Please create:**
+1. Writing fundamentals checklist
+2. Structure templates
+3. Editing process
+4. Grammar guide
+5. Daily exercises
+6. Improvement system
+
+**Output:** Complete writing improvement program.`,
+        promptZh: `我想成为更好的作家。
+
+**写作背景：**
+- 类型：[商务、博客、报告、创意]
+- 当前水平：[初学者/中级/高级]
+- 挑战：[清晰度、结构、语法、速度]
+- 目标：[为什么提高]
+
+**请创建：**
+1. 写作基础清单
+2. 结构模板
+3. 编辑过程
+4. 语法指南
+5. 每日练习
+6. 改进系统
+
+**输出：** 完整的写作提升计划。`,
+      },
+    ],
+  },
