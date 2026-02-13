@@ -62,7 +62,7 @@ export async function sendVerificationCode({ email, code }: SendVerificationCode
                         <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 32px 0;">
                           <tr>
                             <td align="center">
-                              <a href="http://localhost:3000/welcome" style="display: inline-block; background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); color: #ffffff; text-decoration: none; padding: 16px 48px; border-radius: 8px; font-size: 15px; font-weight: 500; letter-spacing: 0.5px;">
+                              <a href="http://localhost:3000/welcome" style="display: inline-block; background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); color: #ffffff; text-decoration: none; padding: 16px 48px; border-radius: 8px; font-size: 15px; font-weight: 500; letter-spacing: 0.5px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.2);">
                                 欢迎来到 OPENENDED
                               </a>
                             </td>
