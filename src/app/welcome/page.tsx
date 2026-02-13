@@ -10,8 +10,9 @@ export default function WelcomePage() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            {/* 主体 - 三条精致的波浪线 - 使用 transform 而不是 path 变形 */}
+            {/* 主体 - 三条精致的波浪线 - 水平流动 */}
             <g>
+              {/* 第一条波浪 - 向右流动 */}
               <path
                 d="M 3 13.5 Q 9 10.5, 14 13.5 Q 19 16.5, 24 13.5 Q 29 10.5, 34 13.5"
                 stroke="url(#wave1Gradient)"
@@ -23,12 +24,19 @@ export default function WelcomePage() {
                 <animateTransform
                   attributeName="transform"
                   type="translate"
-                  values="0,0; 0,-0.8; 0,0.8; 0,-0.8; 0,0"
-                  dur="6s"
+                  values="0,0; 1,0; 0,0"
+                  dur="3s"
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="opacity"
+                  values="0.5;0.7;0.5"
+                  dur="3s"
                   repeatCount="indefinite"
                 />
               </path>
 
+              {/* 第二条波浪 - 向左流动 */}
               <path
                 d="M 3 20 Q 9 17, 14 20 Q 19 23, 24 20 Q 29 17, 34 20"
                 stroke="url(#wave2Gradient)"
@@ -40,12 +48,19 @@ export default function WelcomePage() {
                 <animateTransform
                   attributeName="transform"
                   type="translate"
-                  values="0,0; 0,0.6; 0,-0.6; 0,0.6; 0,0"
-                  dur="6s"
+                  values="0,0; -1,0; 0,0"
+                  dur="3s"
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="opacity"
+                  values="0.7;0.9;0.7"
+                  dur="3s"
                   repeatCount="indefinite"
                 />
               </path>
 
+              {/* 第三条波浪 - 向右流动 */}
               <path
                 d="M 3 26.5 Q 9 23.5, 14 26.5 Q 19 29.5, 24 26.5 Q 29 23.5, 34 26.5"
                 stroke="url(#wave3Gradient)"
@@ -57,14 +72,20 @@ export default function WelcomePage() {
                 <animateTransform
                   attributeName="transform"
                   type="translate"
-                  values="0,0; 0,0.8; 0,-0.8; 0,0.8; 0,0"
-                  dur="6s"
+                  values="0,0; 1.2,0; 0,0"
+                  dur="3s"
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="opacity"
+                  values="0.85;1;0.85"
+                  dur="3s"
                   repeatCount="indefinite"
                 />
               </path>
             </g>
 
-            {/* 延伸线 - 简单的透明度动画 */}
+            {/* 延伸线 - 简单的透明度脉动 */}
             <line
               x1="34"
               y1="13.5"
@@ -77,7 +98,7 @@ export default function WelcomePage() {
               <animate
                 attributeName="opacity"
                 values="0.3;0.6;0.3"
-                dur="6s"
+                dur="3s"
                 repeatCount="indefinite"
               />
             </line>
@@ -93,7 +114,7 @@ export default function WelcomePage() {
               <animate
                 attributeName="opacity"
                 values="0.5;0.8;0.5"
-                dur="6s"
+                dur="3s"
                 repeatCount="indefinite"
               />
             </line>
@@ -109,7 +130,7 @@ export default function WelcomePage() {
               <animate
                 attributeName="opacity"
                 values="0.7;1;0.7"
-                dur="6s"
+                dur="3s"
                 repeatCount="indefinite"
               />
             </line>
@@ -118,8 +139,8 @@ export default function WelcomePage() {
             <ellipse cx="20" cy="20" rx="20" ry="10" fill="url(#ambientGlow1)">
               <animate
                 attributeName="opacity"
-                values="0.06;0.12;0.06"
-                dur="6s"
+                values="0.05;0.1;0.05"
+                dur="3s"
                 repeatCount="indefinite"
               />
             </ellipse>
