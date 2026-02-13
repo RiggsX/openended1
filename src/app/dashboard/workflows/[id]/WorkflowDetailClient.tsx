@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
-import type { UserTier } from "@/lib/subscription";
 
 interface WorkflowStep {
   title: string;
@@ -28,7 +27,6 @@ interface Workflow {
 
 interface Props {
   workflow: Workflow;
-  userTier: UserTier;
   isAdmin: boolean;
 }
 

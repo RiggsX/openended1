@@ -29,11 +29,5 @@ export default async function WorkflowDetailPage({ params }: PageProps) {
   }
 
   // 传递数据到客户端组件
-  return (
-    <WorkflowDetailClient
-      workflow={workflow}
-      userTier={subscription.tier}
-      isAdmin={subscription.isAdmin}
-    />
-  );
+  return <WorkflowDetailClient workflow={workflow} isAdmin={subscription.isAdmin} />;
 }
