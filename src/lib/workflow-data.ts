@@ -5418,4 +5418,371 @@ Provide a complete funnel blueprint with page templates, email sequences, and op
       },
     ],
   },
+  "41": {
+    id: 41,
+    title: "Career Change Strategy",
+    titleZh: "职业转换策略",
+    category: "Career",
+    tier: "Plus",
+    description: "Navigate career transitions successfully with strategic planning.",
+    descriptionZh: "通过战略规划成功实现职业转换。",
+    steps: [
+      {
+        title: "Career Transition Planning",
+        titleZh: "职业转换规划",
+        description: "Create a roadmap for changing careers or industries.",
+        descriptionZh: "创建职业或行业转换的路线图。",
+        prompt: `I want to change careers and need a strategic plan.
+
+**Current Situation:**
+- Current role/industry: [What you do now]
+- Years of experience: [Number]
+- Target role/industry: [Where you want to go]
+- Reason for change: [Why you want to switch]
+- Timeline: [How soon you need to transition]
+
+**My Assets:**
+- Transferable skills: [What carries over]
+- Network: [Connections in target field]
+- Financial runway: [How long you can afford to transition]
+- Education/certifications: [What you have]
+
+**My Gaps:**
+- Skills needed: [What you're missing]
+- Experience gaps: [What employers expect]
+- Concerns: [What worries you]
+
+**Please create:**
+1. Career transition roadmap (6-12 months)
+2. Skills gap analysis and learning plan
+3. Resume repositioning strategy
+4. Networking and informational interview plan
+5. Financial transition plan
+6. Story crafting (explaining your transition)
+7. Job search strategy for career changers
+
+**Output:** Complete career change plan with timeline and action steps.`,
+        promptZh: `我想转换职业并需要一个战略计划。
+
+**当前情况：**
+- 当前角色/行业：[你现在做什么]
+- 工作年限：[数字]
+- 目标角色/行业：[你想去哪里]
+- 转换原因：[为什么想转换]
+- 时间表：[多快需要转换]
+
+**我的资产：**
+- 可转移技能：[什么可以带过去]
+- 人脉：[目标领域的联系人]
+- 财务跑道：[你能承受多长时间的转换]
+- 教育/证书：[你有什么]
+
+**我的差距：**
+- 需要的技能：[你缺少什么]
+- 经验差距：[雇主期望什么]
+- 担忧：[什么让你担心]
+
+**请创建：**
+1. 职业转换路线图（6-12 个月）
+2. 技能差距分析和学习计划
+3. 简历重新定位策略
+4. 人脉拓展和信息面试计划
+5. 财务转换计划
+6. 故事塑造（解释你的转换）
+7. 职业转换者的求职策略
+
+**输出：** 完整的职业转换计划，包含时间表和行动步骤。`,
+      },
+    ],
+  },
+  "42": {
+    id: 42,
+    title: "Networking & Relationship Building",
+    titleZh: "人脉拓展与关系建立",
+    category: "Career",
+    tier: "Core",
+    description: "Build and maintain professional relationships strategically.",
+    descriptionZh: "战略性地建立和维护职业关系。",
+    steps: [
+      {
+        title: "Strategic Networking System",
+        titleZh: "战略性人脉系统",
+        description: "Create a system for building meaningful professional connections.",
+        descriptionZh: "创建建立有意义职业联系的系统。",
+        prompt: `I want to build a strong professional network.
+
+**My Context:**
+- Current network size: [LinkedIn connections, etc.]
+- Industry/field: [Where you work]
+- Networking goals: [Job search, partnerships, learning, etc.]
+- Comfort level: [Introvert/extrovert, experience]
+- Time available: [Hours per week]
+
+**My Challenges:**
+- Biggest obstacle: [Fear, time, don't know how]
+- Past experiences: [What worked/didn't work]
+- Target connections: [Who you want to meet]
+
+**Please create:**
+1. Networking strategy framework
+2. LinkedIn optimization and outreach templates
+3. Coffee chat/informational interview scripts
+4. Event networking tactics
+5. Follow-up and relationship maintenance system
+6. Value-first approach (how to help others)
+7. CRM system for tracking connections
+
+**Output:** Complete networking system with templates and tracking tools.`,
+        promptZh: `我想建立强大的职业人脉网络。
+
+**我的背景：**
+- 当前网络规模：[LinkedIn 联系人等]
+- 行业/领域：[你工作的地方]
+- 人脉目标：[求职、合作、学习等]
+- 舒适度：[内向/外向、经验]
+- 可用时间：[每周小时数]
+
+**我的挑战：**
+- 最大障碍：[恐惧、时间、不知道如何做]
+- 过去的经历：[什么有效/无效]
+- 目标联系人：[你想见谁]
+
+**请创建：**
+1. 人脉拓展策略框架
+2. LinkedIn 优化和外联模板
+3. 咖啡聊天/信息面试脚本
+4. 活动人脉策略
+5. 跟进和关系维护系统
+6. 价值优先方法（如何帮助他人）
+7. 跟踪联系人的 CRM 系统
+
+**输出：** 完整的人脉系统，包含模板和跟踪工具。`,
+      },
+    ],
+  },
+  "43": {
+    id: 43,
+    title: "Side Hustle Launch Plan",
+    titleZh: "副业启动计划",
+    category: "Business",
+    tier: "Core",
+    description: "Start and grow a profitable side business while working full-time.",
+    descriptionZh: "在全职工作的同时启动和发展盈利的副业。",
+    steps: [
+      {
+        title: "Side Business Strategy",
+        titleZh: "副业战略",
+        description: "Plan and launch a side hustle that fits your schedule.",
+        descriptionZh: "规划和启动适合你时间表的副业。",
+        prompt: `I want to start a side hustle while keeping my day job.
+
+**My Situation:**
+- Available time: [Hours per week]
+- Skills/expertise: [What you're good at]
+- Budget: [Money to invest]
+- Goals: [Extra income amount, long-term plans]
+- Risk tolerance: [Conservative or aggressive]
+
+**Side Hustle Ideas:**
+- Options I'm considering: [List 2-3 ideas]
+- Market demand: [What you know about demand]
+- Competition: [Who else is doing this]
+
+**My Constraints:**
+- Day job restrictions: [Non-compete, time]
+- Family commitments: [Other obligations]
+- Energy levels: [When you're most productive]
+
+**Please create:**
+1. Side hustle validation framework
+2. Business model canvas (simplified)
+3. Launch timeline (0-90 days)
+4. Time management strategy
+5. First customer acquisition plan
+6. Pricing strategy
+7. Growth roadmap (when to scale or quit day job)
+
+**Output:** Complete side hustle launch plan with validation and execution steps.`,
+        promptZh: `我想在保留日常工作的同时开始副业。
+
+**我的情况：**
+- 可用时间：[每周小时数]
+- 技能/专长：[你擅长什么]
+- 预算：[要投资的钱]
+- 目标：[额外收入金额、长期计划]
+- 风险承受能力：[保守或激进]
+
+**副业想法：**
+- 我正在考虑的选项：[列出 2-3 个想法]
+- 市场需求：[你对需求的了解]
+- 竞争：[还有谁在做这个]
+
+**我的约束：**
+- 日常工作限制：[竞业禁止、时间]
+- 家庭承诺：[其他义务]
+- 能量水平：[你何时最有生产力]
+
+**请创建：**
+1. 副业验证框架
+2. 商业模式画布（简化版）
+3. 启动时间表（0-90 天）
+4. 时间管理策略
+5. 首个客户获取计划
+6. 定价策略
+7. 增长路线图（何时扩大规模或辞职）
+
+**输出：** 完整的副业启动计划，包含验证和执行步骤。`,
+      },
+    ],
+  },
+  "44": {
+    id: 44,
+    title: "Remote Work Optimization",
+    titleZh: "远程工作优化",
+    category: "Productivity",
+    tier: "Core",
+    description: "Master remote work with productivity systems and work-life balance.",
+    descriptionZh: "通过生产力系统和工作生活平衡掌握远程工作。",
+    steps: [
+      {
+        title: "Remote Work System Design",
+        titleZh: "远程工作系统设计",
+        description: "Create an effective remote work environment and routine.",
+        descriptionZh: "创建有效的远程工作环境和例程。",
+        prompt: `I want to optimize my remote work setup and productivity.
+
+**My Current Setup:**
+- Work arrangement: [Full remote, hybrid, flexible]
+- Home office: [Dedicated space or shared]
+- Equipment: [What you have]
+- Team structure: [Solo, small team, large org]
+- Time zone challenges: [If any]
+
+**My Challenges:**
+- Biggest issues: [Distractions, isolation, communication, boundaries]
+- Productivity problems: [What's not working]
+- Work-life balance: [Current state]
+
+**My Goals:**
+- Ideal work day: [How you want it to look]
+- Productivity targets: [What you want to achieve]
+- Well-being priorities: [Health, relationships, etc.]
+
+**Please create:**
+1. Home office setup guide (ergonomics, equipment)
+2. Daily routine and schedule optimization
+3. Communication and collaboration best practices
+4. Boundary setting strategies (work-life separation)
+5. Productivity tools and systems
+6. Team connection and culture building
+7. Mental health and well-being practices
+
+**Output:** Complete remote work optimization system with setup guide and routines.`,
+        promptZh: `我想优化我的远程工作设置和生产力。
+
+**我的当前设置：**
+- 工作安排：[完全远程、混合、灵活]
+- 家庭办公室：[专用空间或共享]
+- 设备：[你有什么]
+- 团队结构：[独自、小团队、大组织]
+- 时区挑战：[如有]
+
+**我的挑战：**
+- 最大问题：[分心、孤立、沟通、界限]
+- 生产力问题：[什么不起作用]
+- 工作生活平衡：[当前状态]
+
+**我的目标：**
+- 理想的工作日：[你希望它看起来如何]
+- 生产力目标：[你想实现什么]
+- 幸福优先事项：[健康、关系等]
+
+**请创建：**
+1. 家庭办公室设置指南（人体工程学、设备）
+2. 日常例程和时间表优化
+3. 沟通和协作最佳实践
+4. 界限设定策略（工作生活分离）
+5. 生产力工具和系统
+6. 团队联系和文化建设
+7. 心理健康和幸福实践
+
+**输出：** 完整的远程工作优化系统，包含设置指南和例程。`,
+      },
+    ],
+  },
+  "45": {
+    id: 45,
+    title: "Leadership Skills Development",
+    titleZh: "领导力技能发展",
+    category: "Career",
+    tier: "Plus",
+    description: "Develop essential leadership skills for managing teams and driving results.",
+    descriptionZh: "发展管理团队和推动结果的基本领导力技能。",
+    steps: [
+      {
+        title: "Leadership Framework & Practice",
+        titleZh: "领导力框架与实践",
+        description: "Build core leadership competencies through structured practice.",
+        descriptionZh: "通过结构化实践建立核心领导力能力。",
+        prompt: `I want to develop my leadership skills.
+
+**My Context:**
+- Current role: [Manager, team lead, aspiring leader]
+- Team size: [Number of direct reports]
+- Experience: [Years in leadership]
+- Industry: [Your field]
+- Leadership challenges: [What you struggle with]
+
+**My Goals:**
+- Leadership style: [What kind of leader you want to be]
+- Specific skills: [What you want to improve]
+- Team outcomes: [What you want to achieve]
+
+**My Gaps:**
+- Weaknesses: [Areas needing work]
+- Feedback received: [What others have said]
+- Situations you avoid: [Difficult conversations, etc.]
+
+**Please create:**
+1. Leadership competency framework
+2. Communication and feedback skills
+3. Delegation and empowerment strategies
+4. Conflict resolution techniques
+5. Team motivation and engagement
+6. Decision-making under pressure
+7. Personal leadership development plan
+
+**Output:** Complete leadership development program with frameworks and practice exercises.`,
+        promptZh: `我想发展我的领导力技能。
+
+**我的背景：**
+- 当前角色：[经理、团队负责人、有抱负的领导者]
+- 团队规模：[直接下属数量]
+- 经验：[领导年限]
+- 行业：[你的领域]
+- 领导挑战：[你挣扎的地方]
+
+**我的目标：**
+- 领导风格：[你想成为什么样的领导者]
+- 具体技能：[你想提高什么]
+- 团队成果：[你想实现什么]
+
+**我的差距：**
+- 弱点：[需要改进的领域]
+- 收到的反馈：[其他人说了什么]
+- 你避免的情况：[困难的对话等]
+
+**请创建：**
+1. 领导力能力框架
+2. 沟通和反馈技能
+3. 授权和赋能策略
+4. 冲突解决技巧
+5. 团队激励和参与
+6. 压力下的决策
+7. 个人领导力发展计划
+
+**输出：** 完整的领导力发展计划，包含框架和实践练习。`,
+      },
+    ],
+  },
 };
