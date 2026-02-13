@@ -7,11 +7,11 @@ import { useI18n } from "@/lib/i18n";
 
 interface PricingTier {
   name: string;
-  price: { monthly: number; yearly: number };
-  description: string;
+  monthlyPrice: number;
+  yearlyPrice: number;
+  tagline: string;
+  audience: string;
   features: string[];
-  cta: string;
-  highlight?: boolean;
 }
 
 export default function ProductPage() {
@@ -113,9 +113,9 @@ export default function ProductPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {tiers.map((tier: PricingTier, i: number) => {
               const isFeatured = tier.name === "Plus";
-              const price = isYearly ? tier.price.yearly : tier.price.monthly;
+              const price = isYearly ? tier.yearlyPrice : tier.monthlyPrice;
               const period = isYearly ? t("product.yearly") : t("product.monthly");
-              const savings = isYearly && tier.price.monthly * 12 - tier.price.yearly;
+              const savings = isYearly && tier.monthlyPrice * 12 - tier.yearlyPrice;
 
               return (
                 <motion.div
