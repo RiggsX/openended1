@@ -1,16 +1,12 @@
 import type { Metadata } from "next";
-import { SidebarNav } from "@/components/layout/sidebar-nav";
-import { MobileNav } from "@/components/layout/mobile-nav";
-import { Footer } from "@/components/layout/footer";
-import { Cursor } from "@/components/motion/cursor";
-import { I18nProvider } from "@/lib/i18n";
-import { SessionProvider } from "@/components/providers/session-provider";
 import "./globals.css";
+import { TopNav } from "@/components/layout/top-nav";
+import { Footer } from "@/components/layout/footer";
+import { Providers } from "@/components/providers";
 
 export const metadata: Metadata = {
-  title: "OPENENDED — AI Workflow System",
-  description: "A structured AI workflow system. Stop figuring out AI. Start using it.",
-  keywords: ["AI", "workflow", "system", "productivity", "prompts", "automation"],
+  title: "OPENENDED - AI Workflow Platform",
+  description: "Transform your workflow with AI-powered automation",
 };
 
 export default function RootLayout({
@@ -19,28 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-background text-foreground antialiased cursor-none">
-        <SessionProvider>
-          <I18nProvider>
-            {/* Custom cursor — desktop only */}
-            <div className="hidden md:block">
-              <Cursor />
-            </div>
-
-            {/* Fixed sidebar navigation — desktop only */}
-            <SidebarNav />
-
-            {/* Main content area — offset for sidebar */}
-            <div className="relative pl-0 md:pl-[var(--nav-width)]">
-              <div className="min-h-screen">{children}</div>
-              <Footer />
-            </div>
-
-            {/* Mobile bottom tab bar */}
-            <MobileNav />
-          </I18nProvider>
-        </SessionProvider>
+    <html lang="zh">
+      <body>
+        <Providers>
+          <TopNav />
+          <main>{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

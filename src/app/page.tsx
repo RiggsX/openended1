@@ -1,213 +1,209 @@
 "use client";
 
+import { useRef } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { SlowFade } from "@/components/motion/slow-fade";
-import { Button } from "@/components/ui/button";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 
-const EASE_SMOOTH: [number, number, number, number] = [0.76, 0, 0.24, 1];
+interface AudienceItem {
+  bold: string;
+  rest: string;
+}
 
 export default function HomePage() {
+  const containerRef = useRef<HTMLDivElement>(null);
   const { t, tRaw } = useI18n();
-  
-  const systemCards = [
-    {
-      num: "01",
-      title: t("home.system.workflows.title"),
-      desc: t("home.system.workflows.desc"),
-    },
-    {
-      num: "02",
-      title: t("home.system.prompts.title"),
-      desc: t("home.system.prompts.desc"),
-    },
-    {
-      num: "03",
-      title: t("home.system.updates.title"),
-      desc: t("home.system.updates.desc"),
-    },
-  ];
 
-  const audienceItems = tRaw("home.audience.items") || [];
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"],
+  });
+
+  const heroY = useTransform(scrollYProgress, [0, 0.2], [0, 80]);
+  const heroOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
   return (
-    <div className="min-h-screen">
-      {/* ═══════════════════════════════════════
-          SECTION 1 — Hero
-      ═══════════════════════════════════════ */}
-      <section className="relative min-h-[90vh] flex items-center justify-center px-8 md:px-16 py-32">
-        <div className="max-w-[900px] text-center">
-          <motion.h1
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2, ease: EASE_SMOOTH }}
-            className="text-[clamp(2.5rem,7vw,5rem)] font-extralight leading-[1.05] text-foreground"
-          >
-            {t("home.hero.title").split("\n").map((line, i) => (
-              <span key={i}>
-                {line}
-                {i < t("home.hero.title").split("\n").length - 1 && <br />}
-              </span>
-            ))}
-          </motion.h1>
+    <div ref={containerRef} className="min-h-screen bg-black">
+      {/* Hero */}
+      <section className="h-screen flex items-center justify-center relative overflow-hidden">
+        <div className="absolute inset-0 grid-subtle opacity-40" />
 
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
+        <motion.div
+          className="container text-center relative z-10"
+          style={{ y: heroY, opacity: heroOpacity }}
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4, ease: EASE_SMOOTH }}
-            className="mt-8 text-[17px] font-light leading-[1.7] text-muted max-w-[600px] mx-auto"
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            {t("home.hero.subtitle")}
-          </motion.p>
+            <p className="text-small text-white/40 mb-8">AI Workflow Platform</p>
+            <h1 className="text-display mb-6 max-w-4xl mx-auto whitespace-pre-line">
+              {t("home.hero.title")}
+            </h1>
+            <p className="text-body text-white/50 mb-12 max-w-xl mx-auto">
+              {t("home.hero.subtitle")}
+            </p>
+          </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 12 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.6, ease: EASE_SMOOTH }}
-            className="mt-12"
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <Link href="/product">
-              <Button size="lg">{t("home.hero.cta")}</Button>
+            <Link
+              href="/product"
+              className="inline-block text-small px-8 py-3 bg-white text-black hover:bg-white/90 transition-all rounded"
+            >
+              {t("home.hero.cta")}
             </Link>
+          </motion.div>
+        </motion.div>
+
+        {/* Scroll Indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.8 }}
+          className="absolute bottom-12 left-1/2 -translate-x-1/2"
+        >
+          <div className="w-[1px] h-12 bg-gradient-to-b from-white/30 to-transparent" />
+        </motion.div>
+      </section>
+
+      {/* Problem */}
+      <section className="py-32 relative">
+        <div className="container max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <h2 className="text-title mb-12 whitespace-pre-line">{t("home.problem.title")}</h2>
+
+            <div className="space-y-8">
+              <p className="text-body text-white/60 leading-relaxed">{t("home.problem.p1")}</p>
+              <p className="text-body text-white/60 leading-relaxed">{t("home.problem.p2")}</p>
+              <p className="text-body text-white/60 leading-relaxed">{t("home.problem.p3")}</p>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          SECTION 2 — The Problem
-      ═══════════════════════════════════════ */}
-      <section className="py-32 px-8 md:px-16">
-        <div className="max-w-[700px] mx-auto">
-          <SlowFade>
-            <div className="w-[60px] h-px bg-signal mb-16 mx-auto" />
-          </SlowFade>
+      {/* System */}
+      <section className="py-32 relative">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="text-center mb-20"
+          >
+            <h2 className="text-title">{t("home.system.title")}</h2>
+          </motion.div>
 
-          <SlowFade delay={0.1}>
-            <h2 className="text-[clamp(2rem,5vw,3rem)] font-extralight leading-[1.15] text-foreground text-center mb-12">
-              {t("home.problem.title").split("\n").map((line, i) => (
-                <span key={i}>
-                  {line}
-                  {i < t("home.problem.title").split("\n").length - 1 && <br />}
-                </span>
-              ))}
-            </h2>
-          </SlowFade>
-
-          <SlowFade delay={0.15}>
-            <p className="text-[16px] font-light leading-[1.9] text-muted">
-              {t("home.problem.p1")}
-            </p>
-          </SlowFade>
-
-          <SlowFade delay={0.2}>
-            <p className="mt-6 text-[16px] font-light leading-[1.9] text-muted">
-              {t("home.problem.p2")}
-            </p>
-          </SlowFade>
-
-          <SlowFade delay={0.25}>
-            <p className="mt-6 text-[16px] font-light leading-[1.9] text-foreground">
-              {t("home.problem.p3")}
-            </p>
-          </SlowFade>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════
-          SECTION 3 — What It Is
-      ═══════════════════════════════════════ */}
-      <section className="py-32 px-8 md:px-16 bg-surface">
-        <div className="max-w-[1200px] mx-auto">
-          <SlowFade>
-            <h2 className="text-[clamp(2rem,5vw,3rem)] font-extralight leading-[1.15] text-foreground text-center mb-20">
-              {t("home.system.title")}
-            </h2>
-          </SlowFade>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-20">
-            {systemCards.map((card, i) => (
-              <SlowFade key={card.num} delay={0.1 + i * 0.08}>
-                <div className="border border-border bg-card p-8 transition-colors duration-700 hover:border-signal/40">
-                  <div className="text-signal text-[14px] font-light tracking-[0.2em] mb-4">
-                    {card.num}
-                  </div>
-                  <h3 className="text-[20px] font-extralight text-foreground mb-4">
-                    {card.title}
-                  </h3>
-                  <p className="text-[14px] font-light leading-[1.8] text-muted">
-                    {card.desc}
-                  </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-20">
+            {[
+              {
+                num: "01",
+                title: t("home.system.workflows.title"),
+                desc: t("home.system.workflows.desc"),
+              },
+              {
+                num: "02",
+                title: t("home.system.prompts.title"),
+                desc: t("home.system.prompts.desc"),
+              },
+              {
+                num: "03",
+                title: t("home.system.updates.title"),
+                desc: t("home.system.updates.desc"),
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              >
+                <div className="card-minimal p-8 rounded h-full">
+                  <p className="text-small text-white/30 mb-4">{item.num}</p>
+                  <h3 className="text-lg font-normal mb-3">{item.title}</h3>
+                  <p className="text-body text-white/50 text-sm leading-relaxed">{item.desc}</p>
                 </div>
-              </SlowFade>
+              </motion.div>
             ))}
           </div>
 
-          <SlowFade delay={0.35}>
-            <p className="text-[15px] font-light leading-[1.8] text-muted text-center max-w-[600px] mx-auto">
-              {t("home.system.footer")}
-              <br />
-              <span className="text-foreground">
-                {t("home.system.footerHighlight")}
-              </span>
-            </p>
-          </SlowFade>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="text-center max-w-3xl mx-auto"
+          >
+            <p className="text-body text-white/60 mb-2">{t("home.system.footer")}</p>
+            <p className="text-body text-white">{t("home.system.footerHighlight")}</p>
+          </motion.div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          SECTION 4 — Who It's For
-      ═══════════════════════════════════════ */}
-      <section className="py-32 px-8 md:px-16">
-        <div className="max-w-[800px] mx-auto">
-          <SlowFade>
-            <h2 className="text-[clamp(2rem,5vw,3rem)] font-extralight leading-[1.15] text-foreground text-center mb-16">
-              {t("home.audience.title").split("\n").map((line, i) => (
-                <span key={i}>
-                  {line}
-                  {i < t("home.audience.title").split("\n").length - 1 && <br />}
-                </span>
-              ))}
-            </h2>
-          </SlowFade>
+      {/* Audience */}
+      <section className="py-32 relative">
+        <div className="container max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <h2 className="text-title mb-12 whitespace-pre-line">{t("home.audience.title")}</h2>
 
-          <div className="space-y-6">
-            {audienceItems.map((item: any, i: number) => (
-              <SlowFade key={i} delay={0.1 + i * 0.08}>
-                <div className="border-l-2 border-signal pl-6 py-2">
-                  <p className="text-[15px] font-light leading-[1.8] text-muted">
-                    <span className="text-foreground">{item.bold}</span>{" "}
-                    {item.rest}
-                  </p>
-                </div>
-              </SlowFade>
-            ))}
-          </div>
+            <div className="space-y-6">
+              {(tRaw("home.audience.items") as AudienceItem[]).map(
+                (item: AudienceItem, i: number) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, margin: "-80px" }}
+                    transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                    className="border-l border-white/[0.12] pl-6 py-3 hover:border-white/30 transition-colors"
+                  >
+                    <p className="text-sm">
+                      <span className="font-normal">{item.bold}</span>
+                      <span className="text-white/50"> {item.rest}</span>
+                    </p>
+                  </motion.div>
+                ),
+              )}
+            </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          SECTION 5 — Final CTA
-      ═══════════════════════════════════════ */}
-      <section className="py-32 px-8 md:px-16 flex items-center justify-center">
-        <div className="text-center max-w-[700px]">
-          <SlowFade>
-            <h2 className="text-[clamp(2rem,5vw,3rem)] font-extralight text-foreground mb-6">
-              {t("home.cta.title")}
-            </h2>
-          </SlowFade>
-
-          <SlowFade delay={0.1}>
-            <p className="text-[16px] font-light text-muted mb-10">
-              {t("home.cta.subtitle")}
-            </p>
-          </SlowFade>
-
-          <SlowFade delay={0.2}>
-            <Link href="/product">
-              <Button size="lg">{t("home.cta.button")}</Button>
+      {/* CTA */}
+      <section className="py-32 border-t border-white/[0.06]">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="text-center max-w-3xl mx-auto"
+          >
+            <h2 className="text-title mb-6">{t("home.cta.title")}</h2>
+            <p className="text-body text-white/50 mb-10">{t("home.cta.subtitle")}</p>
+            <Link
+              href="/product"
+              className="inline-block text-small px-8 py-3 bg-white text-black hover:bg-white/90 transition-all rounded"
+            >
+              {t("home.cta.button")}
             </Link>
-          </SlowFade>
+          </motion.div>
         </div>
       </section>
     </div>

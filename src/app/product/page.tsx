@@ -1,247 +1,215 @@
 "use client";
 
 import { useState } from "react";
-import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { SlowFade } from "@/components/motion/slow-fade";
-import { Magnetic } from "@/components/motion/magnetic";
-import { Button } from "@/components/ui/button";
-import { Check, X } from "lucide-react";
+import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
+
+interface PricingTier {
+  name: string;
+  price: { monthly: number; yearly: number };
+  description: string;
+  features: string[];
+  cta: string;
+  highlight?: boolean;
+}
 
 export default function ProductPage() {
   const { t, tRaw } = useI18n();
-  const { data: session } = useSession();
-  const router = useRouter();
-  const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");
-  const [loading, setLoading] = useState<string | null>(null);
+  const [isYearly, setIsYearly] = useState(false);
 
-  const handleSubscribe = async (tier: string) => {
-    if (!session) {
-      router.push("/auth/signin");
-      return;
-    }
-
-    setLoading(tier);
-    try {
-      const response = await fetch("/api/payments/create", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ tier, interval: billing }),
-      });
-
-      const data = await response.json();
-
-      if (data.paymentUrl) {
-        window.location.href = data.paymentUrl;
-      } else {
-        throw new Error("No payment URL returned");
-      }
-    } catch (error) {
-      console.error("Payment error:", error);
-      alert("Failed to create payment. Please try again.");
-      setLoading(null);
-    }
-  };
-
-  const valuePoints = tRaw("product.valuePoints") || [];
-  const notPoints = tRaw("product.notPoints") || [];
-  const pricingTiers = tRaw("product.pricing.tiers") || [];
+  const tiers = tRaw("product.pricing.tiers") as PricingTier[];
 
   return (
-    <div className="min-h-screen py-24 px-8 md:px-16">
-      {/* ═══════════════════════════════════════
-          Product Description
-      ═══════════════════════════════════════ */}
-      <section className="max-w-[900px] mx-auto mb-32">
-        <SlowFade>
-          <h1 className="text-[clamp(2.5rem,6vw,4rem)] font-extralight leading-[1.1] text-foreground mb-8">
-            {t("product.title")}
-          </h1>
-        </SlowFade>
-
-        <SlowFade delay={0.1}>
-          <div className="w-[80px] h-px bg-signal mb-16" />
-        </SlowFade>
-
-        <SlowFade delay={0.2}>
-          <h2 className="text-[24px] font-extralight text-foreground mb-8">
-            {t("product.whatYouGet")}
-          </h2>
-        </SlowFade>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-          {valuePoints.map((point: string, i: number) => (
-            <SlowFade key={point} delay={0.25 + i * 0.05}>
-              <div className="flex items-start gap-3">
-                <div className="mt-1 shrink-0">
-                  <Check size={18} className="text-signal" strokeWidth={1.5} />
-                </div>
-                <p className="text-[15px] font-light leading-[1.7] text-foreground">{point}</p>
-              </div>
-            </SlowFade>
-          ))}
-        </div>
-
-        <SlowFade delay={0.5}>
-          <h2 className="text-[24px] font-extralight text-foreground mb-8">
-            {t("product.whatNot")}
-          </h2>
-        </SlowFade>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {notPoints.map((point: string, i: number) => (
-            <SlowFade key={point} delay={0.55 + i * 0.05}>
-              <div className="flex items-start gap-3">
-                <div className="mt-1 shrink-0">
-                  <X size={18} className="text-muted" strokeWidth={1.5} />
-                </div>
-                <p className="text-[15px] font-light leading-[1.7] text-muted">{point}</p>
-              </div>
-            </SlowFade>
-          ))}
+    <div className="min-h-screen bg-black">
+      {/* Hero */}
+      <section className="pt-32 pb-20">
+        <div className="container max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <h1 className="text-display mb-6">{t("product.title")}</h1>
+          </motion.div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          Pricing Section
-      ═══════════════════════════════════════ */}
-      <section className="max-w-[1400px] mx-auto mb-24">
-        <SlowFade>
-          <h2 className="text-[clamp(2rem,5vw,3rem)] font-extralight leading-[1.15] text-foreground text-center mb-4">
-            {t("product.pricing.title")}
-          </h2>
-        </SlowFade>
-
-        <SlowFade delay={0.05}>
-          <p className="text-[16px] font-light text-muted text-center mb-12">
-            {t("product.pricing.subtitle")}
-          </p>
-        </SlowFade>
-
-        {/* Billing Toggle */}
-        <SlowFade delay={0.08}>
-          <div className="flex items-center justify-center gap-4 mb-16">
-            <button
-              onClick={() => setBilling("monthly")}
-              className={`text-[14px] font-light px-5 py-2 border transition-all duration-500 ${
-                billing === "monthly"
-                  ? "border-signal text-signal"
-                  : "border-border text-muted hover:text-foreground"
-              }`}
+      {/* What You Get */}
+      <section className="py-20">
+        <div className="container max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             >
-              {t("product.billingToggle.monthly")}
-            </button>
-            <button
-              onClick={() => setBilling("yearly")}
-              className={`text-[14px] font-light px-5 py-2 border transition-all duration-500 ${
-                billing === "yearly"
-                  ? "border-signal text-signal"
-                  : "border-border text-muted hover:text-foreground"
-              }`}
+              <h3 className="text-lg font-normal mb-6">{t("product.whatYouGet")}</h3>
+              <ul className="space-y-3">
+                {(tRaw("product.valuePoints") as string[]).map((point, i) => (
+                  <li key={i} className="text-body text-white/60 flex items-start">
+                    <span className="mr-2">✓</span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             >
-              {t("product.billingToggle.yearly")}
-            </button>
+              <h3 className="text-lg font-normal mb-6">{t("product.whatNot")}</h3>
+              <ul className="space-y-3">
+                {(tRaw("product.notPoints") as string[]).map((point, i) => (
+                  <li key={i} className="text-body text-white/60 flex items-start">
+                    <span className="mr-2">✗</span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           </div>
-        </SlowFade>
+        </div>
+      </section>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-          {pricingTiers.map(
-            (
-              tier: {
-                name: string;
-                monthlyPrice: number;
-                yearlyPrice: number;
-                tagline: string;
-                audience: string;
-                features: string[];
-              },
-              i: number,
-            ) => {
-              const recommended = tier.name === "Plus";
-              const price = billing === "monthly" ? tier.monthlyPrice : tier.yearlyPrice;
-              const suffix = billing === "monthly" ? t("product.monthly") : t("product.yearly");
-              const yearlySaving = tier.monthlyPrice * 12 - tier.yearlyPrice;
+      {/* Pricing */}
+      <section className="py-32 border-t border-white/[0.06]">
+        <div className="container max-w-5xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-title mb-4">{t("product.pricing.title")}</h2>
+            <p className="text-body text-white/50 mb-8">{t("product.pricing.subtitle")}</p>
+
+            {/* Billing Toggle */}
+            <div className="inline-flex items-center gap-3 p-1 bg-white/[0.02] border border-white/[0.06] rounded">
+              <button
+                onClick={() => setIsYearly(false)}
+                className={`px-6 py-2 rounded text-small transition-all ${
+                  !isYearly ? "bg-white text-black" : "text-white/50 hover:text-white"
+                }`}
+              >
+                {t("product.billingToggle.monthly")}
+              </button>
+              <button
+                onClick={() => setIsYearly(true)}
+                className={`px-6 py-2 rounded text-small transition-all ${
+                  isYearly ? "bg-white text-black" : "text-white/50 hover:text-white"
+                }`}
+              >
+                {t("product.billingToggle.yearly")}
+              </button>
+            </div>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {tiers.map((tier: PricingTier, i: number) => {
+              const isFeatured = tier.name === "Plus";
+              const price = isYearly ? tier.price.yearly : tier.price.monthly;
+              const period = isYearly ? t("product.yearly") : t("product.monthly");
+              const savings = isYearly && tier.price.monthly * 12 - tier.price.yearly;
 
               return (
-                <SlowFade key={tier.name} delay={0.1 + i * 0.1}>
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
-                    className={`relative border bg-card p-8 transition-all duration-[0.9s] hover:border-signal/60 ${
-                      recommended ? "border-signal lg:scale-105" : "border-border"
-                    }`}
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-80px" }}
+                  transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                >
+                  <div
+                    className={`card-minimal p-8 rounded h-full relative ${isFeatured ? "border-white/[0.15]" : ""}`}
                   >
-                    {recommended ? (
-                      <div className="absolute -top-3 left-8 bg-signal text-background px-4 py-1 text-[11px] font-light tracking-[0.15em]">
-                        {t("product.recommended")}
+                    {isFeatured ? (
+                      <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                        <span className="text-xs px-3 py-1 bg-white text-black rounded-full">
+                          {t("product.recommended")}
+                        </span>
                       </div>
                     ) : null}
 
-                    <div className="mb-8">
-                      <h3 className="text-[28px] font-extralight text-foreground mb-2">
-                        OPENENDED {tier.name}
-                      </h3>
-                      <div className="flex items-baseline gap-2 mb-2">
-                        <span className="text-[48px] font-extralight text-signal">${price}</span>
-                        <span className="text-[16px] font-light text-muted">{suffix}</span>
-                      </div>
-                      {billing === "yearly" && yearlySaving > 0 && (
-                        <p className="text-[13px] font-light text-signal mb-4">
-                          {t("product.yearlySave")} ${yearlySaving}
-                        </p>
-                      )}
-                      <p className="text-[14px] font-light text-muted italic mb-6">
-                        {tier.tagline}
-                      </p>
-                      <p className="text-[13px] font-light leading-[1.7] text-muted">
-                        <span className="text-foreground">{t("product.forLabel")}</span>{" "}
-                        {tier.audience}
-                      </p>
+                    <p className="text-small text-white/40 mb-2">{tier.name}</p>
+                    <div className="mb-2">
+                      <span className="text-4xl font-light">${price}</span>
+                      <span className="text-white/50 text-sm">{period}</span>
                     </div>
+                    {isYearly && savings > 0 ? (
+                      <p className="text-xs text-white/40 mb-4">
+                        {t("product.yearlySave")} ${savings}
+                      </p>
+                    ) : null}
+                    <p className="text-sm text-white/60 mb-4">{tier.tagline}</p>
+                    <p className="text-body text-white/50 text-sm mb-6 leading-relaxed">
+                      <span className="text-white/40">{t("product.forLabel")}</span> {tier.audience}
+                    </p>
 
-                    <div className="space-y-4 mb-8">
-                      {tier.features.map((feature: string) => (
-                        <div key={feature} className="flex items-start gap-3">
-                          <div className="mt-1 shrink-0">
-                            <Check size={16} className="text-signal" strokeWidth={1.5} />
-                          </div>
-                          <p className="text-[13px] font-light leading-[1.7] text-muted">
-                            {feature}
-                          </p>
-                        </div>
+                    <ul className="space-y-3 mb-8">
+                      {tier.features.map((feature: string, j: number) => (
+                        <li key={j} className="text-sm text-white/60 flex items-start">
+                          <span className="mr-2">·</span>
+                          {feature}
+                        </li>
                       ))}
-                    </div>
+                    </ul>
 
-                    <Magnetic strength={0.2}>
-                      <Button
-                        variant={recommended ? "primary" : "secondary"}
-                        className="w-full"
-                        onClick={() => handleSubscribe(tier.name.toLowerCase())}
-                        disabled={loading === tier.name.toLowerCase()}
-                      >
-                        {loading === tier.name.toLowerCase()
-                          ? "Processing..."
-                          : `${t("product.getButton")} ${tier.name}`}
-                      </Button>
-                    </Magnetic>
-                  </motion.div>
-                </SlowFade>
+                    <button className="w-full text-small px-6 py-2.5 border border-white/[0.12] hover:bg-white/[0.02] transition-all rounded">
+                      {t("product.getButton")}
+                    </button>
+                  </div>
+                </motion.div>
               );
-            },
-          )}
-        </div>
+            })}
+          </div>
 
-        <SlowFade delay={0.4}>
-          <p className="text-[14px] font-light leading-[1.8] text-muted text-center max-w-[800px] mx-auto">
-            {t("product.pricing.guide.core")} <span className="text-foreground">Core</span>.
-            <br />
-            {t("product.pricing.guide.plus")} <span className="text-foreground">Plus</span>.
-            <br />
-            {t("product.pricing.guide.pro")} <span className="text-foreground">Pro</span>.
-          </p>
-        </SlowFade>
+          {/* Guide */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="space-y-4 max-w-3xl mx-auto"
+          >
+            <p className="text-body text-white/60 text-center">
+              {t("product.pricing.guide.core")} <span className="text-white">Core</span>
+            </p>
+            <p className="text-body text-white/60 text-center">
+              {t("product.pricing.guide.plus")} <span className="text-white">Plus</span>
+            </p>
+            <p className="text-body text-white/60 text-center">
+              {t("product.pricing.guide.pro")} <span className="text-white">Pro</span>
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-32 border-t border-white/[0.06]">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="text-center max-w-3xl mx-auto"
+          >
+            <h2 className="text-title mb-6">{t("home.cta.title")}</h2>
+            <p className="text-body text-white/50 mb-10">{t("home.cta.subtitle")}</p>
+            <Link
+              href="/auth/signin"
+              className="inline-block text-small px-8 py-3 bg-white text-black hover:bg-white/90 transition-all rounded"
+            >
+              {t("home.cta.button")}
+            </Link>
+          </motion.div>
+        </div>
       </section>
     </div>
   );
