@@ -58,6 +58,17 @@ export async function sendVerificationCode({ email, code }: SendVerificationCode
                           ⏱ 验证码有效期为 <strong>10 分钟</strong>
                         </div>
                         
+                        <!-- Welcome Button -->
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 32px 0;">
+                          <tr>
+                            <td align="center">
+                              <a href="http://localhost:3000/welcome" style="display: inline-block; background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); color: #ffffff; text-decoration: none; padding: 16px 48px; border-radius: 8px; font-size: 15px; font-weight: 500; letter-spacing: 0.5px;">
+                                欢迎来到 OPENENDED
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                        
                         <!-- Security Notice -->
                         <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 32px 0;">
                           <tr>
