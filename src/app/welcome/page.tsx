@@ -10,68 +10,61 @@ export default function WelcomePage() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            {/* 主体 - 三条精致的波浪线 */}
-            <path
-              d="M 3 13.5 Q 9 10.5, 14 13.5 Q 19 16.5, 24 13.5 Q 29 10.5, 34 13.5"
-              stroke="url(#wave1Gradient)"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              fill="none"
-            >
-              <animate
-                attributeName="d"
-                values="M 3 13.5 Q 9 10.5, 14 13.5 Q 19 16.5, 24 13.5 Q 29 10.5, 34 13.5;
-                        M 3 13.5 Q 9 11.5, 14 13.5 Q 19 15.5, 24 13.5 Q 29 11.5, 34 13.5;
-                        M 3 13.5 Q 9 10, 14 13.5 Q 19 17, 24 13.5 Q 29 10, 34 13.5;
-                        M 3 13.5 Q 9 11.5, 14 13.5 Q 19 15.5, 24 13.5 Q 29 11.5, 34 13.5;
-                        M 3 13.5 Q 9 10.5, 14 13.5 Q 19 16.5, 24 13.5 Q 29 10.5, 34 13.5"
-                dur="4s"
-                repeatCount="indefinite"
-              />
-            </path>
+            {/* 主体 - 三条精致的波浪线 - 使用 transform 而不是 path 变形 */}
+            <g>
+              <path
+                d="M 3 13.5 Q 9 10.5, 14 13.5 Q 19 16.5, 24 13.5 Q 29 10.5, 34 13.5"
+                stroke="url(#wave1Gradient)"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+              >
+                <animateTransform
+                  attributeName="transform"
+                  type="translate"
+                  values="0,0; 0,-0.8; 0,0.8; 0,-0.8; 0,0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                />
+              </path>
 
-            <path
-              d="M 3 20 Q 9 17, 14 20 Q 19 23, 24 20 Q 29 17, 34 20"
-              stroke="url(#wave2Gradient)"
-              strokeWidth="2.3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              fill="none"
-            >
-              <animate
-                attributeName="d"
-                values="M 3 20 Q 9 17, 14 20 Q 19 23, 24 20 Q 29 17, 34 20;
-                        M 3 20 Q 9 18, 14 20 Q 19 22, 24 20 Q 29 18, 34 20;
-                        M 3 20 Q 9 16.5, 14 20 Q 19 23.5, 24 20 Q 29 16.5, 34 20;
-                        M 3 20 Q 9 18, 14 20 Q 19 22, 24 20 Q 29 18, 34 20;
-                        M 3 20 Q 9 17, 14 20 Q 19 23, 24 20 Q 29 17, 34 20"
-                dur="4s"
-                repeatCount="indefinite"
-              />
-            </path>
+              <path
+                d="M 3 20 Q 9 17, 14 20 Q 19 23, 24 20 Q 29 17, 34 20"
+                stroke="url(#wave2Gradient)"
+                strokeWidth="2.3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+              >
+                <animateTransform
+                  attributeName="transform"
+                  type="translate"
+                  values="0,0; 0,0.6; 0,-0.6; 0,0.6; 0,0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                />
+              </path>
 
-            <path
-              d="M 3 26.5 Q 9 23.5, 14 26.5 Q 19 29.5, 24 26.5 Q 29 23.5, 34 26.5"
-              stroke="url(#wave3Gradient)"
-              strokeWidth="2.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              fill="none"
-            >
-              <animate
-                attributeName="d"
-                values="M 3 26.5 Q 9 23.5, 14 26.5 Q 19 29.5, 24 26.5 Q 29 23.5, 34 26.5;
-                        M 3 26.5 Q 9 24.5, 14 26.5 Q 19 28.5, 24 26.5 Q 29 24.5, 34 26.5;
-                        M 3 26.5 Q 9 23, 14 26.5 Q 19 30, 24 26.5 Q 29 23, 34 26.5;
-                        M 3 26.5 Q 9 24.5, 14 26.5 Q 19 28.5, 24 26.5 Q 29 24.5, 34 26.5;
-                        M 3 26.5 Q 9 23.5, 14 26.5 Q 19 29.5, 24 26.5 Q 29 23.5, 34 26.5"
-                dur="4s"
-                repeatCount="indefinite"
-              />
-            </path>
+              <path
+                d="M 3 26.5 Q 9 23.5, 14 26.5 Q 19 29.5, 24 26.5 Q 29 23.5, 34 26.5"
+                stroke="url(#wave3Gradient)"
+                strokeWidth="2.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+              >
+                <animateTransform
+                  attributeName="transform"
+                  type="translate"
+                  values="0,0; 0,0.8; 0,-0.8; 0,0.8; 0,0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                />
+              </path>
+            </g>
 
-            {/* 延伸线 - 动态淡入淡出 */}
+            {/* 延伸线 - 简单的透明度动画 */}
             <line
               x1="34"
               y1="13.5"
@@ -83,8 +76,8 @@ export default function WelcomePage() {
             >
               <animate
                 attributeName="opacity"
-                values="0.4;0.7;0.4"
-                dur="4s"
+                values="0.3;0.6;0.3"
+                dur="6s"
                 repeatCount="indefinite"
               />
             </line>
@@ -99,8 +92,8 @@ export default function WelcomePage() {
             >
               <animate
                 attributeName="opacity"
-                values="0.6;0.9;0.6"
-                dur="4s"
+                values="0.5;0.8;0.5"
+                dur="6s"
                 repeatCount="indefinite"
               />
             </line>
@@ -115,18 +108,18 @@ export default function WelcomePage() {
             >
               <animate
                 attributeName="opacity"
-                values="0.8;1;0.8"
-                dur="4s"
+                values="0.7;1;0.7"
+                dur="6s"
                 repeatCount="indefinite"
               />
             </line>
 
-            {/* 环境光晕 - 脉动效果 */}
-            <ellipse cx="20" cy="20" rx="20" ry="10" fill="url(#ambientGlow1)" opacity="0.12">
+            {/* 环境光晕 - 柔和脉动 */}
+            <ellipse cx="20" cy="20" rx="20" ry="10" fill="url(#ambientGlow1)">
               <animate
                 attributeName="opacity"
-                values="0.08;0.15;0.08"
-                dur="4s"
+                values="0.06;0.12;0.06"
+                dur="6s"
                 repeatCount="indefinite"
               />
             </ellipse>
