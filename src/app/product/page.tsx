@@ -115,7 +115,7 @@ export default function ProductPage() {
               const isFeatured = tier.name === "Plus";
               const price = isYearly ? tier.yearlyPrice : tier.monthlyPrice;
               const period = isYearly ? t("product.yearly") : t("product.monthly");
-              const savings = isYearly && tier.monthlyPrice * 12 - tier.yearlyPrice;
+              const savings = isYearly ? tier.monthlyPrice * 12 - tier.yearlyPrice : 0;
 
               return (
                 <motion.div
